@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
-import Page_O from './pageOleada/Page_O';
+import pageWave from './pageWave/pageWave';
 import Home  from './homePage/Home';
 
 const App = () => {
@@ -9,10 +9,10 @@ const App = () => {
       <div>
         <nav>
             <Link to="/">Home</Link>
-            <Link to="/Page_O">Page oleada</Link>
+            <Link to="/pageWave">Page Wave</Link>
         </nav>
         <Route path="/" exact component={Home} />
-        <Route path="/Page_O" exact component={Page_O} />
+        <Route path="/pageWave" exact component={pageWave} />
       </div>
     </BrowserRouter>
   );
