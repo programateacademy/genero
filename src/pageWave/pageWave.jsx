@@ -1,16 +1,13 @@
 import React from 'react'
-import ImageBook from './Components/Books/ImageBook'
-import Description from './Components/Books/Description'
-import Button from './Components/Books/Button'
-import Visualization from './Components/Books/Visualization'
+
+import WaveAnimation from './Components/Section/WaveAnimation';
+import Container from './Components/Section/Container';
 
 const Page_o = () => {
   return (
     <div>
-      <ImageBook/>
-      <Description/>
-      <Button/>
-      <Visualization/>
+         <Container/>
+         <WaveAnimation/>
     </div>
   )
 }
