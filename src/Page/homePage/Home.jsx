@@ -1,13 +1,17 @@
 import React from 'react'
 import Form from './Components/Form'
 import './styles.css'
+import Container from './Components/Section/Container'
+import WaveAnimation from './Components/Section/WaveAnimation'
 
 
 const Home = () => {
   return (
     <div>
-      Home Aqui si puedo acceder a la pagina principal
+      <Container/>
+     <WaveAnimation/> 
       <Form/>
+
     </div>
   )
 }
