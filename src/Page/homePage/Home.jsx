@@ -6,7 +6,7 @@ import './styles.css'
 const Home = () => {
   return (
     <div>
-      Home Aqui si puedo acceder a la pagina principal
+      Home Aqui 
       <Form/>
     </div>
   )
