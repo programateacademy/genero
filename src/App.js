@@ -1,8 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import pageWave from './pageWave/pageWave';
 import Home  from './homePage/Home';
-import Cards from './pageWave/Components/Books/Cards';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
@@ -15,13 +14,16 @@ const App = () => {
         </nav>
         <Route path="/" exact component={Home} />
         <Route path="/pageWave" exact component={pageWave} />
-
-<div style={{marginTop:100}}>
-</div>
-
+        
+        <Card
+        title="¿Quiénes lideran el movimiento Feminista Chicano?"
+        description="El movimiento feminista chicano fue liderado por muchas mujeres notables, incluyendo a Dolores Huerta, Cherríe Moraga, Gloria Anzaldúa, Ana Castillo, Sandra Cisneros, y muchas más."
+        imageUrl="https://d1ih8jugeo2m5m.cloudfront.net/2021/07/imagenes-sin-copyright-gratis.jpg"
+      />
 
       </div>
     </BrowserRouter>
+
 
 
   )
