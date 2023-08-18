@@ -9,8 +9,14 @@ const App = () => {
     <BrowserRouter>
       <div>
         <nav>
-            <Link to="/">Home</Link>
-            <Link to="/pageWave">Page Wave</Link>
+            <div>
+                <ul className="Navbar">
+                    <li><a className="active" href="index.htm">Inicio</a></li>
+                    <li><a href="index.htm">Sobre</a></li>
+                    <li><a href="index.htm">Recursos</a></li>
+                    <li><a href="index.htm">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
         <Route path="/" exact component={Home} />
         <Route path="/pageWave" exact component={pageWave} />
