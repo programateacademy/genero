@@ -3,14 +3,18 @@ import '../style.css'
 
 const Form = () => {
 
+  function handleSubmit(e) {
+    
+  }
+
   return (
-    <section className='form'>
+    <section className='formulary'>
       <div className='grid-content'>
         <div className='text'>
           <h1 className='white'>¡Tu voz importa y queremos escucharte!  </h1>
           <h1 className='purple'>Unete a nosotras</h1>
         </div>
-        <div className='grid-input'>
+        <form className='grid-input' id='form' onSubmit={handleSubmit}>
           <div className='content-input'>
             <p>Tu nombre</p>
             <input type="text" name='name' className='name' placeholder='Name' />
@@ -24,7 +28,7 @@ const Form = () => {
             <textarea type="text" name='message' className='message' />
             <button type='submit' className='btn-submit'>Enviar</button>
           </div>
-        </div>
+        </form>
       </div>
     </section>
   );

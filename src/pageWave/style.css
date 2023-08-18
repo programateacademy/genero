@@ -40,24 +40,30 @@
 
 .grid-input textarea{
     background: #C09AC3;
-    height: 50px;
+    height: 70px;
     width: 185%;
+    color: white;
+    font-size: 16px;
 }
 
 .grid-input input::placeholder, .grid-input input[type="text"] {
-    
     color: white;
     font-size: 14px;
 }
 
 .btn-submit {
     margin-top: 20px;
-    width: 90%;
+    width: 50%;
     border-radius: 50px;
     background: #EF5AFF;
     color: white;
     border: none;
     font-size: 20px;
+}
+
+.btn-submit:hover {
+    background: #e151f1; 
+    cursor: pointer;
 }
 
 
