@@ -1,7 +1,27 @@
 .demoPage{
-    background-color: rgb(127, 53, 109);
+
+    background-color: rgb(222, 99, 191);
     border: 1px solid #000;
   }
+
+.Book{
+  position: relative;
+  left: 200px;
+  top:-10px;
+}
+
+
+.container-book{
+  display: block;
+  position: absolute;
+  margin-left: 250px;
+  margin-bottom: 100px;
+  background-color: #80e077;
+  width: 600px;
+  height: 400px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
 
 
   .card {
