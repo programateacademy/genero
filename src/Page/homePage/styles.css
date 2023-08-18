@@ -1,0 +1,61 @@
+/*-------------------------------Form------------------------------------*/
+
+.grid-content {
+    background-color: #A65BAE;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.white {
+    color: white;
+}
+
+.purple {
+    color: #EF5AFF;
+}
+
+.grid-input {
+    display: grid;
+    grid-template: 1fr / 200px 200px;
+}
+
+.grid-input input {
+    border: #A65BAE;
+    height: 30px;
+    background: #C09AC3;
+}
+
+.content-input p{
+    color: white;
+    font-size: 22px;
+}
+
+.grid-input textarea{
+    background: #C09AC3;
+    height: 50px;
+    width: 185%;
+}
+
+.grid-input input::placeholder, .grid-input input[type="text"] {
+    
+    color: white;
+    font-size: 14px;
+}
+
+.btn-submit {
+    margin-top: 20px;
+    width: 90%;
+    border-radius: 50px;
+    background: #EF5AFF;
+    color: white;
+    border: none;
+    font-size: 20px;
+}

@@ -1,5 +1,7 @@
 import React from 'react'
-import Form from '../pageWave/Components/Form'
+import Form from './Components/Form'
+import './styles.css'
+
 
 const Home = () => {
   return (

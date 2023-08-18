@@ -1,10 +1,10 @@
 import React from 'react'
 import MyBook from './Components/Books/MyBook'
-import './style.css'
-import Card from './Components/Card'
+import './styles.css'
+import Card from './Components/Cards/Card'
 
 
-const Page_o = () => {
+const Page_Wave = () => {
   return (
     <div>
         <Card
@@ -17,4 +17,4 @@ const Page_o = () => {
   )
 }
 
-export default Page_o
+export default Page_Wave
