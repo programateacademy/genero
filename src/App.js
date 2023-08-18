@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
-import pageWave from './pageWave/pageWave';
-import Home  from './homePage/Home';
+import pageWave from './Page/pageWave/pageWave';
+import Home  from './Page/homePage/Home';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (
@@ -15,7 +16,13 @@ const App = () => {
         <Route path="/pageWave" exact component={pageWave} />
       </div>
     </BrowserRouter>
-  );
-};
+
+
+
+  )
+
+
+
+}
 
 export default App;

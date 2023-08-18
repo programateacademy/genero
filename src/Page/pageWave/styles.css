@@ -1,0 +1,23 @@
+.demoPage{
+    background-color: rgb(127, 53, 109);
+    border: 1px solid #000;
+  }
+
+
+  .card {
+    border: 1px solid #f010d2;
+    border-radius: 8px;
+    box-shadow: 0 7px 4px rgba(230, 129, 250, 0.651);
+    padding: 16px;
+    margin: 6px;
+    display: grid;
+    max-width: 40%;
+  }
+  
+  .card img {
+    max-width: 55%;
+    justify-content:left;
+    height: auto;
+    margin-bottom: 8px;
+  }
+ 
