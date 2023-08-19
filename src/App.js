@@ -4,6 +4,7 @@ import pageWave from './Page/pageWave/pageWave';
 import Home  from './Page/homePage/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -14,12 +15,6 @@ const App = () => {
         </nav>
         <Route path="/" exact component={Home} />
         <Route path="/pageWave" exact component={pageWave} />
-        
-        <Card
-        title="¿Quiénes lideran el movimiento Feminista Chicano?"
-        description="El movimiento feminista chicano fue liderado por muchas mujeres notables, incluyendo a Dolores Huerta, Cherríe Moraga, Gloria Anzaldúa, Ana Castillo, Sandra Cisneros, y muchas más."
-        imageUrl="https://d1ih8jugeo2m5m.cloudfront.net/2021/07/imagenes-sin-copyright-gratis.jpg"
-      />
 
       </div>
     </BrowserRouter>

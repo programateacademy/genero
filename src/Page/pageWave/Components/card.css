@@ -1,11 +1,10 @@
 .card {
     border: 1px solid #f010d2;
     border-radius: 8px;
-    box-shadow: 0 7px 4px rgba(230, 129, 250, 0.651);
-    padding: 16px;
-    margin: 6px;
+    box-shadow: 7px 7px 7px rgba(286, 100%, 73%);
+    padding: 19px;
     display: grid;
-    max-width: 40%;
+    margin: 18px 129px;
   }
   
   .card img {
@@ -14,4 +13,35 @@
     height: auto;
     margin-bottom: 8px;
   }
- 
+
+
+  h3 {
+    display: grid;
+  font-size: 1.5em;
+  margin-block-start: 0.1em;
+  margin-block-end: 0.1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  justify-content:center;
+  
+  }
+  
+  p {
+    display:grid;
+    font-size: 0.9em;
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  
+  }
+  
+  .card-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -6px; 
+    margin: 19px 28px 28px;
+  }
+
+  
