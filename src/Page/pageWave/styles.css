@@ -7,15 +7,15 @@
 .Book{
   position: relative;
   left: 200px;
-  top:-10px;
+  top:100px;
 }
 
 
 .container-book{
   display: block;
-  position: absolute;
+  /* position: absolute;
   margin-left: 250px;
-  margin-bottom: 100px;
+  margin-bottom: 100px; */
   background-color: #80e077;
   width: 600px;
   height: 400px;
@@ -40,4 +40,10 @@
     height: auto;
     margin-bottom: 8px;
   }
- 
+
+.Container_page_Wave{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

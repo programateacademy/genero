@@ -15,7 +15,7 @@ const MyBook = () => {
         <HTMLFlipBook 
         width={300}
         height={300}
-        showCover={true}
+        // showCover={true}
         >
     {pages}
         </HTMLFlipBook>
