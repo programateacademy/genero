@@ -13,8 +13,7 @@ const App = () => {
             <div>
                 <ul className="Navbar">
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="/pageWave">Page Wave</Link></li>
-                    <li><a href="index.htm">Recursos</a></li>
+                    <li><Link to="/pageWave">Recursos</Link></li>
                     <li><a href="index.htm">Contacto</a></li>
                 </ul>
             </div>
