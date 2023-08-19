@@ -13,9 +13,9 @@ const MyBook = () => {
   return (
     <div className='Book'>
         <HTMLFlipBook 
-        width={400}
-        height={500}
-        showCover={true}
+        width={300}
+        height={300}
+        // showCover={true}
         >
     {pages}
         </HTMLFlipBook>
