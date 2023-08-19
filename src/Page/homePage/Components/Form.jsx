@@ -3,11 +3,12 @@ import { useForm } from "react-hook-form"
 
 
 const Form = () => {
-  const { register, formState:{ errors }, handleSubmit } = useForm();
+  const { register, formState:{ errors }, reset , handleSubmit } = useForm();
 
   const onSubmit = (dataForm) => {
-    console.log(dataForm)
-  }
+    console.log(dataForm);
+    reset()
+  };
   return (
     <section className='formulary'>
       <div className='grid-content'>
