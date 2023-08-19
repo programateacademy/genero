@@ -1,5 +1,4 @@
 import image from "../../../../assets/img/image2.png"
-import "./Container.css"
 
 const Container = ()=>{
     return(

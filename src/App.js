@@ -5,6 +5,7 @@ import Home  from './Page/homePage/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'; 
 
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -26,8 +27,6 @@ const App = () => {
 
 
   )
-
-
 
 }
 
