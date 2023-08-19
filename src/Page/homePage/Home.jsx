@@ -8,12 +8,8 @@ import WaveAnimation from './Components/Section/WaveAnimation'
 const Home = () => {
   return (
     <div>
-<<<<<<< HEAD
-      Home Aqui 
-=======
       <Container/>
      <WaveAnimation/> 
->>>>>>> andrews
       <Form/>
 
     </div>
