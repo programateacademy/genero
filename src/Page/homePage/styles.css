@@ -22,18 +22,25 @@
     color: #EF5AFF;
 }
 
+.red {
+    color: red;
+    font-size: 15px;
+}
+
 .grid-input {
     display: grid;
     grid-template: 1fr / 200px 200px;
 }
 
-.grid-input input {
+.grid-input input[type="text"] {
     border: #A65BAE;
     height: 30px;
     background: #C09AC3;
+    color: white;
+    font-size: 14px;
 }
 
-.content-input p{
+.white-form-text{
     color: white;
     font-size: 22px;
 }
@@ -46,7 +53,7 @@
     font-size: 16px;
 }
 
-.grid-input input::placeholder, .grid-input input[type="text"] {
+.grid-input input::placeholder {
     color: white;
     font-size: 14px;
 }
@@ -66,7 +73,43 @@
     cursor: pointer;
 }
 
+@media ( max-width: 1040px) {
+    .grid-content {
+        padding: 100px 70px;
+    }
+    
+    .grid-input {
+        justify-content: end;
+    }
+}
 
+@media ( max-width: 900px) {
+    .grid-content {
+        padding: 100px 0;
+    }
+
+    .grid-input {
+        grid-template-columns: 180px 160px;
+    }
+}
+
+@media ( max-width: 670px) {
+    .grid-content {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .text {
+        margin-bottom: 30px;
+    }
+    .grid-input {
+        justify-content: center;
+        grid-template-columns: 180px;
+    }
+
+    .grid-input textarea {
+        width: 100%;
+    }
+}
 
 
 
