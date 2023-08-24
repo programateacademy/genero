@@ -197,6 +197,10 @@ iframe {
     animation: textAnimation 1s alternate infinite; /* Animación */
   }
 
+  .Input_search{
+    width: 100%;
+  }
+
   
   @keyframes textAnimation {
     0% {
