@@ -12,7 +12,7 @@ function Card(props) {
                     <p>{card.description}</p>
                 </div>
             ))}
-       <h1>Recursos</h1> 
+       <h1 className='Resource_title'>Recursos</h1> 
         </div>
     );
 }

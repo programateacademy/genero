@@ -1,6 +1,6 @@
 import React from 'react'
 import Form from './Components/Form'
-import './styles_home.css'
+import './styles.css'
 import Container from './Components/Section/Container'
 import WaveAnimation from './Components/Section/WaveAnimation'
 
