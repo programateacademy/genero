@@ -1,17 +1,20 @@
 .demoPage{
-
+  display:flex ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
     background-color: rgb(222, 99, 191);
     border: 1px solid #000;
   }
 
-.Book{
+/* .Book{
   position: relative;
-  left: 200px;
-  top:100px;
-}
+  left: 400px;
+  top:400px;
+} */
 
 
-.container-book{
+.bookContainer{
   display: block;
   /* position: absolute;
   margin-left: 250px;
@@ -68,4 +71,16 @@ p {
   justify-content: space-between;
   margin-bottom: -6px; 
   margin: 19px 28px 28px;
+}
+
+/* .Container{
+  width: 1000px;
+  height: 1000px;
+} */
+
+iframe {
+  background-color: transparent;
+  width: 80vw;
+  height: 800px;
+  border-radius: 10px;
 }

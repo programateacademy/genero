@@ -11,7 +11,7 @@ const App = () => {
     <BrowserRouter>
       <div>
         <nav>
-            <div>
+            <div className='Menu'>
                 <ul className="Navbar">
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/pageWave">Recursos</Link></li>

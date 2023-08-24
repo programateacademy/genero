@@ -1,30 +1,64 @@
 import React from 'react'
+import { useForm } from "react-hook-form"
+import emailjs from 'emailjs-com';
 
 
 const Form = () => {
+  const { register, formState:{ errors }, reset , handleSubmit } = useForm();
 
+  const onSubmit = (dataForm) => {
+    const templateParams = {
+      from_name: dataForm.name,
+      from_email: dataForm.email, 
+      message: dataForm.message
+    }
+    
+    emailjs.send(
+      'service_vfku1yv', 
+      'template_cd2wjzj', 
+       templateParams ,
+      'LRxNH6JKhqn7_y75P'
+    )
+
+    .then((response) => {
+      console.log("Correo enviado exitosamente", response);
+    })
+    .catch((error) => {
+      console.error("Error al enviar el correo", error);
+    });
+    
+    console.log(dataForm);
+    reset()
+  };
   return (
-    <section className='form'>
+    <section className='formulary'>
       <div className='grid-content'>
         <div className='text'>
-          <h1 className='white'>¡Tu voz importa y queremos escucharte!  </h1>
+          <h1 className='white'>¡Tu voz importa y </h1>
+          <h1 className='white'>queremos escucharte!</h1>
           <h1 className='purple'>Unete a nosotras</h1>
         </div>
-        <div className='grid-input'>
+        <form className='grid-input' id='form' onSubmit={handleSubmit(onSubmit)}>
           <div className='content-input'>
-            <p>Tu nombre</p>
-            <input type="text" name='name' className='name' placeholder='Name' />
+            <p className='white'>Tu nombre</p>
+            <input type="text" className='name' {...register('name', {required: true, maxLength: 25,})} />
+            {errors.name?.type === 'required' && <p className='red'>Debes escribir tu nombre</p>}
+            {errors.name?.type === 'maxLength' && <p className='red'>Puedes escrbir maximo 25 caracteres</p>}
           </div>
           <div className='content-input'>
-            <p>Tu correo</p>
-            <input type="text" name='email' className='email' placeholder='Email' />
+            <p className='white'>Tu correo</p>
+            <input type="text" className='email' {...register('email', {required: true, pattern:/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/})}   />
+            {errors.email?.type === 'required' && <p className='red'>Debes escribir tu email</p>}
+            {errors.email?.type === 'pattern' && <p className='red'>Escribe un email valido</p>}
+
           </div>
           <div className='content-input'>
-            <p>Tu mensaje</p>
-            <textarea type="text" name='message' className='message' />
-            <button type='submit' className='btn-submit'>Enviar</button>
+            <p className='white-form-text'>Tu mensaje</p>
+            <textarea type="text" className='message'{...register('message', {required: true})} />
+            {errors.message?.type === 'required' && <p className='red'>Escribe un mensaje</p>}
+            <input type='submit' className='btn-submit' value='Enviar'/>
           </div>
-        </div>
+        </form>
       </div>
     </section>
   );
