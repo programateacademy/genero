@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div>
       <Container/>
-     <WaveAnimation/> 
+      <WaveAnimation/> 
       <Form/>
     </div>
   )
