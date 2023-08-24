@@ -1,39 +1,15 @@
 import React from 'react'
 import MyBook from './Components/Books/MyBook'
-import './styles.css'
-import Card from './Components/Cards/Card'
+import './styles_page.css'
+import Card from '../pageWave/Components/Cards/Card';
+import jsonData from '../../data.json';
 
 
-const Page_Wave = () => {
+const Page_Wave = (props) => {
   return (
     <div>
-
-      <div className="card-group">
-        <Card 
-          title="¿Quiénes lideran el movimiento Feminista Chicano?"
-          description="El movimiento feminista chicano fue liderado por muchas mujeres notables, incluyendo a Dolores Huerta, Cherríe Moraga, Gloria Anzaldúa, Ana Castillo, Sandra Cisneros, y muchas más."
-          imageUrl="https://d1ih8jugeo2m5m.cloudfront.net/2021/07/imagenes-sin-copyright-gratis.jpg" />
-
-        <Card 
-        title="¿Quiénes lideran el movimiento Feminista Chicano?"
-          description="El movimiento feminista chicano fue liderado por muchas mujeres notables, incluyendo a Dolores Huerta, Cherríe Moraga, Gloria Anzaldúa, Ana Castillo, Sandra Cisneros, y muchas más."
-          imageUrl="https://d1ih8jugeo2m5m.cloudfront.net/2021/07/imagenes-sin-copyright-gratis.jpg" />
-      </div>
-
-      <div className="card-group">
-
-        <Card 
-        title="¿Quiénes lideran el movimiento Feminista Chicano?"
-          description="El movimiento feminista chicano fue liderado por muchas mujeres notables, incluyendo a Dolores Huerta, Cherríe Moraga, Gloria Anzaldúa, Ana Castillo, Sandra Cisneros, y muchas más."
-          imageUrl="https://d1ih8jugeo2m5m.cloudfront.net/2021/07/imagenes-sin-copyright-gratis.jpg" />
-
-        <Card 
-        title="¿Quiénes lideran el movimiento Feminista Chicano?"
-        description="El movimiento feminista chicano fue liderado por muchas mujeres notables, incluyendo a Dolores Huerta, Cherríe Moraga, Gloria Anzaldúa, Ana Castillo, Sandra Cisneros, y muchas más."
-        imageUrl="https://d1ih8jugeo2m5m.cloudfront.net/2021/07/imagenes-sin-copyright-gratis.jpg" />
-
-      </div>
-    <MyBook/>
+      <Card jsonArray={jsonData["Cards-Second-Wave"]} arrayName="Cards-First-Wave"/>
+      <MyBook/>
     </div>
   )
 }

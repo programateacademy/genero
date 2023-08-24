@@ -89,7 +89,7 @@
     margin-top: 4.5rem;
 }
 
-p{
+.text_home{
     width: 45%;
     text-align: start;
     font-size: 1.1rem;
@@ -195,7 +195,9 @@ h2{
       transform: translateY(-100%);
     }
   }
-  
+
+
+/*-------------------------------Media_queries------------------------------------*/
 
 @media ( max-width: 1040px) {
     .grid-content {
