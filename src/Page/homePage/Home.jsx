@@ -11,7 +11,6 @@ const Home = () => {
       <Container/>
      <WaveAnimation/> 
       <Form/>
-
     </div>
   )
 }
