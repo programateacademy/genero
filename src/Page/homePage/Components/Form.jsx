@@ -1,11 +1,32 @@
 import React from 'react'
 import { useForm } from "react-hook-form"
+import emailjs from 'emailjs-com';
 
 
 const Form = () => {
   const { register, formState:{ errors }, reset , handleSubmit } = useForm();
 
   const onSubmit = (dataForm) => {
+    const templateParams = {
+      from_name: dataForm.name,
+      from_email: dataForm.email, 
+      message: dataForm.message
+    }
+    
+    emailjs.send(
+      'service_vfku1yv', 
+      'template_cd2wjzj', 
+       templateParams ,
+      'LRxNH6JKhqn7_y75P'
+    )
+
+    .then((response) => {
+      console.log("Correo enviado exitosamente", response);
+    })
+    .catch((error) => {
+      console.error("Error al enviar el correo", error);
+    });
+    
     console.log(dataForm);
     reset()
   };
