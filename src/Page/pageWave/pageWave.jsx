@@ -8,8 +8,8 @@ import jsonData from '../../data.json';
 const Page_Wave = (props) => {
   return (
     <div>
-      <Card jsonArray={jsonData["Cards-Second-Wave"]} arrayName="Cards-First-Wave"/>
-      <MyBook/>
+      <Card jsonArray={jsonData["Cards-First-Wave"]}/>
+      <MyBook books={jsonData['First-Wave-Books']} />
     </div>
   )
 }

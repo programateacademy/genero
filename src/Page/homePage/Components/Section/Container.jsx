@@ -13,7 +13,7 @@ const Container = ()=>{
             (N. del T. persona que se dedica a la imprenta) desconocido usó 
             una galería de textos y los mezcló de tal manera que logró hacer 
             un libro de textos especimen.</p>
-        <a href="#" className="button-flex">Profundizar</a>
+        <a href="wwww.facebook.com" className="button-flex">Profundizar</a>
         </section>
     );
 };
