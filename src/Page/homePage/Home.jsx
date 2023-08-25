@@ -1,8 +1,14 @@
 import React from 'react'
+import './styles.css'
+import YouTubeVideo from '../homePage/Components/aboutUs/YoutubeVideo'
+import AboutUs from '../homePage/Components/aboutUs/AboutUs'
 
 const Home = () => {
   return (
-    <div>Home Aqui si puedo acceder a la pagina principal</div>
+    <div>
+      <YouTubeVideo/>
+      <AboutUs/>
+    </div>
   )
 }
 

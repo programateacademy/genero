@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import pageWave from './Page/pageWave/pageWave';
 import Home  from './Page/homePage/Home';
@@ -10,8 +10,14 @@ const App = () => {
     <BrowserRouter>
       <div>
         <nav>
-            <Link to="/">Home</Link>
-            <Link to="/pageWave">Page Wave</Link>
+            <div>
+                <ul className="Navbar">
+                    <li><Link to="/">Home</Link></li>
+                    <li><a href="/">Sobre</a></li>
+                    <li><Link to="/pageWave">Recursos</Link></li>
+                    <li><a href="/">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
         <Route path="/" exact component={Home} />
         <Route path="/pageWave" exact component={pageWave} />
@@ -19,11 +25,8 @@ const App = () => {
       </div>
     </BrowserRouter>
 
-
-
+  
   )
-
-
 
 }
 
