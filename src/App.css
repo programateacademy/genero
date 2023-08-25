@@ -48,6 +48,7 @@ nav {
 .Navbar {
     display: flex;
     align-items: center;
+    margin: 1rem 0;
 }
 
 .Navbar li {
@@ -211,5 +212,35 @@ iframe {
     }
     100% {
       font-size: 16px; /* Tamaño de fuente de nuevo */
+  }
+}
+
+@media ( max-width: 1040px ) {
+  .Navbar li {
+    padding: 0 20px;
+  }
+}
+
+@media ( max-width: 500px ) {
+  nav{
+    padding: 20px 0px;
+  }
+
+  .Navbar {
+    padding: 0 10px;
+  }
+
+  .Navbar li{
+    padding: 10px 10px 0 10px;
+  }
+
+  .Navbar li a{
+    font-size: 14px;
+  }
+}
+
+@media ( max-width: 320px ) {
+  .Navbar li a {
+    font-size: 12px;
   }
 }
