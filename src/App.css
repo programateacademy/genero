@@ -48,6 +48,8 @@ nav {
 .Navbar {
     display: flex;
     align-items: center;
+    list-style-type: none;
+    padding: 0;
 }
 
 .Navbar li {
@@ -56,7 +58,9 @@ nav {
     position: relative;
 }
 
-.Navbar li a {
+
+
+.Navbar li a , #title_oleada{
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 600;
@@ -96,6 +100,27 @@ nav {
   }
 }
 
+
+.Dropdown {
+  position: relative;
+}
+
+.DropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #C09AC3;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.Dropdown:hover .DropdownContent {
+  display: block;
+}
+
+.DropdownContent li {
+  padding: 10px;
+}
 
 
 /* ----pageWave--- */
@@ -155,13 +180,13 @@ nav {
 /* -----book------ */
 
 iframe {
-  background-color: transparent;
   width: 50vw;
   height: 400px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .demoPage{
+  position: absolute;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -188,18 +213,40 @@ iframe {
     text-align: center;
   }
 
-  .demoPage a{
-    text-align: center;
+  .Text_author, .demoPage h4{
+    font-size: 30px;
     color: white;
+  }
+
+  .demoPage a{
+    position: relative;
+    left: 20px;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    animation: textAnimation 1s alternate infinite; /* Animación */
+    animation: textAnimation 2s alternate infinite; /* Animación */
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+  }
+
+  .Container_Load{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Image_load{
+    width: 35%;
   }
 
   .Input_search{
     width: 100%;
   }
+
+.button_books{
+  border-radius:10px; 
+}
 
   
   @keyframes textAnimation {
