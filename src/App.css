@@ -48,6 +48,8 @@ nav {
 .Navbar {
     display: flex;
     align-items: center;
+    list-style-type: none;
+    padding: 0;
 }
 
 .Navbar li {
@@ -56,7 +58,9 @@ nav {
     position: relative;
 }
 
-.Navbar li a {
+
+
+.Navbar li a , #title_oleada{
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 600;
@@ -96,6 +100,27 @@ nav {
   }
 }
 
+
+.Dropdown {
+  position: relative;
+}
+
+.DropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #C09AC3;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.Dropdown:hover .DropdownContent {
+  display: block;
+}
+
+.DropdownContent li {
+  padding: 10px;
+}
 
 
 /* ----pageWave--- */
