@@ -1,7 +1,6 @@
 import React from "react";
 
-
-const WaveAnimation = () => {
+const WaveAnimation2 = () => {
   return (
 <div>
   <div class="wave-effect wave-anim">
@@ -15,10 +14,10 @@ const WaveAnimation = () => {
       <div class="wave wave-three"></div>
     </div>
   </div>
-  <div class="section-title text-center">OLEADA 1</div>
+  <div class="section-title text-center">OLEADA 2</div>
   <div class="section-title-border mt-3"></div>
 </div>
 
   );
 };
-export default WaveAnimation;
+export default WaveAnimation2;
