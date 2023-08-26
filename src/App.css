@@ -213,3 +213,68 @@ iframe {
       font-size: 16px; /* Tamaño de fuente de nuevo */
   }
 }
+
+
+/* Respondive design mobile*/
+@media (max-width: 320px) and (max-width: 600px) {
+
+  nav {
+    justify-content: center;
+    background: #C09AC3;
+    padding: 8px 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.Navbar {
+    padding: 6px 8px;
+}
+
+.Navbar li {
+    padding: 8px;
+    position:relative;
+    justify-content:center;
+}
+
+.Navbar li a {
+    font-size: 1rem;
+
+}
+
+.Navbar li a::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #711288;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.section-title {
+  margin-top: 1.8rem;
+  padding-bottom: 0.0rem;
+  line-height: 1;
+  font-size: 1.5rem;
+  font-weight: 500;
+  
+}
+
+.row {
+ 
+}
+
+
+}
+
+/* Estilos para pantallas medianas (tablets) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Aplica cambios de diseño para tablets aquí */
+}
+
+/* Estilos para pantallas grandes (escritorio) */
+@media (min-width: 1025px) {
+  /* Aplica cambios de diseño para escritorio aquí */
+}
