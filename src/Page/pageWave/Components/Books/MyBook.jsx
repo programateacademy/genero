@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import girl from '../../../../assets/img/girlLoad.png';
-import BookDropdown from '../Books/BookDropdown '; 
-
-const MyBook = React.forwardRef((props, ref) => {
+import BookDropdown from './BookDropdown ';
+const MyBook = (props) => {
   const { books } = props;
-  const [selectedBook, setSelectedBook] = useState(books[0]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [selectedBook, setSelectedBook] = useState(books[currentIndex]);
   const [searchBy, setSearchBy] = useState('title'); // Predeterminado a búsqueda por título
 
   const handleBookSelect = (item, searchType) => {
@@ -14,11 +14,22 @@ const MyBook = React.forwardRef((props, ref) => {
 
   const handleSearchByChange = (event) => {
     setSearchBy(event.target.value);
+    setCurrentIndex(0); // Restablecer el índice al cambiar la opción de búsqueda
+    const selected = searchBy === 'title' ? books.find(book => book.Title === selectedBook.Title) : books.find(book => book.Author === selectedBook.Author);
+    setSelectedBook(selected);
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % books.length);
+  };
+
+  const handlePrevious = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + books.length) % books.length);
   };
 
   return (
     <div>
-      <div className='demoPage' ref={ref}>
+      <div className='demoPage'>
         <div>
           <label htmlFor="searchBySelect">Buscar por:</label>
           <select id="searchBySelect" value={searchBy} onChange={handleSearchByChange}>
@@ -29,6 +40,8 @@ const MyBook = React.forwardRef((props, ref) => {
         <div>
           <BookDropdown books={books} onBookSelect={handleBookSelect} searchBy={searchBy} />
         </div>
+        <button onClick={handlePrevious}>Anterior</button>
+        <button onClick={handleNext}>Siguiente</button>
         <h4>Título: {selectedBook.Title}</h4>
         <p className='Text_author'>Autor: {selectedBook.Author}</p>
         <p className='Text_Synopsis'>Sinopsis: {selectedBook.Synopsis}</p>
@@ -52,9 +65,10 @@ const MyBook = React.forwardRef((props, ref) => {
       </div>
     </div>
   );
-});
+};
 
 export default MyBook;
+
 
 
 
