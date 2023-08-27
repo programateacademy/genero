@@ -1,6 +1,7 @@
 import { Component } from "react";
 import "./NavbarStyles.css";
 import { HashLink as Link } from 'react-router-hash-link';
+import foto from '../assets/img/imagenav.jpeg'
 // import { findRenderedDOMComponentWithClass } from "react-dom/test-utils";
 
 class Navbar extends Component {
@@ -28,6 +29,7 @@ class Navbar extends Component {
                     <i id="Bar" className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
                 </div>
             </nav>
+            <img id="photonav" src={foto} alt="foto_menu" />
         </>
     )
 }

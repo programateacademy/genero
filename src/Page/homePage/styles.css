@@ -385,10 +385,11 @@ h2{
 }
 
 .image-with-overlay-overlay {
-  background-color: rgb(235, 230, 230);
+  background-color: #C09AC3;
   color: black;
   padding: 12px;
-  margin-left: -40px; /* Espacio entre la imagen y el cuadro de texto */
+  margin-left: -40px; 
+  border-radius: 10px;
 }
 
 .image-with-overlay-overlay h3{
