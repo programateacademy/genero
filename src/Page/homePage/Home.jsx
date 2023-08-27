@@ -3,6 +3,7 @@ import Form from './Components/Form'
 import './styles.css'
 import Section from './Components/Section/Section'
 import Section2 from './Components/Section2/Section2'
+import Footer from '../../Components/Footer'
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Section/>
       <Section2/> 
       <Form/>
+      <Footer/>
     </div>
   )
 }

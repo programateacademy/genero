@@ -17,7 +17,7 @@ class Navbar extends Component {
                         <li><a className="active" href="/"> Inicio</a></li>
                         <li><a href="/pageWave/Cards-First-Wave/First-Wave-Books">Oleada 1</a></li>
                         <li><a href="/pageWave/Cards-Second-Wave/Second-Wave-Books">Oleada 2</a></li>
-                        <li><a href="/pageWave">Contacto</a></li>
+                        <li><a href="/">Contacto</a></li>
                     </ul>
                 </div>
                 <div id="Mobile" onClick={this.handleClick}>

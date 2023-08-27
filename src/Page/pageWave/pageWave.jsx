@@ -9,15 +9,11 @@ const Page_Wave = () => {
   const { cardsProp, booksProp } = useParams();
 
   return (
-    <body>
     <div>
       <Card jsonArray={jsonData[cardsProp]} />
       <MyBook books={jsonData[booksProp]} />
-    </div>
-    <footer>
       <Footer/>
-    </footer>
-    </body>
+    </div>
   );
 }
 

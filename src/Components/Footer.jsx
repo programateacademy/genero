@@ -45,7 +45,7 @@ const Footer = () => {
                         </a>
                     </div>
                     <div className="sb_footer-links_div">
-                        <img src={logo_educamas}></img>
+                        <img src={logo_educamas} alt="Logo_educamas"></img>
                         <div className="wrapper">
                             
                         </div>

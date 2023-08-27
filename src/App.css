@@ -162,7 +162,6 @@ iframe {
 }
 
 .demoPage{
-  position: absolute;
   display: grid;
   padding: 50px;
   background-color:#C09AC3;
@@ -192,8 +191,6 @@ iframe {
   }
 
   .demoPage a{
-    position: relative;
-    left: 20px;
     text-decoration: none;
     font-size: 16px;
     animation: textAnimation 2s alternate infinite; /* Animación */
@@ -210,7 +207,7 @@ iframe {
   }
 
   .Image_load{
-    width: 35%;
+    width: 20%;
   }
 
   .Input_search{
