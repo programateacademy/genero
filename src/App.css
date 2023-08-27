@@ -100,7 +100,6 @@ nav {
   }
 }
 
-<<<<<<< HEAD
 
 .Dropdown {
   position: relative;
@@ -324,7 +323,6 @@ iframe {
 @media (min-width: 1025px) {
   /* Aplica cambios de diseño para escritorio aquí */
 }
-=======
 /*Dropdown reusable component*/ 
  
 .botonDropdown { 
@@ -359,4 +357,3 @@ iframe {
   background-color: rgb(255, 255, 255) !important; 
   border-radius: 2px !important; 
 }
->>>>>>> 00e09a7f391c59a6315aed2d6738746ffb1c3592
