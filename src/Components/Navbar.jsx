@@ -1,6 +1,6 @@
 import { Component } from "react";
 import "./NavbarStyles.css";
-import { findRenderedDOMComponentWithClass } from "react-dom/test-utils";
+// import { findRenderedDOMComponentWithClass } from "react-dom/test-utils";
 
 class Navbar extends Component {
     state={clicked: false}

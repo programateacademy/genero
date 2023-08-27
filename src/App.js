@@ -1,7 +1,6 @@
-
-import Navbar from './Components/Navbar';
 import React from 'react';
 import { BrowserRouter, Route} from 'react-router-dom';
+import Navbar from './Components/Navbar';
 import PageWave from './Page/pageWave/pageWave';
 import Home from './Page/homePage/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
