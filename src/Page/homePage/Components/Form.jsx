@@ -16,7 +16,7 @@ const Form = () => {
     emailjs.send(
       'service_vfku1yv', 
       'template_cd2wjzj', 
-       templateParams ,
+      templateParams ,
       'LRxNH6JKhqn7_y75P'
     )
 

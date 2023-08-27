@@ -255,11 +255,6 @@ h1 {
     color: white;
 }
 
-.purple {
-    color: #EF5AFF;
-}
-
-
 .grid-input {
     display: grid;
     grid-template: 1fr / 200px 200px;
@@ -280,12 +275,31 @@ h1 {
 }
 
 .grid-input textarea{
+    resize: none;
     background: #C09AC3;
-    height: 70px;
+    height: 180px;
     width: 185%;
     color: white;
     font-size: 16px;
 }
+
+.grid-input textarea::-webkit-scrollbar{
+  width: 7px;
+  height: 6px;
+}
+
+.grid-input textarea::-webkit-scrollbar-track {
+  width: 10px;
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color:#A65BAE;
+  border-radius: 5px;
+}
+
+
 
 .grid-input input::placeholder {
     height: 50px;
@@ -311,6 +325,8 @@ h1 {
 .btn-submit:hover {
     background: #e151f1; 
 }
+
+
 
 /*-------------------------------Card Wave------------------------------------*/
 .container{
