@@ -8,15 +8,22 @@ import AboutUs from '../homePage/Components/aboutUs/AboutUs'
 import './styles.css'
 
 const Home = () => {
-  const videoId = "a7it63FFDYQ";
+  const videoIds = ["a7it63FFDYQ", "QqUiaRmx794"];
   return (
     <div>
       <Section/>
       <Section2/> 
       <AboutUs/>
-      <YouTubeVideo videoId={videoId} />
+      <h1 id="Tittle_videos">Videos que te pueden interesar</h1>
+      <div className='Container_Videos'>
+      {videoIds.map(videoId => (
+        <YouTubeVideo key={videoId} videoId={videoId} />
+      ))}
+      </div>
       <Form/>
-      <Footer/>
+      <div>
+      <Footer />
+      </div>
     </div>
   )
 }

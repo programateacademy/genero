@@ -1,5 +1,6 @@
 import { Component } from "react";
 import "./NavbarStyles.css";
+import { HashLink as Link } from 'react-router-hash-link';
 // import { findRenderedDOMComponentWithClass } from "react-dom/test-utils";
 
 class Navbar extends Component {
@@ -16,10 +17,12 @@ class Navbar extends Component {
                 <div>
                     <ul id="Navbar" className={this.state.clicked ? "#Navbar active" : "#Navbar"}>
                         <li><a className="active" href="/"> Inicio</a></li>
+                        <li><Link to="/#about" smooth={true}>Sobre</Link></li>
                         <li><a href="/pageWave/Cards-First-Wave/First-Wave-Books">Oleada 1</a></li>
                         <li><a href="/pageWave/Cards-Second-Wave/Second-Wave-Books">Oleada 2</a></li>
-                        <li><a href="/">Contacto</a></li>
+                        <li><Link to="/#Footer" smooth={true}>Contacto</Link></li>
                     </ul>
+                    
                 </div>
                 <div id="Mobile" onClick={this.handleClick}>
                     <i id="Bar" className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>

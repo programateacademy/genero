@@ -6,7 +6,7 @@ nav {
     background: #C09AC3;
     padding: 20px 80px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-    border-radius: 15px;
+    border-radius: 0 0 10px 10px;
 }
 
 #Navbar {
@@ -41,13 +41,11 @@ nav {
     transition: transform 0.2s ease-in-out;
 }
 
-#Navbar li a:hover,
-#Navbar li a.active {
+#Navbar li a:hover {
     color: #711288;
 }
 
-#Navbar li a:hover::after,
-#Navbar li a.active::after {
+#Navbar li a:hover::after, .Navbar li a.active::after {
     transform: scaleX(1);
 }
 

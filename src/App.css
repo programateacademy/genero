@@ -7,14 +7,6 @@
 }
 
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #C09AC3;
-    padding: 20px 80px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-}
 
 .Navbar {
     display: flex;
@@ -53,8 +45,7 @@ nav {
     color: #711288;
 }
 
-.Navbar li a:hover::after,
-.Navbar li a.active::after {
+.Navbar li a:hover::after{
     transform: scaleX(1);
 }
 
@@ -164,6 +155,8 @@ iframe {
   width: 100%;
   height: 100vh;
   border-radius: 5px; 
+  box-shadow: 5px 20px 60px #00E6CA; 
+  margin-bottom: 5%;
 }
 
 .demoPage{

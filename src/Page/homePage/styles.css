@@ -100,7 +100,7 @@ h1 {
   color: #95a0ab !important;
 }
 
-.text-center {
+.text-center , #Tittle_videos {
   text-align: center !important;
 }
 .pt-4 {
@@ -357,7 +357,7 @@ h2{
 
 /*-------------------------------About Us------------------------------------*/
 
-.image-with-overlay {
+#about {
   display: flex;
   align-items: center;
   margin-inline: 80px;
@@ -386,12 +386,17 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10%;
-    width: 80%;
+    margin: 5%;
+    width: 100%;
 }
 
 .youtube-video iframe{
   height: 60vh;
+}
+
+.Container_Videos{
+  display: flex;
+
 }
 
 

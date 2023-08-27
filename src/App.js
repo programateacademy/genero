@@ -9,7 +9,7 @@ import './App.css';
 const App = () => {
   return (
     <BrowserRouter>
-      <Navbar />
+      <Navbar/>
       <div>
         <Route path="/" exact component={Home} />
         <Route path="/pageWave/:cardsProp/:booksProp" component={PageWave} />
