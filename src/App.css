@@ -36,30 +36,6 @@
   color: #61dafb;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #C09AC3;
-    padding: 20px 80px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-}
-
-.Navbar {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    padding: 0;
-}
-
-.Navbar li {
-    list-style: none;
-    padding: 0 60px;
-    position: relative;
-}
-
-
-
 .Navbar li a , #title_oleada{
     text-decoration: none;
     font-size: 1.5rem;

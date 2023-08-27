@@ -1,3 +1,6 @@
+
+import Footer from './Components/Footer';
+import Navbar from './Components/Navbar';
 import React from 'react';
 import { BrowserRouter, Route} from 'react-router-dom';
 import PageWave from './Page/pageWave/pageWave';
@@ -9,12 +12,8 @@ import DropdownMenu from './Page/DropdownMenu';
 const App = () => {
   return (
     <BrowserRouter>
+    <Navbar/>
       <div>
-        <nav>
-          <div className='Menu'>
-            <DropdownMenu />
-          </div>
-        </nav>
         <Route path="/" exact component={Home} />
         <Route path="/pageWave/:cardsProp/:booksProp" component={PageWave} />
       </div>
