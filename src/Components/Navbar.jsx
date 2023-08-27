@@ -3,6 +3,7 @@ import "./NavbarStyles.css";
 // import { findRenderedDOMComponentWithClass } from "react-dom/test-utils";
 
 class Navbar extends Component {
+    
     state={clicked: false}
     handleClick = ()=>{
         this.setState({clicked:!this.state.clicked})
