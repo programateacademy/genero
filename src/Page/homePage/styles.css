@@ -11,10 +11,7 @@ h1 {
   font-family: "Poppins", sans-serif;
 }
 
-p {
-  font-size: 14.4px;
-  line-height: 24px;
-}
+
 
 /* ------- Container and Row --------- */
 .container,
@@ -32,46 +29,7 @@ p {
   margin-right: auto;
   margin-left: auto;
 }
-@media (min-width: 576px) {
-  .container,
-  .container-sm {
-    max-width: 540px;
-  }
-}
-@media (min-width: 768px) {
-  .container,
-  .container-md,
-  .container-sm {
-    max-width: 720px;
-  }
-}
-@media (min-width: 992px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl {
-    max-width: 1140px;
-  }
-}
-@media (min-width: 1400px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl,
-  .container-xxl {
-    max-width: 1320px;
-  }
-}
+
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -440,6 +398,47 @@ h2{
 
 /*-------------------------------Media_queries------------------------------------*/
 
+@media (min-width: 576px) {
+    .container,
+    .container-sm {
+      max-width: 540px;
+    }
+  }
+  @media (min-width: 768px) {
+    .container,
+    .container-md,
+    .container-sm {
+      max-width: 720px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+      max-width: 960px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+      max-width: 1140px;
+    }
+  }
+  @media (min-width: 1400px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+      max-width: 1320px;
+    }
+  }
+
 @media ( max-width: 1040px) {
     .grid-content {
         padding: 100px 70px;
@@ -450,14 +449,18 @@ h2{
     }
 }
 
-@media ( max-width: 900px) {
-    .grid-content {
-        padding: 100px 0;
-    }
+@media ( max-width: 990px) {
+  .col-lg-8.offset-lg-2 {
+    margin: 0;
+  }  
+  
+  .grid-content {
+    padding: 100px 0;
+  }
 
-    .grid-input {
-        grid-template-columns: 180px 160px;
-    }
+  .text h1 {
+    font-size: 29px;
+  }
 }
 
 @media ( max-width: 670px) {
