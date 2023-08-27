@@ -70,8 +70,7 @@ h1 {
   position: relative;
 }
 
-.h1,
-h1 {
+.h1{
   font-size: 36px;
 }
 
@@ -260,10 +259,6 @@ h1 {
     color: #EF5AFF;
 }
 
-.red {
-    color: red;
-    font-size: 15px;
-}
 
 .grid-input {
     display: grid;
@@ -391,8 +386,14 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh; /* O ajusta la altura según tus necesidades */
+    margin: 10%;
+    width: 80%;
 }
+
+.youtube-video iframe{
+  height: 60vh;
+}
+
 
 
 

@@ -8,12 +8,13 @@ import AboutUs from '../homePage/Components/aboutUs/AboutUs'
 import './styles.css'
 
 const Home = () => {
+  const videoId = "a7it63FFDYQ";
   return (
     <div>
       <Section/>
       <Section2/> 
       <AboutUs/>
-      <YouTubeVideo/>
+      <YouTubeVideo videoId={videoId} />
       <Form/>
       <Footer/>
     </div>
