@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import girl from '../../../../assets/img/girlLoad.png';
-import BookDropdown from './BookDropdown ';
+import BookDropdown from './BookDropdown '; // Ajusta la ruta según tu estructura de archivos
+
 const MyBook = (props) => {
   const { books } = props;
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -15,16 +16,16 @@ const MyBook = (props) => {
   const handleSearchByChange = (event) => {
     setSearchBy(event.target.value);
     setCurrentIndex(0); // Restablecer el índice al cambiar la opción de búsqueda
-    const selected = searchBy === 'title' ? books.find(book => book.Title === selectedBook.Title) : books.find(book => book.Author === selectedBook.Author);
-    setSelectedBook(selected);
   };
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % books.length);
+    setSelectedBook(books[(currentIndex + 1) % books.length]);
   };
 
   const handlePrevious = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + books.length) % books.length);
+    setSelectedBook(books[(currentIndex - 1 + books.length) % books.length]);
   };
 
   return (
@@ -68,8 +69,6 @@ const MyBook = (props) => {
 };
 
 export default MyBook;
-
-
 
 
 
