@@ -11,10 +11,12 @@ h1 {
   font-family: "Poppins", sans-serif;
 }
 
-.section{
-position: relative;
-top:-60px;
-}
+/* .section{
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  top:-60px;
+} */
 
 
 
@@ -43,7 +45,9 @@ top:-60px;
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
+  flex-direction:end;
 }
+
 .row > * {
   flex-shrink: 0;
   width: 100%;
@@ -330,11 +334,10 @@ top:-60px;
 
 /*-------------------------------Card Wave------------------------------------*/
 .container{
-  display: flex;
-  flex-direction: column-reverse;
-    margin: 4rem 6rem;
-    font-family: Poppins;
-    padding: 0 4rem 0 0;
+  display: flex; 
+  margin: 4rem 6rem;
+  font-family: Poppins;
+  padding: 0 4rem 0 0;
     
 }
 
