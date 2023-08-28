@@ -23,7 +23,7 @@ const Container = () => {
             personas, estaban restringidos para ciertas clases sociales.
           </p>
           <div className="d-flex justify-content-center align-items-center mt-4">
-          <Button class="btn mt-4">
+          <Button class="btn mt-4" href="/pageWave/Cards-First-Wave/First-Wave-Books">
             Profundizar <i class="mdi mdi-arrow-right"></i>
           </Button>{' '}
           </div>

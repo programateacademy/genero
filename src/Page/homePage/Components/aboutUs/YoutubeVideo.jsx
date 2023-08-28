@@ -1,7 +1,7 @@
 import React from 'react';
 
 const YouTubeVideo = () => {
-  const videoId = 'https://www.youtube.com/watch?v=a7it63FFDYQ'; // Reemplaza con el ID de tu video de YouTube
+  const videoId = 'https://www.youtube.com/watch?v=a7it63FFDYQ'; 
 
   return (
     <div className="youtube-video">
