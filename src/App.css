@@ -6,13 +6,26 @@
   font-family: "Poppins", sans-serif;
 }
 
+.Container_Accessibility{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox_accesibility{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #C09AC3;
+}
 
 
-/* App.css */
+
 .app-container {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  justify-content: center;
 }
 
 .sticky-navbar {

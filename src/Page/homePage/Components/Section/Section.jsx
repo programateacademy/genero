@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import WaveAnimation from "./WaveAnimation";
 import Container from "./Container";
 import ImageGallery from "./ImageGallery";
-// import Carousel from "./Carousel";
+import Carousel from "./Carousel";
 
 class Section extends Component {
 images = [
@@ -15,7 +15,7 @@ images = [
       <>
         <WaveAnimation waveTitle="Oleada 1" />
         <div className="section">
-        {/* <Carousel/> */}
+        <Carousel/>
         <ImageGallery images={this.images} />
         <Container/>
       </div>
