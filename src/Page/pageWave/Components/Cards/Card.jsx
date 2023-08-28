@@ -12,7 +12,6 @@ function Card(props) {
                     <p>{card.description}</p>
                 </div>
             ))}
-       <h1 className='Resource_title'>Referencias</h1> 
         </div>
     );
 }

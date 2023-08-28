@@ -6,13 +6,29 @@ nav {
     background: #C09AC3;
     padding: 20px 80px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-    border-radius: 15px;
+    border-radius: 0 0 10px 10px;
+    position: sticky;
 }
 
 #Navbar {
+    position: absolute;
+    list-style-type: none;
     display: flex;
+    justify-content: space-around;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
+
+#photonav{
+    position: relative;
+    top: -10px;
+    width: 100%;
+    height: 25vh;
+    opacity: 0.9;
+}
+
 
 #Navbar li {
     list-style: none;
@@ -22,7 +38,7 @@ nav {
 
 #Navbar li a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #fff;
     transition: 0.3s ease-in-out;
@@ -41,13 +57,11 @@ nav {
     transition: transform 0.2s ease-in-out;
 }
 
-#Navbar li a:hover,
-#Navbar li a.active {
+#Navbar li a:hover {
     color: #711288;
 }
 
-#Navbar li a:hover::after,
-#Navbar li a.active::after {
+#Navbar li a:hover::after, .Navbar li a.active::after {
     transform: scaleX(1);
 }
 
