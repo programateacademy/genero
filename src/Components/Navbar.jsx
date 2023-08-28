@@ -8,6 +8,11 @@ class Navbar extends Component {
         this.setState({clicked:!this.state.clicked})
 
     }
+
+    scrollToBottom = () => {
+        const element = document.getElementById('bottom-section'); // Cambia 'bottom-section' por el ID de tu sección inferior
+        element.scrollIntoView({ behavior: 'smooth' })
+    }
     render () {
     return (
         <>
@@ -17,7 +22,7 @@ class Navbar extends Component {
                         <li><a className="active" href="/"> Inicio</a></li>
                         <li><a href="/pageWave/Cards-First-Wave/First-Wave-Books">Oleada 1</a></li>
                         <li><a href="/pageWave/Cards-Second-Wave/Second-Wave-Books">Oleada 2</a></li>
-                        <li><a href="/">Contacto</a></li>
+                        <li><a onClick={this.scrollToBottom}>Contacto</a></li>
                     </ul>
                 </div>
                 <div id="Mobile" onClick={this.handleClick}>
