@@ -1,12 +1,13 @@
 import React from "react";
 import { Button } from "reactstrap";
 
+
 const Container = () => {
   return (
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-          <p class="section-subtitle text-muted text-center pt-4">
+    <div className="container">
+      <div className="row">
+        <div className="col-lg-8 offset-lg-2">
+          <p className="section-subtitle text-muted text-center pt-4">
             La primera ola es un periodo de consolidación del feminismo como un
             movimiento social y político que demanda igualdad con el género
             masculino, motivadas por escuelas de pensamiento e ideales que
