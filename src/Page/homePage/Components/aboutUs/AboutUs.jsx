@@ -2,8 +2,8 @@ import image from "../../../../assets/img/enf.png"
 
 const ImageWithOverlay = ({ imageUrl, overlayText }) => {
   return (
-    <div className="image-with-overlay">
-      <img src={image} alt="Imagen" className="image-with-overlay-image" />
+    <div id="about">
+      <img src={image} alt="Imagen de Sobre Nosotros" className="image-with-overlay-image" />
       <div className="image-with-overlay-overlay">
         <h6>SOBRE</h6>
         <h3>EducaMás</h3> 

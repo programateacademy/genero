@@ -18,7 +18,7 @@ const BookDropdown = ({ books, onBookSelect, searchBy }) => {
   const items = searchBy === 'title' ? books.map(book => book.Title) : books.map(book => book.Author);
 
   return (
-    <div>
+    <div className='Select_drop mb-4'>
       <label htmlFor="itemSelect">
         Selecciona {searchBy === 'title' ? 'un libro' : 'un autor'}:
       </label>

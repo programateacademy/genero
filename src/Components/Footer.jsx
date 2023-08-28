@@ -5,7 +5,7 @@ import logo_educamas from '../assets/img/Logo-educamas.png'
 
 const Footer = () => {
     return (
-        <div className="Footer">
+        <div className="Footer" id="bottom-section">
             <div className="sb_footer section_padding">
                 <div className="sb_footer-links">
                     <div className="sb_footer-links_div">

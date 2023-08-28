@@ -6,95 +6,26 @@
   font-family: "Poppins", sans-serif;
 }
 
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* App.css */
+.app-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: stretch;
 }
 
-.App-link {
-  color: #61dafb;
+.sticky-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color:transparent;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #C09AC3;
-    padding: 20px 80px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+.content {
+  flex: 1;
 }
 
-.Navbar {
-    display: flex;
-    align-items: center;
-    margin: 1rem 0;
-}
-
-.Navbar li {
-    list-style: none;
-    padding: 0 60px;
-    position: relative;
-}
-
-.Navbar li a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #fff;
-    transition: 0.3s ease-in-out;
-    position: relative;
-}
-
-.Navbar li a::after {
-    content: "";
-    width: 100%;
-    height: 2px;
-    background: #711288;
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    transform: scaleX(0);
-    transition: transform 0.2s ease-in-out;
-}
-
-.Navbar li a:hover,.Navbar li a.active{
-    color: #711288;
-}
-
-.Navbar li a:hover::after,
-.Navbar li a.active::after {
-    transform: scaleX(1);
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 
 .Dropdown {
@@ -121,64 +52,80 @@ nav {
 
 /* ----pageWave--- */
 
+.card-list{
+  display: flex;
+  justify-content: flex-end;
+}
+
 
 .card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10%;
   border: 1px solid #C09AC3;
   border-radius: 8px;
-  box-shadow: 7px 7px 7px rgba(286, 100%, 73%);
-  padding: 19px;
-  display: grid;
-  margin: 18px 129px;
+  padding: 3%;
+  margin: 5%;
+  font-size: 80%;
 }
 
-.card-list :first-child{
-  display: grid;
-  grid-template-columns: 2fr 1fr; /* Dos columnas, la primera ocupa el doble */
-  grid-template-rows: 1fr; /* Una fila */
-  grid-gap: 2%;
+.card img{
+  border-radius: 10px;
+  box-shadow: 5px 20px 60px #00E6CA; 
 }
 
-.card-list :first-child img{
-  width: 100%;
-  height: 100%;
-}
 
-.card-list :nth-child(2) {
-  display: grid;
-  grid-template-rows: 2fr auto;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 2%;
-}
-
-.card-list :nth-child(2) h3 {
-  grid-column: span 2;
+.card h3{
   text-align: center;
-  font-size: 1.5em;
-  font-weight: bold;
+  grid-column: span 2;
+  background-color: #F551FF;
+  width: 50%;
+  border-radius: 10px;
 }
 
-.card img {
-  width: 80%;
+
+.card-list:first-child img{
+  width: 100%;
   height: 80%;
-  justify-content:left;
-  height: auto;
-  margin-bottom: 8px;
 }
 
 
-.card-group {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: -6px; 
-  margin: 19px 28px 28px;
+
+.card-list :nth-child(2) img {
+  width: 100%;
+  height: 80%;
 }
+
 
 /* -----book------ */
+
+.contaiter_select{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.Select_drop{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.contaiter_select select{
+  height: 50%;
+  border-radius: 10px;
+}
 
 iframe {
   width: 100%;
   height: 100vh;
   border-radius: 5px; 
+  box-shadow: 5px 20px 60px #00E6CA; 
+  margin-bottom: 5%;
 }
 
 .demoPage{
@@ -188,6 +135,7 @@ iframe {
   border: 1px solid #000;
   align-items: center;
   justify-content: center;
+  color: white;
   }
 
   .demoPage:last-child{
@@ -199,6 +147,7 @@ iframe {
     font-size: 20px;
     text-align: justify;
     padding: 2%;
+    margin: 2%;
   }
 
   .demoPage h4, .Text_author,  .demoPage a , .Resource_title{
@@ -207,16 +156,16 @@ iframe {
 
   .Text_author, .demoPage h4{
     font-size: 30px;
-    color: white;
   }
 
   .demoPage a{
     text-decoration: none;
     font-size: 16px;
     animation: textAnimation 2s alternate infinite; /* Animación */
-    background-color: white;
-    color: black;
+    background-color: #A65BAE;
+    color: white;
     border-radius: 5px;
+    padding: 10px;
   }
 
   .Container_Load{
@@ -230,48 +179,11 @@ iframe {
     width: 20%;
   }
 
-  .Input_search{
-    width: 100%;
-  }
-
-.button_books{
-  border-radius:10px; 
+.Container_buttons{
+  display: flex;
+  justify-content: space-around;
 }
 
-/*Dropdown reusable component*/ 
- 
-.botonDropdown { 
-  color: deeppink !important; 
-  background-color: rgb(255, 255, 255) !important; 
-  border-color: aqua !important; 
-} 
- 
- 
-.dropdown-cuerpo { 
-  min-width: 11.2rem !important; 
-  --bs-dropdown-padding-x: 0 !important; 
-  --bs-dropdown-padding-y: 0.5rem !important; 
-  border-color: aqua !important; 
-  --bs-dropdown-border-width: var(--bs-border-width) !important; 
-  --bs-dropdown-divider-bg: aqua !important; 
-} 
- 
-.dropdwon-header { 
-  display: block !important; 
-  padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x) !important; 
-  margin-bottom: 0 !important; 
-  color: turquoise !important; 
-} 
- 
-.dropdown-item { 
-  display: block !important; 
-  color: deeppink !important; 
-  text-align: inherit !important; 
-  text-decoration: none !important; 
-  white-space: nowrap !important; 
-  background-color: rgb(255, 255, 255) !important; 
-  border-radius: 2px !important; 
-}
 
   
   @keyframes textAnimation {
@@ -285,6 +197,33 @@ iframe {
       font-size: 16px; /* Tamaño de fuente de nuevo */
   }
 }
+/* --- image galery--- */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-gallery img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.image-gallery img.visible {
+  opacity: 1;
+}
+
+
 
 
 /* Respondive design mobile*/
@@ -333,10 +272,6 @@ iframe {
   font-weight: 500;
   
 }
-
-
-
-
 }
 
 /* Estilos para pantallas medianas (tablets) */
@@ -348,37 +283,4 @@ iframe {
 @media (min-width: 1025px) {
   /* Aplica cambios de diseño para escritorio aquí */
 }
-/*Dropdown reusable component*/ 
- 
-.botonDropdown { 
-  color: deeppink !important; 
-  background-color: rgb(255, 255, 255) !important; 
-  border-color: aqua !important; 
-} 
- 
- 
-.dropdown-cuerpo { 
-  min-width: 11.2rem !important; 
-  --bs-dropdown-padding-x: 0 !important; 
-  --bs-dropdown-padding-y: 0.5rem !important; 
-  border-color: aqua !important; 
-  --bs-dropdown-border-width: var(--bs-border-width) !important; 
-  --bs-dropdown-divider-bg: aqua !important; 
-} 
- 
-.dropdwon-header { 
-  display: block !important; 
-  padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x) !important; 
-  margin-bottom: 0 !important; 
-  color: turquoise !important; 
-} 
- 
-.dropdown-item { 
-  display: block !important; 
-  color: deeppink !important; 
-  text-align: inherit !important; 
-  text-decoration: none !important; 
-  white-space: nowrap !important; 
-  background-color: rgb(255, 255, 255) !important; 
-  border-radius: 2px !important; 
-}
+

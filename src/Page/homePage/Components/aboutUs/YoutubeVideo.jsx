@@ -1,19 +1,19 @@
 import React from 'react';
 
-const YouTubeVideo = () => {
-  const videoId = 'https://www.youtube.com/watch?v=a7it63FFDYQ'; // Reemplaza con el ID de tu video de YouTube
+const YouTubeVideo = ({ videoId }) => {
+  const embedUrl = `https://www.youtube.com/embed/${videoId}`;
 
   return (
-    <div className="youtube-video">
+    <div className="youtube-video embed-responsive embed-responsive-16by9">
       <iframe
-        width="560" // Ancho del video en píxeles
-        height="315" // Alto del video en píxeles
-        src={`https://www.youtube.com/embed/${videoId}`}
         title="YouTube Video"
+        className="embed-responsive-item"
+        src={embedUrl}
         allowFullScreen
-      ></iframe>
+      />
     </div>
   );
 };
 
 export default YouTubeVideo;
+
