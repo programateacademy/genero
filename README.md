@@ -70,5 +70,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 installed libraries for this componet:    
-    - emailjs
-    - react-hook-form
+    - npm install react-hook-form
+    - npm install emailjs-com
+    - npm install reactstrap react react-dom
+
+
+

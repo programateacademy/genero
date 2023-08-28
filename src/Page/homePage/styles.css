@@ -273,7 +273,8 @@ h1 {
     font-size: 14px;
 }
 
-.white-form-text{
+
+.content-input p{
     color: white;
     font-size: 22px;
 }
@@ -287,6 +288,11 @@ h1 {
 }
 
 .grid-input input::placeholder {
+    height: 50px;
+    width: 185%;
+}
+
+.grid-input input::placeholder, .grid-input input[type="text"] {
     color: white;
     font-size: 14px;
 }
@@ -294,6 +300,7 @@ h1 {
 .btn-submit {
     margin-top: 20px;
     width: 50%;
+    width: 90%;
     border-radius: 50px;
     background: #EF5AFF;
     color: white;
@@ -303,7 +310,83 @@ h1 {
 
 .btn-submit:hover {
     background: #e151f1; 
+}
+
+/*-------------------------------Card Wave------------------------------------*/
+.container{
+    margin: 4rem 6rem;
+    font-family: Poppins;
+    padding: 0 4rem 0 0;
+    
+}
+
+.first-des{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+}
+
+
+h2{
+    
+    color: #711288;
+    transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.image{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.image img{
+    width: 50%;
+    align-items: center;
+}
+
+.button-flex{
+    color: #711288;
+    background-color: #C09AC3;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 4px 25px;
+    font-weight: bold;
     cursor: pointer;
+}
+
+/*-------------------------------About Us------------------------------------*/
+
+.image-with-overlay {
+  display: flex;
+  align-items: center;
+  margin-inline: 80px;
+}
+
+.image-with-overlay-image {
+  max-width: 35%; /* Ajusta el ancho de la imagen */
+  height: auto;
+}
+
+.image-with-overlay-overlay {
+  background-color: rgb(235, 230, 230);
+  color: black;
+  padding: 12px;
+  margin-left: -40px; /* Espacio entre la imagen y el cuadro de texto */
+}
+
+.image-with-overlay-overlay h3{
+  text-align: left;
+  font-weight: bold;
+}
+
+/*-------------------Youtube Video----------------------*/
+
+.youtube-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* O ajusta la altura según tus necesidades */
 }
 
 
