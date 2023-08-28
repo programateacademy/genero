@@ -7,6 +7,16 @@
     margin-top: auto;
 }
 
+#Footer a{
+color: white;
+text-decoration: none;
+
+}
+
+#Footer a:hover{
+    color: #711288;   
+}
+
 .sb_footer{
     display: flex;
     flex-direction: column;
@@ -32,14 +42,15 @@
     height: auto;
 }
 
-a{
-    color: white;
-    text-decoration: none;
-}
 
 .Socialmedia{
     display: flex;
     flex-direction: row;
+    gap: 10px;
+}
+
+.Socialmedia a{
+    color: white;
 }
 
 .Socialmedia img{

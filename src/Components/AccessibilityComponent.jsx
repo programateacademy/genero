@@ -30,7 +30,7 @@ const AccessibilityComponent = () => {
   const textColorOptions = [
     { value: "", label: "Seleccione un color" },
     { value: "black", label: "Negro" },
-    { value: "darkgray", label: "Gris Oscuro" },
+    { value: "white", label: "Blanco" },
     { value: "gray", label: "Gris Medio" }
   ];
 
