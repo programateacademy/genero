@@ -73,6 +73,8 @@ installed libraries for this componet:
     - npm install react-hook-form
     - npm install emailjs-com
     - npm install reactstrap react react-dom
+    -npm install @fortawesome/react-fontawesome @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/free-brands-svg-icons
+
 
 
 

@@ -1,62 +1,48 @@
 import React from "react";
 import './Footer.css';
-import logo_educamas from '../assets/img/Logo-educamas.png'
+import logo_educamas from '../assets/img/Logo-educamas.png';
+import SocialIcon from './SocialIcon';
+import { faFacebook, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
+const socialLinks = [
+    { href: 'https://web.facebook.com/profile.php?id=100071201326480', icon: faFacebook },
+    { href: 'https://www.linkedin.com/company/educam%C3%A1s/?viewAsMember=true', icon: faLinkedin },
+    { href: 'https://www.instagram.com/somoseducamas/', icon: faInstagram },
+];
+
+const footerLinks = [
+    { title: 'Recursos', links: [{ href: 'index.html', text: 'Literatura' }, { href: 'index.html', text: 'Historia' }, { href: 'index.html', text: 'Videos' }, { href: 'index.html', text: 'Imagenes' }] },
+    { title: 'Acerca de', links: [{ href: 'index.html', text: 'Feminismo' }, { href: 'index.html', text: 'Temas de genero' }, { href: 'index.html', text: 'Nous Cims Genero' }] },
+    { title: 'Contacto', links: [{ href: 'index.html', text: 'Politica de privacidad' }, { href: 'index.html', text: 'Terminos de uso' }] },
+];
+
+const additionalLinks = [
+    { href: 'index.html', text: 'Terms & conditions' },
+    { href: 'index.html', text: 'Privacy' },
+    { href: 'index.html', text: 'Security' },
+    { href: 'index.html', text: 'Cookie Declaration' },
+];
 
 const Footer = () => {
     return (
-        <div className="Footer" id="bottom-section">
+        <div id="Footer">
             <div className="sb_footer section_padding">
                 <div className="sb_footer-links">
-                    <div className="sb_footer-links_div">
-                        <h4>Recursos</h4>
-                        <a href="index.html">
-                            <p>Literatura</p>
-                        </a>
-                        <a href="index.html">
-                            <p>Historia</p>
-                        </a>
-                        <a href="index.html">
-                            <p>Videos</p>
-                        </a>
-                        <a href="index.html">
-                            <p>Imagenes</p>
-                        </a>
-                    </div>
-                    <div className="sb_footer-links_div">
-                        <h4>Acerca de</h4>
-                        <a href="index.html">
-                            <p>Feminismo</p>
-                        </a>
-                        <a href="index.html">
-                            <p>Temas de genero</p>
-                        </a>
-                        <a href="index.html">
-                            <p>Nous Cims Genero</p>
-                        </a>
-                    </div>
-                    <div className="sb_footer-links_div">
-                        <h4>Contacto</h4>
-                        <a href="index.html">
-                            <p>Politica de privacidad</p>
-                        </a>
-                        <a href="index.html">
-                            <p>Terminos de uso</p>
-                        </a>
-                    </div>
+                    {footerLinks.map((section, index) => (
+                        <div className="sb_footer-links_div" key={index}>
+                            <h4>{section.title}</h4>
+                            {section.links.map((link, linkIndex) => (
+                                <a href={link.href} key={linkIndex}>
+                                    <p>{link.text}</p>
+                                </a>
+                            ))}
+                        </div>
+                    ))}
                     <div className="sb_footer-links_div">
                         <img src={logo_educamas} alt="Logo_educamas"></img>
                         <div className="wrapper">
-                            
+                            {/* Contenido adicional aquí */}
                         </div>
-                        {/*
-                        <div className="Socialmedia">
-                            <p><img src={fb} alt=""></img></p>
-                            <p><img src={twitter} alt=""></img></p>
-                            <p><img src={linkedlin} alt=""></img></p>
-                            <p><img src={Insta} alt=""></img></p>
-                        </div>
-                        */}                        
                     </div>
                 </div>
                 <hr></hr>
@@ -66,16 +52,17 @@ const Footer = () => {
                             @{new Date().getFullYear()} Codeinn. All right reserved.
                         </p>
                     </div>
-                    <div className="sb_footer-below-links">
-                        <a href="index.html"><div><p>Terms & conditions</p></div></a>
-                        <a href="index.html"><div><p>Privacy</p></div></a>
-                        <a href="index.html"><div><p>Security</p></div></a>
-                        <a href="index.html"><div><p>Cookie Declaration</p></div></a>
-                    </div>
+                    <div className="Socialmedia">
+                            <nav className='Socialmedia'>
+                                {socialLinks.map((link, index) => (
+                                    <SocialIcon key={index} href={link.href} icon={link.icon} />
+                                ))}
+                            </nav>
+                        </div>  
                 </div>
             </div>
         </div>
     )
 }
 
-export default Footer
+export default Footer;

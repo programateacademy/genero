@@ -4,12 +4,19 @@
 body {
   font-family: "Rubik", sans-serif;
   overflow-x: hidden !important;
-  position: relative;
+  position: absolute;
 }
 
 h1 {
   font-family: "Poppins", sans-serif;
 }
+
+/* .section{
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  top:-60px;
+} */
 
 
 
@@ -38,7 +45,9 @@ h1 {
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
+  flex-direction:end;
 }
+
 .row > * {
   flex-shrink: 0;
   width: 100%;
@@ -70,24 +79,25 @@ h1 {
   position: relative;
 }
 
-.h1,
-h1 {
-  font-size: 36px;
-}
+
 
 .section-title {
   text-transform: uppercase;
-  margin-top: 2rem; 
   letter-spacing: 2px;
-  margin-bottom: 0px;
-  padding-bottom: 1rem;
-  line-height: 1;
   font-size: 1.75rem;
   font-weight: 500;
   position: relative;
-  z-index: 1;
+  bottom: -80px;
 }
 
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -3px; 
+  left: 45%;
+  width: 10%;
+  border-bottom: 2px solid #A65BAE; 
+}
 .section-title-border {
   width: 50px;
   height: 2px;
@@ -101,7 +111,7 @@ h1 {
   color: #95a0ab !important;
 }
 
-.text-center {
+.text-center , #Tittle_videos {
   text-align: center !important;
 }
 .pt-4 {
@@ -127,6 +137,11 @@ h1 {
   transition: all 0.5s;
 }
 
+.btn:hover{
+  background-color: rgb(107, 104, 104);
+  color: white;
+}
+
 .btn-primary{
     color: #fff;
     background-color: #A65BAE;
@@ -148,12 +163,13 @@ h1 {
 }
 
 /* ------- Wave animation --------- */
+
+
 .wave-effect {
   position: relative;
   left: 0;
   right: 0;
   bottom: 50%;
-  margin: auto;
   height: 150px;
   overflow: hidden;
 }
@@ -174,21 +190,13 @@ h1 {
 
 .wave {
   position: absolute;
-  left: 0;
-  width: 200%;
+  width: 200vw;
   height: 100%;
   background-repeat: repeat no-repeat;
   background-position: 0 bottom;
   transform-origin: center bottom;
 }
 
-.waves-shape {
-  position: absolute;
-  bottom: -1px;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
 
 .wave-one {
   background-size: 50% 100px;
@@ -251,15 +259,6 @@ h1 {
     color: white;
 }
 
-.purple {
-    color: #EF5AFF;
-}
-
-.red {
-    color: red;
-    font-size: 15px;
-}
-
 .grid-input {
     display: grid;
     grid-template: 1fr / 200px 200px;
@@ -280,12 +279,31 @@ h1 {
 }
 
 .grid-input textarea{
+    resize: none;
     background: #C09AC3;
-    height: 70px;
+    height: 180px;
     width: 185%;
     color: white;
     font-size: 16px;
 }
+
+.grid-input textarea::-webkit-scrollbar{
+  width: 7px;
+  height: 6px;
+}
+
+.grid-input textarea::-webkit-scrollbar-track {
+  width: 10px;
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color:#A65BAE;
+  border-radius: 5px;
+}
+
+
 
 .grid-input input::placeholder {
     height: 50px;
@@ -312,11 +330,14 @@ h1 {
     background: #e151f1; 
 }
 
+
+
 /*-------------------------------Card Wave------------------------------------*/
 .container{
-    margin: 4rem 6rem;
-    font-family: Poppins;
-    padding: 0 4rem 0 0;
+  display: flex; 
+  margin: 4rem 6rem;
+  font-family: Poppins;
+  padding: 0 4rem 0 0;
     
 }
 
@@ -357,7 +378,7 @@ h2{
 
 /*-------------------------------About Us------------------------------------*/
 
-.image-with-overlay {
+#about {
   display: flex;
   align-items: center;
   margin-inline: 80px;
@@ -369,10 +390,11 @@ h2{
 }
 
 .image-with-overlay-overlay {
-  background-color: rgb(235, 230, 230);
+  background-color: #C09AC3;
   color: black;
   padding: 12px;
-  margin-left: -40px; /* Espacio entre la imagen y el cuadro de texto */
+  margin-left: -40px; 
+  border-radius: 10px;
 }
 
 .image-with-overlay-overlay h3{
@@ -386,8 +408,19 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh; /* O ajusta la altura según tus necesidades */
+    margin: 5%;
+    width: 100%;
 }
+
+.youtube-video iframe{
+  height: 60vh;
+}
+
+.Container_Videos{
+  display: flex;
+
+}
+
 
 
 
