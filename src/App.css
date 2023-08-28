@@ -13,7 +13,6 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  /* min-height: 100vh; */
 }
 
 .sticky-navbar {
@@ -25,7 +24,6 @@
 
 .content {
   flex: 1;
-  /* padding: 20px; */
 }
 
 

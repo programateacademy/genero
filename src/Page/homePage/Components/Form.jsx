@@ -20,18 +20,18 @@ const Form = () => {
       'LRxNH6JKhqn7_y75P'
     )
 
-    .then((response) => {
-      console.log("Correo enviado exitosamente", response);
-    })
-    .catch((error) => {
-      console.error("Error al enviar el correo", error);
-    });
+    // .then((response) => {
+    //   console.log("Correo enviado exitosamente", response);
+    // })
+    // .catch((error) => {
+    //   console.error("Error al enviar el correo", error);
+    // });
     
-    console.log(dataForm);
+    // console.log(dataForm);
     reset()
   };
   return (
-    <section className='formulary'>
+    <section id='formulary'>
       <div className='grid-content'>
         <div className='text'>
           <h1 className='white'>¡Tu voz importa y </h1>

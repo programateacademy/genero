@@ -8,8 +8,8 @@ class Section extends Component {
   render() {
     return (
       <div className="section">
-        <WaveAnimation />
-        <Carousel />
+        <WaveAnimation waveTitle="Oleada 1" />
+        <Carousel/>
         <Container />
       </div>
     );
