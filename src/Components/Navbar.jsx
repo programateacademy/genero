@@ -20,7 +20,7 @@ class Navbar extends Component {
     return (
         <>
             <nav>
-                <div>
+                <div className="menu-principal">
                     <ul id="Navbar" className={this.state.clicked ? "#Navbar active" : "#Navbar"}>
                         <li><a className="active" href="/"> Inicio</a></li>
                         <li><Link to="/#about" smooth={true}>Sobre</Link></li>

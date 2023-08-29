@@ -44,7 +44,7 @@
 
 .card-group {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   margin-bottom: -6px; 
   margin: 19px 28px 28px;
 }

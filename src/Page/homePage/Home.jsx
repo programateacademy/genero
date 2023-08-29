@@ -10,7 +10,7 @@ import './styles.css'
 const Home = () => {
   const videoIds = ["a7it63FFDYQ", "QqUiaRmx794"];
   return (
-    <div>
+    <div className="interacciones-user">
       <Section/>
       <Section2/> 
       <AboutUs/>
