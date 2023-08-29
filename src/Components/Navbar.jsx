@@ -35,7 +35,7 @@ class Navbar extends Component {
                     <i id="Bar" className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
                 </div>
             </nav>
-            <img id="photonav" src={photo} alt="foto_menu" />
+            {/*<img id="photonav" src={photo} alt="foto_menu" />*/}
         </>
     )
 }
