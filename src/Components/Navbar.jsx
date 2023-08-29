@@ -26,11 +26,7 @@ class Navbar extends Component {
                         <li><Link to="/#about" smooth={true}>Sobre</Link></li>
                         <li><a href="/pageWave/Cards-First-Wave/First-Wave-Books">Oleada 1</a></li>
                         <li><a href="/pageWave/Cards-Second-Wave/Second-Wave-Books">Oleada 2</a></li>
-<<<<<<< HEAD
-                        <li><a onClick={this.scrollToBottom}>Contacto</a></li>
-=======
                         <li><Link to="/#Footer" smooth={true}>Contacto</Link></li>
->>>>>>> ef55f132f16d4bc5f5c6ea111b1153471e742f39
                     </ul>
                     
                 </div>

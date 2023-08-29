@@ -25,11 +25,7 @@ const additionalLinks = [
 
 const Footer = () => {
     return (
-<<<<<<< HEAD
-        <div className="Footer" id="bottom-section">
-=======
         <div id="Footer">
->>>>>>> ef55f132f16d4bc5f5c6ea111b1153471e742f39
             <div className="sb_footer section_padding">
                 <div className="sb_footer-links">
                     {footerLinks.map((section, index) => (
