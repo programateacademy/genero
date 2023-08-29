@@ -297,7 +297,6 @@ iframe {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 
-<<<<<<< HEAD
 @media ( max-width: 500px ) {
   nav{
     padding: 20px 0px;
@@ -319,10 +318,8 @@ iframe {
     margin: 20px;
   }
   
-=======
 .Navbar {
     padding: 6px 8px;
->>>>>>> f545f0291bb5d32c9b09196f5e813bdcdcdfb753
 }
 
 .Navbar li {
@@ -405,4 +402,5 @@ iframe {
   white-space: nowrap !important; 
   background-color: rgb(255, 255, 255) !important; 
   border-radius: 2px !important; 
+  }
 }
