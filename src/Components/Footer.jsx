@@ -16,12 +16,6 @@ const footerLinks = [
     { title: 'Contacto', links: [{ href: 'index.html', text: 'Politica de privacidad' }, { href: 'index.html', text: 'Terminos de uso' }] },
 ];
 
-const additionalLinks = [
-    { href: 'index.html', text: 'Terms & conditions' },
-    { href: 'index.html', text: 'Privacy' },
-    { href: 'index.html', text: 'Security' },
-    { href: 'index.html', text: 'Cookie Declaration' },
-];
 
 const Footer = () => {
     return (
