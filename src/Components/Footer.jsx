@@ -26,44 +26,45 @@ const additionalLinks = [
 const Footer = () => {
     return (
         <div id="Footer">
-        <div className="Footer" id="bottom-section">
-            <div className="sb_footer section_padding">
-                <div className="sb_footer-links">
-                    {footerLinks.map((section, index) => (
-                        <div className="sb_footer-links_div" key={index}>
-                            <h4>{section.title}</h4>
-                            {section.links.map((link, linkIndex) => (
-                                <a href={link.href} key={linkIndex}>
-                                    <p>{link.text}</p>
-                                </a>
-                            ))}
-                        </div>
-                    ))}
-                    <div className="sb_footer-links_div">
-                        <img src={logo_educamas} alt="Logo_educamas"></img>
-                        <div className="wrapper">
-                            {/* Contenido adicional aquí */}
+            <div className="Footer" id="bottom-section">
+                <div className="sb_footer section_padding">
+                    <div className="sb_footer-links">
+                        {footerLinks.map((section, index) => (
+                            <div className="sb_footer-links_div" key={index}>
+                                <h4>{section.title}</h4>
+                                {section.links.map((link, linkIndex) => (
+                                    <a href={link.href} key={linkIndex}>
+                                        <p>{link.text}</p>
+                                    </a>
+                                ))}
+                            </div>
+                        ))}
+                        <div className="sb_footer-links_div">
+                            <img src={logo_educamas} alt="Logo_educamas"></img>
+                            <div className="wrapper">
+                                {/* Contenido adicional aquí */}
+                            </div>
                         </div>
                     </div>
-                </div>
-                <hr></hr>
-                <div className="sb_footer-below">
-                    <div className="sb_footer-copyright">
-                        <p>
-                            @{new Date().getFullYear()} Codeinn. All right reserved.
-                        </p>
-                    </div>
-                    <div className="Socialmedia">
+                    <hr></hr>
+                    <div className="sb_footer-below">
+                        <div className="sb_footer-copyright">
+                            <p>
+                                @{new Date().getFullYear()} Codeinn. All right reserved.
+                            </p>
+                        </div>
+                        <div className="Socialmedia">
                             <nav className='Socialmedia'>
                                 {socialLinks.map((link, index) => (
                                     <SocialIcon key={index} href={link.href} icon={link.icon} />
                                 ))}
                             </nav>
-                        </div>  
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    )
+        </div>   
+         )
 }
 
-export default Footer;
+            export default Footer;
