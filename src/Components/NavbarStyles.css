@@ -3,7 +3,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #C09AC3;
+    background: #FFFF;
     padding: 20px 80px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     border-radius: 0 0 10px 10px;
@@ -40,7 +40,7 @@ nav {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 600;
-    color: #fff;
+    color: #711288;
     transition: 0.3s ease-in-out;
     position: relative;
 }
@@ -70,7 +70,7 @@ nav {
 }
 
 #Mobile i {
-    color: #fff;
+    color: #711288;
     align-items: center;
 }
 
