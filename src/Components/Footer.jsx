@@ -16,16 +16,11 @@ const footerLinks = [
     { title: 'Contacto', links: [{ href: 'index.html', text: 'Politica de privacidad' }, { href: 'index.html', text: 'Terminos de uso' }] },
 ];
 
-const additionalLinks = [
-    { href: 'index.html', text: 'Terms & conditions' },
-    { href: 'index.html', text: 'Privacy' },
-    { href: 'index.html', text: 'Security' },
-    { href: 'index.html', text: 'Cookie Declaration' },
-];
 
 const Footer = () => {
     return (
         <div id="Footer">
+<<<<<<< HEAD
             <div className="Footer" id="bottom-section">
                 <div className="sb_footer section_padding">
                     <div className="sb_footer-links">
@@ -44,6 +39,24 @@ const Footer = () => {
                             <div className="wrapper">
                                 {/* Contenido adicional aquí */}
                             </div>
+=======
+            <div className="sb_footer section_padding">
+                <div className="sb_footer-links">
+                    {footerLinks.map((section, index) => (
+                        <div className="sb_footer-links_div" key={index}>
+                            <h4>{section.title}</h4>
+                            {section.links.map((link, linkIndex) => (
+                                <a href={link.href} key={linkIndex}>
+                                    <p>{link.text}</p>
+                                </a>
+                            ))}
+                        </div>
+                    ))}
+                    <div className="sb_footer-links_div">
+                        <img src={logo_educamas} alt="Logo_educamas"></img>
+                        <div className="wrapper">
+                            {/* Contenido adicional aquí */}
+>>>>>>> 7e185754933e7162ec44c3775b12c8a39e3dce58
                         </div>
                     </div>
                     <hr></hr>
