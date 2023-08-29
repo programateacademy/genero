@@ -2,10 +2,19 @@
     padding: 4rem 4rem;
 }
 
-.Footer{
+#Footer{
     background-color: #C09AC3;
-    border-radius: 15px;
     margin-top: auto;
+}
+
+#Footer a{
+color: white;
+text-decoration: none;
+
+}
+
+#Footer a:hover{
+    color: #711288;   
 }
 
 .sb_footer{
@@ -33,14 +42,15 @@
     height: auto;
 }
 
-a{
-    color: white;
-    text-decoration: none;
-}
 
 .Socialmedia{
     display: flex;
     flex-direction: row;
+    gap: 10px;
+}
+
+.Socialmedia a{
+    color: white;
 }
 
 .Socialmedia img{

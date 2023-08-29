@@ -31,18 +31,15 @@ const MyBook = (props) => {
   return (
     <div>
       <div className='demoPage'>
-        <div>
+      <h1 className='Resource_title'>Referencias</h1> 
+        <div className="contaiter_select">
           <label htmlFor="searchBySelect">Buscar por:</label>
           <select id="searchBySelect" value={searchBy} onChange={handleSearchByChange}>
             <option value="title">Título</option>
             <option value="author">Autor</option>
           </select>
-        </div>
-        <div>
           <BookDropdown books={books} onBookSelect={handleBookSelect} searchBy={searchBy} />
         </div>
-        <button onClick={handlePrevious}>Anterior</button>
-        <button onClick={handleNext}>Siguiente</button>
         <h4>Título: {selectedBook.Title}</h4>
         <p className='Text_author'>Autor: {selectedBook.Author}</p>
         <p className='Text_Synopsis'>Sinopsis: {selectedBook.Synopsis}</p>
@@ -62,6 +59,10 @@ const MyBook = (props) => {
               </a>
             </div>
           )}
+        <div className='Container_buttons'>
+          <button  class="btn mt-4" onClick={handlePrevious}>Lectura Anterior</button>
+          <button class="btn mt-4" onClick={handleNext}>Siguiente Lectura</button>
+        </div>
         </div>
       </div>
     </div>
