@@ -1,45 +1,36 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import "./NavbarStyles.css";
 import { HashLink as Link } from 'react-router-hash-link';
-// import photo from '../assets/img/imagenav.jpeg';
-import AccessibilityComponent from './AccessibilityComponent'; // Asegúrate de que la ruta sea correcta
-import disabledLogo from '../assets/img/disabled-logo.png'; // Asegúrate de que la ruta sea correcta
+// import photo from '../assets/img/imagenav.jpeg'
+// import { findRenderedDOMComponentWithClass } from "react-dom/test-utils";
 
 class Navbar extends Component {
-    state = {
-        clicked: false,
-        showAccessibility: false,
-        showMenu: false // Nuevo estado para controlar el menú de opciones
-    }
 
+    state = { clicked: false }
     handleClick = () => {
-        this.setState({ clicked: !this.state.clicked });
-    }
+        this.setState({ clicked: !this.state.clicked })
 
-    handleAccessibilityClick = () => {
-        this.setState({ showAccessibility: !this.state.showAccessibility });
-    }
-
-    handleMenuClick = () => {
-        this.setState({ showMenu: !this.state.showMenu }); // Cambia el estado del menú al hacer clic en el botón
     }
 
     scrollToBottom = () => {
         const element = document.getElementById('bottom-section'); // Cambia 'bottom-section' por el ID de tu sección inferior
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: 'smooth' })
     }
-
-    render () {
+    render() {
         return (
             <>
                 <nav>
                     <div>
-                        <ul id="Navbar" className={this.state.clicked ? "#Navbar active" : "#Navbar"}>
-                            <li><a className="active" href="/"> Inicio</a></li>
+                        <ul id="Navbar" className={this.state.clicked ? "active" : ""}>
+                            <li><a className="active" href="/">Inicio</a></li>
                             <li><Link to="/#about" smooth={true}>Sobre</Link></li>
-                            <li><a href="/pageWave/Cards-First-Wave/First-Wave-Books">Recursos </a><i className='fas fa-caret-down' /></li>
-                            {/* <li><a href="/pageWave/Cards-First-Wave/First-Wave-Books">Oleada 1</a></li>
-                            <li><a href="/pageWave/Cards-Second-Wave/Second-Wave-Books">Oleada 2</a></li> */}
+                            <li className="dropdown">
+                                <a href="#" className="dropbtn">Recursos <i className="fas fa-caret-down"></i></a>
+                                <div className="dropdown-content">
+                                    <a href="/pageWave/Cards-First-Wave/First-Wave-Books">Oleada 1</a>
+                                    <a href="/pageWave/Cards-Second-Wave/Second-Wave-Books">Oleada 2</a>
+                                </div>
+                            </li>
                             <li><Link to="/#Footer" smooth={true}>Contacto</Link></li>
                         </ul>
                     </div>
@@ -47,23 +38,12 @@ class Navbar extends Component {
                         <i id="Bar" className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
                     </div>
                 </nav>
-                {/* <img id="photonav" src={photo} alt="foto_menu" /> */}
-                <button className="accessibility-button" onClick={this.handleAccessibilityClick}>
-                    <img src={disabledLogo} alt="Logo de persona discapacitada" />
-                </button>
-                <div className={`menu-overlay ${this.state.showMenu ? 'show' : ''}`}>
-                    <div className="menu-content">
-                        {this.state.showAccessibility && <AccessibilityComponent />}
-                    </div>
-                </div>
+                {/*<img id="photonav" src={photo} alt="foto_menu" />*/}
             </>
         )
     }
 }
-
 export default Navbar;
-
-
 
 
 
