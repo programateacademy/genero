@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import WaveAnimation from "./WaveAnimation";
 import Container from "./Container";
-import ImageGallery from "./ImageGallery";
 import Carousel from "./Carousel";
 
 class Section extends Component {
@@ -16,7 +15,6 @@ images = [
         <WaveAnimation waveTitle="Oleada 1" />
         <div className="section">
         <Carousel/>
-        <ImageGallery images={this.images} />
         <Container/>
       </div>
       </>
