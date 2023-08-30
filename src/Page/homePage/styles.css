@@ -469,6 +469,7 @@ h2{
     .container-xxl {
       max-width: 1320px;
     }
+    
   }
 
 @media ( max-width: 1040px) {
@@ -497,6 +498,12 @@ h2{
 
   .text h1 {
     font-size: 29px;
+  }
+}
+
+@media ( max-width: 990px) {
+  .container {
+    margin: 4rem 17rem;
   }
 }
 
