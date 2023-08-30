@@ -24,8 +24,9 @@ class Navbar extends Component {
                     <ul id="Navbar" className={this.state.clicked ? "#Navbar active" : "#Navbar"}>
                         <li><a className="active" href="/"> Inicio</a></li>
                         <li><Link to="/#about" smooth={true}>Sobre</Link></li>
-                        <li><a href="/pageWave/Cards-First-Wave/First-Wave-Books">Oleada 1</a></li>
-                        <li><a href="/pageWave/Cards-Second-Wave/Second-Wave-Books">Oleada 2</a></li>
+                        <li><a href="/pageWave/Cards-First-Wave/First-Wave-Books">Recursos </a><i className='fas fa-caret-down' /></li>
+                        {/*<li><a href="/pageWave/Cards-First-Wave/First-Wave-Books">Oleada 1</a></li>
+                        <li><a href="/pageWave/Cards-Second-Wave/Second-Wave-Books">Oleada 2</a></li>*/}
                         <li><Link to="/#Footer" smooth={true}>Contacto</Link></li>
                     </ul>
                     
@@ -34,6 +35,7 @@ class Navbar extends Component {
                     <i id="Bar" className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
                 </div>
             </nav>
+            {/*<img id="photonav" src={photo} alt="foto_menu" />*/}
         </>
     )
 }
