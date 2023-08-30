@@ -237,9 +237,7 @@ iframe {
 
 @media (min-width: 320px) and (max-width: 600px) {
 nav {
-  justify-content: center;
-  background: #C09AC3;
-  padding: 8px 8px;
+  padding: 20px 30px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 
@@ -277,10 +275,6 @@ nav {
   }
 
   @media ( max-width: 500px ) {
-    nav{
-      padding: 20px 0px;
-    }
-  
     .Navbar {
       padding: 0 10px;
     }

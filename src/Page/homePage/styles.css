@@ -475,9 +475,14 @@ h2{
     .grid-content {
         padding: 100px 70px;
     }
-    
     .grid-input {
         justify-content: end;
+    }
+    .Container_Videos {
+      flex-direction: column;
+    }
+    .youtube-video {
+      max-width: 91%;
     }
 }
 
@@ -492,6 +497,12 @@ h2{
 
   .text h1 {
     font-size: 29px;
+  }
+}
+
+@media ( max-width: 770px) {
+  .container {
+    margin: 4rem 11rem;
   }
 }
 
@@ -511,13 +522,23 @@ h2{
     .grid-input textarea {
         width: 100%;
     }
+    .container {
+      margin: 4rem 6rem;
+    }
+    .youtube-video iframe{
+      height: 30vh;
+    }
 }
 
-@media ( max-width: 770px) {
-  .container {
-    margin: 4rem 11rem;
+@media ( max-width: 425px) {
+  #about {
+    margin-inline: 20px;
+    margin-bottom: 80px;
   }
 }
+
+
+
 
 
 
