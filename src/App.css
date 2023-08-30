@@ -10,10 +10,14 @@
 
 
 .accessibility-button{
-  width: 10%;
-  height: 10%;
+  width: 8%;
   border-radius: 0 10px 10px 0;
   background-color: transparent;
+}
+
+.accessibility-button img{
+  width: 40%;
+  height: 40%;
 }
 
 #menu-accessibility{
@@ -31,18 +35,12 @@
 
 #menu-accessibility button:hover{
   color: white;
-  background-color: #F551FF;
+  background-color: #A65BAE;
 }
 
-.accessibility-button {
-  width: 5%;
-  height: 10%;
-}
 
-.accessibility-button img{
-  width: 100px;
-  height: 100px;
-}
+
+
 
 
 
