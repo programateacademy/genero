@@ -1,4 +1,6 @@
+/**/
 nav {
+    position: sticky;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6,7 +8,6 @@ nav {
     padding: 20px 80px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     border-radius: 0 0 10px 10px;
-    position: sticky;
 }
 
 #Navbar {
