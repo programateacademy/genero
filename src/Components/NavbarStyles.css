@@ -24,8 +24,8 @@ nav {
 #photonav{
     position: relative;
     top: -10px;
-    width: 100%;
-    height: 25vh;
+    width: 90%;
+    height: 45vh;
     opacity: 0.9;
 }
 
