@@ -259,6 +259,10 @@ h1 {
     color: white;
 }
 
+.purple {
+  color: #EF5AFF;
+}
+
 .grid-input {
     display: grid;
     grid-template: 1fr / 200px 200px;
