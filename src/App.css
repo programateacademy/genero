@@ -83,8 +83,19 @@
 }
 
 .card img{
+  position: relative; 
   border-radius: 10px;
-  box-shadow: 5px 20px 60px #00E6CA; 
+  /* box-shadow: 5px 20px 60px #00E6CA;  */
+
+}
+
+.boxblue{
+  position: absolute;
+  background-color: #00E6CA;
+  left: 50px;
+  bottom: 200px;
+  width: 200px;
+  height: 250px;
 }
 
 
@@ -94,6 +105,7 @@
   background-color: #F551FF;
   width: 50%;
   border-radius: 10px;
+  
 }
 
 
