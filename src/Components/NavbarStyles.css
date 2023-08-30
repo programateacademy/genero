@@ -79,19 +79,17 @@ nav {
         flex-direction: column;
         display: flex;
         text-align: center;
-        align-items: flex-start;
-        justify-content: flex-start;
+        justify-content: center;
         position: fixed;
         top: 80px;
         right: -300px;
-        width: 180px;
-        height: 25h;
+        width: 230px;
+        height: 30h;
         background-color: #C09AC3;
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
-        padding: 20px 0 0 0px;
+        padding: 20px 0 0 0;
         transition: 0.3s ease-in-out;
         border-radius: 15px;
-        
     }
     #Navbar.active {
         right: 0px;
@@ -113,4 +111,59 @@ nav {
     nav {
         justify-content: right;
     }
+}
+
+
+/* Estilos para el menú desplegable del Navbar */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 16px;
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #C09AC3;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+    border-radius: 0 0 10px 10px;
+    visibility: hidden;
+    top: -100%;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #7B5E7B;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    top: 100%;
 }
