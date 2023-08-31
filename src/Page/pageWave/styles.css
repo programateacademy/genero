@@ -1,18 +1,17 @@
-.card-list{
-  display: flex;
-  justify-content: center;
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 40px 120px;
 }
 
-.card {
+.card-1{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5%;
   max-width: 800px;
-  border: 1px solid #000;
-  border-radius: 8px;
   padding: 3%;
   margin: 1%;
-  font-size: 80%;
+  font-size: 90%;
 }
 
 .img-container {
@@ -32,7 +31,7 @@
   background-color: #F551FF;
   font-size: 14px;
   color: #fff;
-  width: 25%;
+  width: 90px;
   padding: 5px 0;
 }
 
@@ -44,8 +43,8 @@
 .card-list:first-child img{
   position: relative;
   top: 20px;
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
 }
 
 /* -----book------ */
@@ -81,7 +80,7 @@
 }
 
 
-.contaiter_select select{
+.contaier_select select{
   height: 50%;
   border-radius: 10px;
 }
@@ -204,4 +203,89 @@ iframe {
 
 .mtop {
   margin-top: 30px;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 40px 120px;
+}
+
+.card-1{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5%;
+  max-width: 800px;
+  padding: 3%;
+  margin: 1%;
+  font-size: 90%;
+}
+
+.img-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.img-container img{
+  border-radius: 10px;
+  box-shadow: -20px -20px #00E6CA; 
+  max-width: 450px;
+}
+
+.analytics{
+  text-align: center;
+  background-color: #F551FF;
+  font-size: 14px;
+  color: #fff;
+  width: 90px;
+  padding: 5px 0;
+}
+
+.text-container h3{
+  font-weight: 600;
+}
+
+
+.card-list:first-child img{
+  position: relative;
+  top: 20px;
+  width: 70%;
+  height: 70%;
+}
+@media ( max-width: 1400px ) {
+  .card-list {
+    padding: 40px 60px;
+  }
+}
+
+@media ( max-width: 1150px ) {
+  .card-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .container_select{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media ( max-width: 690px ) {
+  .card-list {
+    padding: 40px;
+  }
+  .card-1 {
+    max-width: 600px;
+    font-size: 60%;
+  }
+  .card-list:first-child img {
+    height: 50%;
+  }
+}
+
+@media ( max-width: 400px ) {
+  .card-list:first-child img {
+    height: 40%;
+  }
 }
