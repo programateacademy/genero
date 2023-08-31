@@ -10,22 +10,49 @@
 
 
 .accessibility-button{
-  width: 8%;
+  width: 10%;
+  height: 10%;
   border-radius: 0 10px 10px 0;
   background-color: transparent;
 }
 
-.accessibility-button img{
-  width: 40%;
-  height: 40%;
+#menu-accessibility{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
 }
+
+
+#menu-accessibility button{
+  background-color: #C09AC3;
+  border-radius: 0 10px 10px 0;
+}
+
+#menu-accessibility button:hover{
+  color: white;
+  background-color: #F551FF;
+}
+
+.accessibility-button {
+  width: 5%;
+  height: 10%;
+}
+
+.accessibility-button img{
+  width: 100px;
+  height: 100px;
+}
+
+
+
+
 
 .app-container {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
-  overflow-x: hidden;
 }
 
 .sticky-navbar {
@@ -83,19 +110,8 @@
 }
 
 .card img{
-  position: relative; 
   border-radius: 10px;
-  /* box-shadow: 5px 20px 60px #00E6CA;  */
-
-}
-
-.boxblue{
-  position: absolute;
-  background-color: #00E6CA;
-  left: 50px;
-  bottom: 200px;
-  width: 200px;
-  height: 250px;
+  box-shadow: 5px 20px 60px #00E6CA; 
 }
 
 
@@ -105,7 +121,6 @@
   background-color: #F551FF;
   width: 50%;
   border-radius: 10px;
-  
 }
 
 
@@ -248,96 +263,64 @@ iframe {
   opacity: 1;
 }
 
-@media (min-width: 320px) and (max-width: 600px) {
-nav {
-  padding: 20px 30px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+
+
+
+/* Respondive design mobile*/
+@media (max-width: 320px) and (max-width: 600px) {
+
+  nav {
+    justify-content: center;
+    background: #C09AC3;
+    padding: 8px 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 
-.botonDropdown { 
-  color: deeppink !important; 
-  background-color: rgb(255, 255, 255) !important; 
-  border-color: aqua !important; 
-} 
- 
- 
-.dropdown-cuerpo { 
-  min-width: 11.2rem !important; 
-  --bs-dropdown-padding-x: 0 !important; 
-  --bs-dropdown-padding-y: 0.5rem !important; 
-  border-color: aqua !important; 
-  --bs-dropdown-border-width: var(--bs-border-width) !important; 
-  --bs-dropdown-divider-bg: aqua !important; 
-} 
- 
-.dropdwon-header { 
-  display: block !important; 
-  padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x) !important; 
-  margin-bottom: 0 !important; 
-  color: turquoise !important; 
-} 
- 
-.dropdown-item { 
-  display: block !important; 
-  color: deeppink !important; 
-  text-align: inherit !important; 
-  text-decoration: none !important; 
-  white-space: nowrap !important; 
-  background-color: rgb(255, 255, 255) !important; 
-  border-radius: 2px !important; 
-  }
-
-  @media ( max-width: 500px ) {
-    .Navbar {
-      padding: 0 10px;
-    }
-  
-    .Navbar li{
-      padding: 10px 10px 0 10px;
-    }
-  
-    .Navbar li a{
-      font-size: 14px;
-    }
-  
-    .card {
-      margin: 20px;
-    }
-    
-    .Navbar {
-      padding: 6px 8px;
-    }
-  
-    .Navbar li {
-      padding: 8px;
-      position:relative;
-      justify-content:center;
-    }
-  
-    .Navbar li a {
-      font-size: 1rem;
-    }
-  
-    .Navbar li a::after {
-      content: "";
-      width: 100%;
-      height: 2px;
-      background: #711288;
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      transform: scaleX(0);
-      transition: transform 0.2s ease-in-out;
-    }
-  
-  
-    .section-title {
-    margin-top: 1.8rem;
-    padding-bottom: 0.0rem;
-    line-height: 1;
-    font-size: 1.5rem;
-    font-weight: 500;
-    
-    }
-  }
+.Navbar {
+    padding: 6px 8px;
 }
+
+.Navbar li {
+    padding: 8px;
+    position:relative;
+    justify-content:center;
+}
+
+.Navbar li a {
+    font-size: 1rem;
+
+}
+
+.Navbar li a::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #711288;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.section-title {
+  margin-top: 1.8rem;
+  padding-bottom: 0.0rem;
+  line-height: 1;
+  font-size: 1.5rem;
+  font-weight: 500;
+  
+}
+}
+
+/* Estilos para pantallas medianas (tablets) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Aplica cambios de diseño para tablets aquí */
+}
+
+/* Estilos para pantallas grandes (escritorio) */
+@media (min-width: 1025px) {
+  /* Aplica cambios de diseño para escritorio aquí */
+}
+
