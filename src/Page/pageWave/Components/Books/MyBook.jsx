@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../../styles.css'
 import girl from '../../../../assets/img/girlLoad.png';
 import BookDropdown from './BookDropdown '; // Ajusta la ruta según tu estructura de archivos
 
