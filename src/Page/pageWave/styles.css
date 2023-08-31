@@ -9,11 +9,9 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 5%;
   max-width: 800px;
-  border: 1px solid #000;
-  border-radius: 8px;
   padding: 3%;
   margin: 1%;
-  font-size: 80%;
+  font-size: 90%;
 }
 
 .img-container {
@@ -168,6 +166,7 @@ iframe {
   }
   .card-1 {
     max-width: 600px;
+    font-size: 60%;
   }
   .card-list:first-child img {
     height: 50%;
