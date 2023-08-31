@@ -25,13 +25,14 @@ nav {
     z-index: 100;
 }
 
-/* #photonav{
+#photonav{
     position: relative;
     top: -10px;
     width: 100%;
     height: auto;
+    z-index: -1;
 
-} */
+}
 
 
 #Navbar li {

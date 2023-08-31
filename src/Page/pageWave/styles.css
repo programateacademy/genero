@@ -50,6 +50,9 @@
 
 /* -----book------ */
 
+#itemSelect,#searchBySelect{
+  background-color: #d5d5d5;
+}
 .contaiter_select {
   display: flex;
   align-items: center;
@@ -130,7 +133,6 @@ iframe {
   .demoPage a{
     text-decoration: none;
     font-size: 16px;
-    animation: textAnimation 2s alternate infinite; /* Animación */
     background-color: #A65BAE;
     color: white;
     border-radius: 5px;
@@ -152,19 +154,7 @@ iframe {
   display: flex;
   justify-content: space-around;
 }
-  
-  @keyframes textAnimation {
-    0% {
-      font-size: 16px; 
-    }
-    50% {
-      font-size: 20px; 
-    }
-    100% {
-      font-size: 16px; 
-  }
-}
- 
+
 .container_select {
   display: flex;
   align-items: center;
