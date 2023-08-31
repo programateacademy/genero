@@ -19,7 +19,7 @@ const Container2 = () => {
             educación superior, la adquisición de bienes y compartir la potestad
             de sus hijos e hijas.
           </p>
-          <div className="d-flex justify-content-center align-items-center mt-4">
+          <div className="d-flex justify-content-start align-items-center mt-4">
           <Button class="btn mt-4" href="/pageWave/Cards-Second-Wave/Second-Wave-Books">
             Profundizar <i class="mdi mdi-arrow-right"></i>
           </Button>{' '}
