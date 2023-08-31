@@ -6,6 +6,21 @@
   font-family: "Poppins", sans-serif;
 }
 
+
+
+
+.accessibility-button{
+  width: 10%;
+  height: 10%;
+  border-radius: 0 10px 10px 0;
+  background-color: transparent;
+}
+
+#menu-accessibility{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
 .App {
   text-align: center;
 }
@@ -13,7 +28,28 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+
+#menu-accessibility button{
+  background-color: #C09AC3;
+  border-radius: 0 10px 10px 0;
 }
+
+#menu-accessibility button:hover{
+  color: white;
+  background-color: #F551FF;
+}
+
+.accessibility-button {
+  width: 5%;
+  height: 10%;
+}
+
+.accessibility-button img{
+  width: 100px;
+  height: 100px;
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

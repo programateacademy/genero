@@ -2,7 +2,7 @@ import React from "react";
 
 const WaveAnimation2 = () => {
   return (
-<div>
+<div class="rotate2">
   <div class="wave-effect wave-anim">
     <div class="waves-shape shape-one">
       <div class="wave wave-one"></div>

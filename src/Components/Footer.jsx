@@ -16,7 +16,6 @@ const footerLinks = [
     { title: 'Contacto', links: [{ href: 'index.html', text: 'Politica de privacidad' }, { href: 'index.html', text: 'Terminos de uso' }] },
 ];
 
-
 const Footer = () => {
     return (
 
@@ -39,6 +38,23 @@ const Footer = () => {
                             {/* Contenido adicional aquí */}
                         </div>
                     </div>
+                </div>
+                <hr></hr>
+                <div className="sb_footer-below">
+                    <div className="sb_footer-copyright">
+                        <p>
+                            @{new Date().getFullYear()} Codeinn. All right reserved.
+                        </p>
+                    </div>
+                    <div className="Socialmedia">
+                        {socialLinks.map((link, index) => (
+                            <SocialIcon key={index} href={link.href} icon={link.icon} />
+                        ))}
+                     </div>  
+                </div>
+            </div>
+        </div>
+    )
                     <hr></hr>
                     <div className="sb_footer-below">
                         <div className="sb_footer-copyright">
