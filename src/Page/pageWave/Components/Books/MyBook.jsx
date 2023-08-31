@@ -33,17 +33,21 @@ const MyBook = (props) => {
     <div>
       <div className='demoPage'>
       <h1 className='Resource_title'>Referencias</h1> 
-        <div className="contaiter_select">
-          <label htmlFor="searchBySelect">Buscar por:</label>
-          <select id="searchBySelect" value={searchBy} onChange={handleSearchByChange}>
+      <div class="section-title-border mt-3"></div>
+        <div className="container_select mb-5" >
+          <label htmlFor="searchBySelect">Buscar por: </label>
+          <select id="searchBySelect" value={searchBy} onChange={handleSearchByChange} className="custom-select">
             <option value="title">Título</option>
             <option value="author">Autor</option>
           </select>
           <BookDropdown books={books} onBookSelect={handleBookSelect} searchBy={searchBy} />
         </div>
+        <div className='description'> 
+        <div className='section-subtitle mb-2 mtop'>
         <h4>Título: {selectedBook.Title}</h4>
-        <p className='Text_author'>Autor: {selectedBook.Author}</p>
-        <p className='Text_Synopsis'>Sinopsis: {selectedBook.Synopsis}</p>
+        <p className='Text_author'>Autor: {selectedBook.Author}</p></div>
+        <p className='Text_Synopsis text-center pt-4'>Sinopsis: {selectedBook.Synopsis}</p>
+        </div>
         <div className='Container_book'>
           {selectedBook.Flipbook !== 'Not_available' ? (
             <iframe
@@ -61,8 +65,8 @@ const MyBook = (props) => {
             </div>
           )}
         <div className='Container_buttons'>
-          <button  class="btn mt-4" onClick={handlePrevious}>Lectura Anterior</button>
-          <button class="btn mt-4" onClick={handleNext}>Siguiente Lectura</button>
+          <button  class="btn mt-4" onClick={handlePrevious}><i class="mdi mdi-arrow-left"></i> Lectura Anterior</button>
+          <button class="btn mt-4" onClick={handleNext}>Siguiente Lectura <i class="mdi mdi-arrow-right"></i></button>
         </div>
         </div>
       </div>

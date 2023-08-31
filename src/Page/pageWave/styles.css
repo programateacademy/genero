@@ -50,21 +50,33 @@
 
 /* -----book------ */
 
-.contaiter_select{
+.contaiter_select {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 20px;
 }
 
-.Select_drop{
+.contaiter_select label,
+.contaiter_select select {
+  margin: 0;
+}
+
+.Select_drop {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 20px;
+  bottom: 20px;
 }
+
+.Select_drop label {
+  flex: 1; 
+  margin: 0;
+}
+
+.Select_drop select {
+  flex: 2; 
+}
+
 
 .contaiter_select select{
   height: 50%;
@@ -81,8 +93,8 @@ iframe {
 .demoPage{
   display: grid;
   padding: 50px;
-  background-color:#C09AC3;
-  border: 1px solid #000;
+  background-color:#ffff;
+  border: 1px solid #ffffff;
   align-items: center;
   justify-content: center;
   color: white;
@@ -92,12 +104,19 @@ iframe {
     grid-row: 1;
   }
 
-
+.description{
+    background-color:#C09AC3;
+}
   .Text_Synopsis{
     font-size: 20px;
     text-align: justify;
     padding: 2%;
     margin: 2%;
+  }
+
+  .Resource_title{
+    background-color:  #ffff;
+    color: #000;
   }
 
   .demoPage h4, .Text_author,  .demoPage a , .Resource_title{
@@ -136,17 +155,63 @@ iframe {
   
   @keyframes textAnimation {
     0% {
-      font-size: 16px; /* Tamaño de fuente inicial */
+      font-size: 16px; 
     }
     50% {
-      font-size: 20px; /* Tamaño de fuente máximo */
+      font-size: 20px; 
     }
     100% {
-      font-size: 16px; /* Tamaño de fuente de nuevo */
+      font-size: 16px; 
   }
 }
+ 
+.container_select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px; 
+  color: #000;
+}
+.custom-select {
+  border: none;
+  border-radius: 4px;
+  padding: 6px 10px;
+  font-size: 16px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #711288;
+  transition: 0.3s ease-in-out;
+  position: relative;
+}
   
+.custom-select::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #711288;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+  border: none;
+}
 
-  
-  
-  
+.custom-select:hover {
+  color: #711288;
+  border: none;
+}
+
+.custom-select:hover::after, .custom-select.active::after {
+  transform: scaleX(1);
+}
+
+.custom-select option {
+  color: inherit; 
+}
+
+.mtop {
+  margin-top: 30px;
+}

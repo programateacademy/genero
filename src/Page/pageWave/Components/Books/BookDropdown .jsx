@@ -19,11 +19,11 @@ const BookDropdown = ({ books, onBookSelect, searchBy }) => {
   const items = searchBy === 'title' ? books.map(book => book.Title) : books.map(book => book.Author);
 
   return (
-    <div className='Select_drop mb-4'>
+    <div className='Select_drop'>
       <label htmlFor="itemSelect">
         Selecciona {searchBy === 'title' ? 'un libro' : 'un autor'}:
       </label>
-      <select id="itemSelect" value={selectedItem} onChange={handleItemChange}>
+      <select id="itemSelect" value={selectedItem} onChange={handleItemChange} className='custom-select'>
         {items.map((item, index) => (
           <option key={index} value={item}>
             {item}

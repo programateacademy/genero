@@ -7,7 +7,7 @@ const Container = () => {
     <div className="container">
       <div className="row">
         <div className="col-lg-8 offset-lg-2">
-        <p className="section-subtitle text-muted text-center pt-4 text-align-right"> 
+        <p className="section-subtitle text-muted pt-4 text-align-right"> 
             La primera ola es un periodo de consolidación del feminismo como un
             movimiento social y político que demanda igualdad con el género
             masculino, motivadas por escuelas de pensamiento e ideales que

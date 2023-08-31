@@ -6,7 +6,7 @@ const Container2 = () => {
     <div class="container">
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
-          <p class="section-subtitle text-muted text-center pt-4">
+          <p class="section-subtitle text-muted text-align-left pt-4">
             La segunda ola del feminismo va a estar marcada por el
             reconocimiento de las distinciones entre mujeres, sí bien las
             mujeres tienen punto de convergencia en sus demandas, la verdad es
