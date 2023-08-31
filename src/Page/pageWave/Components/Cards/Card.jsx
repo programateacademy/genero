@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles.css'
 
 function Card(props) {
     const {jsonArray} = props;
@@ -7,9 +8,14 @@ function Card(props) {
         <div className="card-list">
             {jsonArray.map((card, index) => (
                 <div className="card" key={index}>
-                    <h3>{card.title}</h3>
-                    <img src={card.image} alt={card.title} />
-                    <p>{card.description}</p>
+                    <div className='img-container'>
+                        <img src={card.image} alt={card.title} />
+                    </div>
+                    <div className='text-container'>
+                        <h4 className='analytics'>Analytics</h4>
+                        <h3>{card.title}</h3>
+                        <p>{card.description}</p>
+                    </div>
                 </div>
             ))}
         </div>
