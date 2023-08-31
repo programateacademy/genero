@@ -109,6 +109,10 @@ h1 {
   color: #95a0ab !important;
 }
 
+.text-align-right {
+  text-align: right;
+}
+
 .text-center , #Tittle_videos {
   text-align: center !important;
 }
@@ -132,12 +136,13 @@ h1 {
   padding: 10px 20px;
   font-size: 14px;
   letter-spacing: 0.5px;
-  transition: all 0.5s;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.btn:hover{
-  background-color: rgb(107, 104, 104);
-  color: white;
+.btn:hover {
+  background-color: #ad4ab8;
+  border-color: #ad4ab8;
+  transform: translateX(5px); 
 }
 
 .btn-primary{
