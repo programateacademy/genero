@@ -19,13 +19,12 @@
   background-color: #C09AC3;
 }
 
-
-
 .app-container {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .sticky-navbar {
@@ -40,260 +39,93 @@
 }
 
 
-
-.Dropdown {
-  position: relative;
+@media (min-width: 320px) and (max-width: 600px) {
+nav {
+  padding: 20px 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 
-.DropdownContent {
-  display: none;
-  position: absolute;
-  background-color: #C09AC3;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  border-radius: 10px;
-}
+.botonDropdown { 
+  color: deeppink !important; 
+  background-color: rgb(255, 255, 255) !important; 
+  border-color: aqua !important; 
+} 
 
-.Dropdown:hover .DropdownContent {
-  display: block;
-}
-
-.DropdownContent li {
-  padding: 10px;
-}
-
-
-/* ----pageWave--- */
-
-.card-list{
-  display: flex;
-  justify-content: flex-end;
-}
-
-
-.card {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10%;
-  border: 1px solid #C09AC3;
-  border-radius: 8px;
-  padding: 3%;
-  margin: 5%;
-  font-size: 80%;
-}
-
-.card img{
-  border-radius: 10px;
-  box-shadow: 5px 20px 60px #00E6CA; 
-}
-
-
-.card h3{
-  text-align: center;
-  grid-column: span 2;
-  background-color: #F551FF;
-  width: 50%;
-  border-radius: 10px;
-}
-
-
-.card-list:first-child img{
-  width: 100%;
-  height: 80%;
-}
-
-
-
-.card-list :nth-child(2) img {
-  width: 100%;
-  height: 80%;
-}
-
-
-/* -----book------ */
-
-.contaiter_select{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.Select_drop{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.contaiter_select select{
-  height: 50%;
-  border-radius: 10px;
-}
-
-iframe {
-  width: 100%;
-  height: 100vh;
-  border-radius: 5px; 
-  box-shadow: 5px 20px 60px #00E6CA; 
-  margin-bottom: 5%;
-}
-
-.demoPage{
-  display: grid;
-  padding: 50px;
-  background-color:#C09AC3;
-  border: 1px solid #000;
-  align-items: center;
-  justify-content: center;
-  color: white;
+.dropdown-cuerpo { 
+  min-width: 11.2rem !important; 
+  --bs-dropdown-padding-x: 0 !important; 
+  --bs-dropdown-padding-y: 0.5rem !important; 
+  border-color: aqua !important; 
+  --bs-dropdown-border-width: var(--bs-border-width) !important; 
+  --bs-dropdown-divider-bg: aqua !important; 
+} 
+ 
+.dropdwon-header { 
+  display: block !important; 
+  padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x) !important; 
+  margin-bottom: 0 !important; 
+  color: turquoise !important; 
+} 
+ 
+.dropdown-item { 
+  display: block !important; 
+  color: deeppink !important; 
+  text-align: inherit !important; 
+  text-decoration: none !important; 
+  white-space: nowrap !important; 
+  background-color: rgb(255, 255, 255) !important; 
+  border-radius: 2px !important; 
   }
 
-  .demoPage:last-child{
-    grid-row: 1;
-  }
-
-
-  .Text_Synopsis{
-    font-size: 20px;
-    text-align: justify;
-    padding: 2%;
-    margin: 2%;
-  }
-
-  .demoPage h4, .Text_author,  .demoPage a , .Resource_title{
-    text-align: center;
-  }
-
-  .Text_author, .demoPage h4{
-    font-size: 30px;
-  }
-
-  .demoPage a{
-    text-decoration: none;
-    font-size: 16px;
-    animation: textAnimation 2s alternate infinite; /* Animación */
-    background-color: #A65BAE;
-    color: white;
-    border-radius: 5px;
-    padding: 10px;
-  }
-
-  .Container_Load{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .Image_load{
-    width: 20%;
-  }
-
-.Container_buttons{
-  display: flex;
-  justify-content: space-around;
-}
-
-
-  
-  @keyframes textAnimation {
-    0% {
-      font-size: 16px; /* Tamaño de fuente inicial */
+  @media ( max-width: 500px ) {
+    .Navbar {
+      padding: 0 10px;
     }
-    50% {
-      font-size: 20px; /* Tamaño de fuente máximo */
+  
+    .Navbar li{
+      padding: 10px 10px 0 10px;
     }
-    100% {
-      font-size: 16px; /* Tamaño de fuente de nuevo */
+  
+    .Navbar li a{
+      font-size: 14px;
+    }
+  
+    .card {
+      margin: 20px;
+    }
+    
+    .Navbar {
+      padding: 6px 8px;
+    }
+  
+    .Navbar li {
+      padding: 8px;
+      position:relative;
+      justify-content:center;
+    }
+  
+    .Navbar li a {
+      font-size: 1rem;
+    }
+  
+    .Navbar li a::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background: #711288;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      transform: scaleX(0);
+      transition: transform 0.2s ease-in-out;
+    }
+    .section-title {
+    margin-top: 1.8rem;
+    padding-bottom: 0.0rem;
+    line-height: 1;
+    font-size: 1.5rem;
+    font-weight: 500;
+    
+    }
   }
 }
-/* --- image galery--- */
-.image-gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.image-gallery img {
-  max-width: 100%;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.5s ease-in-out;
-  opacity: 0;
-}
-
-.image-gallery img.visible {
-  opacity: 1;
-}
-
-
-
-
-/* Respondive design mobile*/
-@media (max-width: 320px) and (max-width: 600px) {
-
-  nav {
-    justify-content: center;
-    background: #C09AC3;
-    padding: 8px 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-}
-
-.Navbar {
-    padding: 6px 8px;
-}
-
-.Navbar li {
-    padding: 8px;
-    position:relative;
-    justify-content:center;
-}
-
-.Navbar li a {
-    font-size: 1rem;
-
-}
-
-.Navbar li a::after {
-    content: "";
-    width: 100%;
-    height: 2px;
-    background: #711288;
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    transform: scaleX(0);
-    transition: transform 0.2s ease-in-out;
-}
-
-
-.section-title {
-  margin-top: 1.8rem;
-  padding-bottom: 0.0rem;
-  line-height: 1;
-  font-size: 1.5rem;
-  font-weight: 500;
-  
-}
-}
-
-/* Estilos para pantallas medianas (tablets) */
-@media (min-width: 600px) and (max-width: 1024px) {
-  /* Aplica cambios de diseño para tablets aquí */
-}
-
-/* Estilos para pantallas grandes (escritorio) */
-@media (min-width: 1025px) {
-  /* Aplica cambios de diseño para escritorio aquí */
-}
-
