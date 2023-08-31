@@ -6,53 +6,25 @@
   font-family: "Poppins", sans-serif;
 }
 
-
-
-
-.accessibility-button{
-  width: 10%;
-  height: 10%;
-  border-radius: 0 10px 10px 0;
-  background-color: transparent;
-}
-
-#menu-accessibility{
-  width: 100px;
-  height: 100px;
+.Container_Accessibility{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-
-#menu-accessibility button{
+.checkbox_accesibility{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #C09AC3;
-  border-radius: 0 10px 10px 0;
 }
-
-#menu-accessibility button:hover{
-  color: white;
-  background-color: #F551FF;
-}
-
-.accessibility-button {
-  width: 5%;
-  height: 10%;
-}
-
-.accessibility-button img{
-  width: 100px;
-  height: 100px;
-}
-
-
-
-
 
 .app-container {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .sticky-navbar {
@@ -67,115 +39,93 @@
 }
 
 
-
-.Dropdown {
-  position: relative;
+@media (min-width: 320px) and (max-width: 600px) {
+nav {
+  padding: 20px 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 
-.DropdownContent {
-  display: none;
-  position: absolute;
-  background-color: #C09AC3;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  border-radius: 10px;
-}
+.botonDropdown { 
+  color: deeppink !important; 
+  background-color: rgb(255, 255, 255) !important; 
+  border-color: aqua !important; 
+} 
 
-.Dropdown:hover .DropdownContent {
-  display: block;
-}
+.dropdown-cuerpo { 
+  min-width: 11.2rem !important; 
+  --bs-dropdown-padding-x: 0 !important; 
+  --bs-dropdown-padding-y: 0.5rem !important; 
+  border-color: aqua !important; 
+  --bs-dropdown-border-width: var(--bs-border-width) !important; 
+  --bs-dropdown-divider-bg: aqua !important; 
+} 
+ 
+.dropdwon-header { 
+  display: block !important; 
+  padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x) !important; 
+  margin-bottom: 0 !important; 
+  color: turquoise !important; 
+} 
+ 
+.dropdown-item { 
+  display: block !important; 
+  color: deeppink !important; 
+  text-align: inherit !important; 
+  text-decoration: none !important; 
+  white-space: nowrap !important; 
+  background-color: rgb(255, 255, 255) !important; 
+  border-radius: 2px !important; 
+  }
 
-.DropdownContent li {
-  padding: 10px;
-}
-
-/* -----book------ */
-
-
-/* --- image galery--- */
-.image-gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.image-gallery img {
-  max-width: 100%;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.5s ease-in-out;
-  opacity: 0;
-}
-
-.image-gallery img.visible {
-  opacity: 1;
-}
-
-
-
-
-/* Respondive design mobile*/
-@media (max-width: 320px) and (max-width: 600px) {
-
-  nav {
-    justify-content: center;
-    background: #C09AC3;
-    padding: 8px 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-}
-
-.Navbar {
-    padding: 6px 8px;
-}
-
-.Navbar li {
-    padding: 8px;
-    position:relative;
-    justify-content:center;
-}
-
-.Navbar li a {
-    font-size: 1rem;
-
-}
-
-.Navbar li a::after {
-    content: "";
-    width: 100%;
-    height: 2px;
-    background: #711288;
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    transform: scaleX(0);
-    transition: transform 0.2s ease-in-out;
-}
-
-
-.section-title {
-  margin-top: 1.8rem;
-  padding-bottom: 0.0rem;
-  line-height: 1;
-  font-size: 1.5rem;
-  font-weight: 500;
+  @media ( max-width: 500px ) {
+    .Navbar {
+      padding: 0 10px;
+    }
   
+    .Navbar li{
+      padding: 10px 10px 0 10px;
+    }
+  
+    .Navbar li a{
+      font-size: 14px;
+    }
+  
+    .card {
+      margin: 20px;
+    }
+    
+    .Navbar {
+      padding: 6px 8px;
+    }
+  
+    .Navbar li {
+      padding: 8px;
+      position:relative;
+      justify-content:center;
+    }
+  
+    .Navbar li a {
+      font-size: 1rem;
+    }
+  
+    .Navbar li a::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background: #711288;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      transform: scaleX(0);
+      transition: transform 0.2s ease-in-out;
+    }
+    .section-title {
+    margin-top: 1.8rem;
+    padding-bottom: 0.0rem;
+    line-height: 1;
+    font-size: 1.5rem;
+    font-weight: 500;
+    
+    }
+  }
 }
-}
-
-/* Estilos para pantallas medianas (tablets) */
-@media (min-width: 600px) and (max-width: 1024px) {
-  /* Aplica cambios de diseño para tablets aquí */
-}
-
-/* Estilos para pantallas grandes (escritorio) */
-@media (min-width: 1025px) {
-  /* Aplica cambios de diseño para escritorio aquí */
-}
-

@@ -11,12 +11,7 @@ h1 {
   font-family: "Poppins", sans-serif;
 }
 
-/* .section{
-  display: flex;
-  flex-direction: row-reverse;
-  position: relative;
-  top:-60px;
-} */
+
 
 
 
@@ -442,6 +437,8 @@ h2{
     .container-sm {
       max-width: 540px;
     }
+
+
   }
   @media (min-width: 768px) {
     .container,
@@ -492,6 +489,11 @@ h2{
     .youtube-video {
       max-width: 91%;
     }
+
+    #about h6{
+      font-size:10px;
+    }
+
 }
 
 @media ( max-width: 990px) {
