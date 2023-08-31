@@ -5,13 +5,19 @@ import { Container, Row, Col, UncontrolledCarousel } from "reactstrap";
 
 const items = [
   {
-    src: require("../../../../assets/img/image2.png"),
+    src: require("../../../../assets/img/fem1.jpg"),
     altText: "",
     caption: "",
     header: "",
   },
   {
-    src: require("../../../../assets/img/image1.png"),
+    src: require("../../../../assets/img/fem2.jpg"),
+    altText: "",
+    caption: "",
+    header: "",
+  },
+  {
+    src: require("../../../../assets/img/fem3.jpg"),
     altText: "",
     caption: "",
     header: "",

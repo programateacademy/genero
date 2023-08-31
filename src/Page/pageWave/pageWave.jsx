@@ -7,12 +7,11 @@ import Footer from '../../Components/Footer';
 
 
 
-
 const Page_Wave = () => {
   const { cardsProp, booksProp } = useParams();
 
   return (
-    <div>
+    <div className="page-wave">
 
       <Card jsonArray={jsonData[cardsProp]} />
       <MyBook books={jsonData[booksProp]} />

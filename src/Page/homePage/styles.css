@@ -81,6 +81,12 @@ h1 {
 
 
 
+.border{
+  background: #c394c8;
+  color: #711288;
+  margin-top: none;
+  
+}
 .section-title {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -90,14 +96,6 @@ h1 {
   bottom: -80px;
 }
 
-.section-title::after {
-  content: "";
-  position: absolute;
-  bottom: -3px; 
-  left: 45%;
-  width: 10%;
-  border-bottom: 2px solid #A65BAE; 
-}
 .section-title-border {
   width: 50px;
   height: 2px;
@@ -115,7 +113,7 @@ h1 {
   text-align: center !important;
 }
 .pt-4 {
-  padding-top: 1.5rem !important;
+  padding-top: 0rem !important;
 }
 .border-muted {
   color: #95a0ab !important;
@@ -155,16 +153,25 @@ h1 {
     overflow: hidden;
     display: block;
     align-items: center;
+    margin-bottom: 0px;
 }
 
 .carousel img{
     width: 50%;
     align-items: center;
+    margin-bottom: 0px;
 }
 
 /* ------- Wave animation --------- */
+/*.rotate{
+  transform: rotate(90deg);
+  margin-right: 1500px;
+}
 
-
+.rotate2{
+  transform: rotate(-90deg);
+  margin-left: 1500px;
+}*/
 .wave-effect {
   position: relative;
   left: 0;
