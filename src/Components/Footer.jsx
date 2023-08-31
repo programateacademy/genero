@@ -11,7 +11,7 @@ const socialLinks = [
 ];
 
 const footerLinks = [
-    { title: 'Recursos', links: [{ href: 'index.html', text: 'Literatura' }, { href: 'index.html', text: 'Historia' }, { href: 'index.html', text: 'Videos' }, { href: 'index.html', text: 'Imagenes' }] },
+    { title: 'Recursos', links: [{ href: "/pageWave/Cards-First-Wave/First-Wave-Books#demoPage", text: 'Literatura' }, { href: 'index.html', text: 'Historia' }, { href: '/#videos', text: 'Videos' }, { href: '/#gallery', text: 'Imagenes' }] },
     { title: 'Acerca de', links: [{ href: 'index.html', text: 'Feminismo' }, { href: 'index.html', text: 'Temas de genero' }, { href: 'index.html', text: 'Nous Cims Genero' }] },
     { title: 'Contacto', links: [{ href: 'index.html', text: 'Politica de privacidad' }, { href: 'index.html', text: 'Terminos de uso' }] },
 ];

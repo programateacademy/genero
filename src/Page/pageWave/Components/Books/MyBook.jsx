@@ -31,21 +31,22 @@ const MyBook = (props) => {
 
   return (
     <div>
-      <div className='demoPage'>
+      <div className='demoPage' id='demoPage'>
       <h1 className='Resource_title'>Referencias</h1> 
       <div class="section-title-border mt-3"></div>
         <div className="container_select mb-5" >
           <label htmlFor="searchBySelect">Buscar por: </label>
           <select id="searchBySelect" value={searchBy} onChange={handleSearchByChange} className="custom-select">
             <option value="title">Título</option>
-            <option value="author">Autor</option>
+            <option value="author">Autor(a)</option>
           </select>
           <BookDropdown books={books} onBookSelect={handleBookSelect} searchBy={searchBy} />
         </div>
         <div className='description'> 
         <div className='section-subtitle mb-2 mtop'>
         <h4>Título: {selectedBook.Title}</h4>
-        <p className='Text_author'>Autor: {selectedBook.Author}</p></div>
+        <p className='Text_author'>Autor(a): {selectedBook.Author}</p>
+        </div>
         <p className='Text_Synopsis text-center pt-4'>Sinopsis: {selectedBook.Synopsis}</p>
         </div>
         <div className='Container_book'>

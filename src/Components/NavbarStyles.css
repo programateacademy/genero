@@ -29,9 +29,8 @@ nav {
     position: relative;
     top: -10px;
     width: 100%;
-    height: auto;
-    z-index: -1;
-
+    height: 25vh;
+    opacity: 0.9;
 }
 
 
