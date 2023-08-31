@@ -49,6 +49,7 @@
 
 
 .app-container {
+  overflow-y: hidden;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -66,28 +67,6 @@
   flex: 1;
 }
 
-
-
-.Dropdown {
-  position: relative;
-}
-
-.DropdownContent {
-  display: none;
-  position: absolute;
-  background-color: #C09AC3;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  border-radius: 10px;
-}
-
-.Dropdown:hover .DropdownContent {
-  display: block;
-}
-
-.DropdownContent li {
-  padding: 10px;
-}
 
 
 /* ----pageWave--- */
