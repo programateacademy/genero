@@ -1,84 +1,41 @@
 import React, { useState } from "react";
 
 const AccessibilityComponent = () => {
-  const [backgroundColor, setBackgroundColor] = useState("");
-  const [textColor, setTextColor] = useState("");
-  const [fontSize, setFontSize] = useState("");
+  const backgroundColors = ["lightgray", "darkgray","white"];
+  const textColors = ["black", "darkgray", "gray"];
+  const fontSizes = ["16px", "18px", "20px"];
 
-  const handleBackgroundColorChange = (event) => {
-    document.body.style.backgroundColor = event.target.value;
-    setBackgroundColor(event.target.value);
+  const [backgroundIndex, setBackgroundIndex] = useState(0);
+  const [textIndex, setTextIndex] = useState(0);
+  const [fontSizeIndex, setFontSizeIndex] = useState(0);
+
+  const handleBackgroundChange = () => {
+    setBackgroundIndex((prevIndex) => (prevIndex + 1) % 3);
+    document.body.style.backgroundColor = backgroundColors[backgroundIndex];
   };
 
-  const handleTextColorChange = (event) => {
-    document.body.style.color = event.target.value;
-    setTextColor(event.target.value);
+  const handleTextColorChange = () => {
+    setTextIndex((prevIndex) => (prevIndex + 1) % 3);
+    document.body.style.color = textColors[textIndex];
   };
 
-  const handleFontSizeChange = (event) => {
-    document.body.style.fontSize = event.target.value;
-    setFontSize(event.target.value);
-  };
-
-  const colorOptions = [
-    { value: "", label: "Seleccione un color" },
-    { value: "white", label: "Blanco" },
-    { value: "lightgray", label: "Gris Claro" },
-    { value: "darkgray", label: "Gris" }
-  ];
-
-  const textColorOptions = [
-    { value: "", label: "Seleccione un color" },
-    { value: "black", label: "Negro" },
-    { value: "white", label: "Blanco" },
-    { value: "gray", label: "Gris Medio" }
-  ];
-
-  const fontSizeOptions = [
-    { value: "", label: "Seleccione un tamaño" },
-    { value: "16px", label: "Normal" },
-    { value: "18px", label: "Grande" },
-    { value: "20px", label: "Muy Grande" }
-  ];
-
-  const renderOptions = (options) => {
-    return options.map((option) => (
-      <option key={option.value} value={option.value}>
-        {option.label}
-      </option>
-    ));
+  const handleFontSizeChange = () => {
+    setFontSizeIndex((prevIndex) => (prevIndex + 1) % 3);
+    document.body.style.fontSize = fontSizes[fontSizeIndex];
   };
 
   return (
-    <div className="Container_Accessibility">
-      <h1>Accesibilidad</h1>
-      <label>
-        Color de Fondo:
-        <select value={backgroundColor} onChange={handleBackgroundColorChange}>
-          {renderOptions(colorOptions)}
-        </select>
-      </label>
-      <br />
-      <label>
-        Color de Texto:
-        <select value={textColor} onChange={handleTextColorChange}>
-          {renderOptions(textColorOptions)}
-        </select>
-      </label>
-      <br />
-      <label>
-        Tamaño de Texto:
-        <select value={fontSize} onChange={handleFontSizeChange}>
-          {renderOptions(fontSizeOptions)}
-        </select>
-      </label>
-      <p>
-        Esta sección te permite modificar el tamaño y el color de la página y los textos.
-      </p>
+    <div id="menu-accessibility">
+      <button onClick={handleBackgroundChange}>Cambiar Fondo</button>
+      <button onClick={handleTextColorChange}>Cambiar Color de Texto</button>
+      <button onClick={handleFontSizeChange}>Cambiar Tamaño de Fuente</button>
     </div>
   );
 };
 
 export default AccessibilityComponent;
+
+
+
 
 

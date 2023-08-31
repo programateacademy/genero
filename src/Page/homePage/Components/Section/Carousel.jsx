@@ -5,13 +5,19 @@ import { Container, Row, Col, UncontrolledCarousel } from "reactstrap";
 
 const items = [
   {
-    src: require("../../../../assets/img/image2.png"),
+    src: require("../../../../assets/img/fem1.jpg"),
     altText: "",
     caption: "",
     header: "",
   },
   {
-    src: require("../../../../assets/img/image1.png"),
+    src: require("../../../../assets/img/fem2.jpg"),
+    altText: "",
+    caption: "",
+    header: "",
+  },
+  {
+    src: require("../../../../assets/img/fem3.jpg"),
     altText: "",
     caption: "",
     header: "",
@@ -22,7 +28,7 @@ class Carousel extends React.Component {
   render() {
     return (
       <>
-          <Container className="container">
+          <Container className="container" id='gallery'>
             <Row className="row">
               <Col className="col-lg-8 offset-lg-2" lg="6">
                 <div className="carousel">
