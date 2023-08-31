@@ -36,12 +36,12 @@ const MyBook = (props) => {
           <label htmlFor="searchBySelect">Buscar por:</label>
           <select id="searchBySelect" value={searchBy} onChange={handleSearchByChange}>
             <option value="title">Título</option>
-            <option value="author">Autor</option>
+            <option value="author">Autor(a)</option>
           </select>
           <BookDropdown books={books} onBookSelect={handleBookSelect} searchBy={searchBy} />
         </div>
         <h4>Título: {selectedBook.Title}</h4>
-        <p className='Text_author'>Autor: {selectedBook.Author}</p>
+        <p className='Text_author'>Autor(a): {selectedBook.Author}</p>
         <p className='Text_Synopsis'>Sinopsis: {selectedBook.Synopsis}</p>
         <div className='Container_book'>
           {selectedBook.Flipbook !== 'Not_available' ? (
