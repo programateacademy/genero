@@ -1,7 +1,6 @@
 import React from "react";
 
 const WaveAnimation = ({ waveTitle }) => {
-  // Definir información sobre las ondas
   const waveShapes = [
     { shapeClass: "shape-one", waveClass: "wave-one" },
     { shapeClass: "shape-two", waveClass: "wave-two" },

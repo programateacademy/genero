@@ -14,7 +14,7 @@ const Page_Wave = () => {
     waveTitle = "OLEADA 1";
   } else if (cardsProp === "Cards-Second-Wave") {
     waveTitle = "OLEADA 2";
-  } // Puedes agregar más condiciones según sea necesario
+  }
 
   return (
     <div>

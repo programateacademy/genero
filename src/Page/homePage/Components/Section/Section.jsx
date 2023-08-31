@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import WaveAnimation from "./WaveAnimation";
+import WaveAnimation from "../Section/WaveAnimation";
 import Container from "./Container";
 import Carousel from "./Carousel";
 
