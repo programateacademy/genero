@@ -16,7 +16,6 @@ const footerLinks = [
     { title: 'Contacto', links: [{ href: 'index.html', text: 'Politica de privacidad' }, { href: 'index.html', text: 'Terminos de uso' }] },
 ];
 
-
 const Footer = () => {
     return (
         <div id="Footer">
@@ -47,12 +46,10 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className="Socialmedia">
-                            <nav className='Socialmedia'>
-                                {socialLinks.map((link, index) => (
-                                    <SocialIcon key={index} href={link.href} icon={link.icon} />
-                                ))}
-                            </nav>
-                        </div>  
+                        {socialLinks.map((link, index) => (
+                            <SocialIcon key={index} href={link.href} icon={link.icon} />
+                        ))}
+                     </div>  
                 </div>
             </div>
         </div>
