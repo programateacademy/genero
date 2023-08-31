@@ -7,7 +7,7 @@ const Container = () => {
     <div className="container">
       <div className="row">
         <div className="col-lg-8 offset-lg-2">
-          <p className="section-subtitle text-muted text-center pt-4">
+        <p className="section-subtitle text-muted text-center pt-4 text-align-right"> 
             La primera ola es un periodo de consolidación del feminismo como un
             movimiento social y político que demanda igualdad con el género
             masculino, motivadas por escuelas de pensamiento e ideales que
@@ -23,7 +23,7 @@ const Container = () => {
             estaba reconociendo que los derechos no eran para todas las
             personas, estaban restringidos para ciertas clases sociales.
           </p>
-          <div className="d-flex justify-content-center align-items-center mt-4">
+          <div className="d-flex justify-content-end align-items-center mt-4">
           <Button class="btn mt-4" href="/pageWave/Cards-First-Wave/First-Wave-Books">
             Profundizar <i class="mdi mdi-arrow-right"></i>
           </Button>{' '}

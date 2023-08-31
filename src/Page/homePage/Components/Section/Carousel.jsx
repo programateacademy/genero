@@ -1,7 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import { Container, Row, Col, UncontrolledCarousel } from "reactstrap";
+import { UncontrolledCarousel } from "reactstrap";
 
 const items = [
   {
@@ -28,15 +28,9 @@ class Carousel extends React.Component {
   render() {
     return (
       <>
-          <Container className="container">
-            <Row className="row">
-              <Col className="col-lg-8 offset-lg-2" lg="6">
                 <div className="carousel">
                   <UncontrolledCarousel items={items} />
                 </div>
-              </Col>
-            </Row>
-          </Container>
       </>
     );
   }
