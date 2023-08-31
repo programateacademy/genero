@@ -28,7 +28,7 @@ class Carousel extends React.Component {
   render() {
     return (
       <>
-          <Container className="container">
+          <Container className="container" id='gallery'>
             <Row className="row">
               <Col className="col-lg-8 offset-lg-2" lg="6">
                 <div className="carousel">

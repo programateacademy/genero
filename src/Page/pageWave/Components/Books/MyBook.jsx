@@ -30,7 +30,7 @@ const MyBook = (props) => {
 
   return (
     <div>
-      <div className='demoPage'>
+      <div className='demoPage' id='demoPage'>
       <h1 className='Resource_title'>Referencias</h1> 
         <div className="contaiter_select">
           <label htmlFor="searchBySelect">Buscar por:</label>

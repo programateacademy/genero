@@ -25,7 +25,7 @@ class Navbar extends Component {
     }
 
     scrollToBottom = () => {
-        const element = document.getElementById('bottom-section'); // Cambia 'bottom-section' por el ID de tu sección inferior
+        const element = document.getElementById('Footer'); // Cambia 'bottom-section' por el ID de tu sección inferior
         element.scrollIntoView({ behavior: 'smooth' });
     }
 
