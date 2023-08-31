@@ -90,14 +90,6 @@ h1 {
   bottom: -80px;
 }
 
-.section-title::after {
-  content: "";
-  position: absolute;
-  bottom: -3px; 
-  left: 45%;
-  width: 10%;
-  border-bottom: 2px solid #A65BAE; 
-}
 .section-title-border {
   width: 50px;
   height: 2px;
