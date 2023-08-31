@@ -11,8 +11,10 @@ nav {
 }
 
 .hidden {
-    display: none;
-}
+    opacity: 0;
+    transition: opacity 0.5s ease; 
+    pointer-events: none; 
+}  
 
 #Navbar {
     position: absolute;
@@ -25,13 +27,16 @@ nav {
     z-index: 100;
 }
 
-/* #photonav{
-    position: relative;
+#photonav{
     top: -10px;
     width: 100%;
     height: auto;
+}
 
-} */
+
+.faded-out {
+    opacity: 0;
+} 
 
 
 #Navbar li {
