@@ -7,7 +7,7 @@ function Card(props) {
     return (
         <div className="card-list">
             {jsonArray.map((card, index) => (
-                <div className="card" key={index}>
+                <div className="card-1" key={index}>
                     <div className='img-container'>
                         <img src={card.image} alt={card.title} />
                     </div>
