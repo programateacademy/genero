@@ -39,6 +39,7 @@
 }
 
 
+
 @media (min-width: 320px) and (max-width: 600px) {
 nav {
   padding: 20px 30px;
@@ -50,7 +51,8 @@ nav {
   background-color: rgb(255, 255, 255) !important; 
   border-color: aqua !important; 
 } 
-
+ 
+ 
 .dropdown-cuerpo { 
   min-width: 11.2rem !important; 
   --bs-dropdown-padding-x: 0 !important; 

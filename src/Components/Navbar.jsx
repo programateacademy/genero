@@ -15,7 +15,6 @@ componentWillUnmount() {
 }
 
 handleScroll = () => {
-  // Verifica la posición del scroll, por ejemplo, a 100 píxeles desde arriba
   if (window.scrollY > 100) {
     this.setState({ scrolled: true });
   } else {
