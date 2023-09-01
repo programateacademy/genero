@@ -238,9 +238,6 @@ h1 {
     color: white;
 }
 
-.purple {
-  color: #EF5AFF;
-}
 
 .grid-input {
     display: grid;
@@ -332,11 +329,6 @@ h1 {
 }
 
 
-h2{
-    
-    color: #711288;
-    transform: translate(-50%, -50%) rotate(-90deg);
-}
 
 .image{
     position: relative;

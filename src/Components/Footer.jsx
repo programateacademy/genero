@@ -13,7 +13,7 @@ const socialLinks = [
 const footerLinks = [
     { title: 'Recursos', links: [{ href: "/pageWave/Cards-First-Wave/First-Wave-Books#demoPage", text: 'Literatura' }, { href: 'index.html', text: 'Historia' }, { href: '/#videos', text: 'Videos' }, { href: '/#gallery', text: 'Imagenes' }] },
     { title: 'Acerca de', links: [{ href: 'index.html', text: 'Feminismo' }, { href: 'index.html', text: 'Temas de genero' }, { href: 'index.html', text: 'Nous Cims Genero' }] },
-    { title: 'Contacto', links: [{ href: 'index.html', text: 'Politica de privacidad' }, { href: 'index.html', text: 'Terminos de uso' }] },
+    { title: 'Contacto', links: [{ href: '/#about', text: 'Politica de privacidad' }, { href: 'index.html', text: 'Terminos de uso' }] },
 ];
 
 const Footer = () => {
@@ -33,9 +33,6 @@ const Footer = () => {
                     ))}
                     <div className="sb_footer-links_div">
                         <img src={logo_educamas} alt="Logo_educamas"></img>
-                        <div className="wrapper">
-                            {/* Contenido adicional aquí */}
-                        </div>
                     </div>
                 </div>
                 <hr></hr>
