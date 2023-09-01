@@ -4,6 +4,7 @@ import logo_educamas from '../assets/img/Logo-educamas.png';
 import SocialIcon from './SocialIcon';
 import { faFacebook, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
+
 const socialLinks = [
     { href: 'https://web.facebook.com/profile.php?id=100071201326480', icon: faFacebook },
     { href: 'https://www.linkedin.com/company/educam%C3%A1s/?viewAsMember=true', icon: faLinkedin },
@@ -11,9 +12,9 @@ const socialLinks = [
 ];
 
 const footerLinks = [
-    { title: 'Recursos', links: [{ href: 'index.html', text: 'Literatura' }, { href: 'index.html', text: 'Historia' }, { href: 'index.html', text: 'Videos' }, { href: 'index.html', text: 'Imagenes' }] },
-    { title: 'Acerca de', links: [{ href: 'index.html', text: 'Feminismo' }, { href: 'index.html', text: 'Temas de genero' }, { href: 'index.html', text: 'Nous Cims Genero' }] },
-    { title: 'Contacto', links: [{ href: 'index.html', text: 'Politica de privacidad' }, { href: 'index.html', text: 'Terminos de uso' }] },
+    { title: 'Recursos', links: [{ href: "#", text: 'Literatura' }, { href: '#', text: 'Historia' }, { href: '/#Tittle_videos', text: 'Videos' }, { href: '#', text: 'Imagenes' }] },
+    { title: 'Acerca de', links: [{ href: '#', text: 'Feminismo' }, { href: '#', text: 'Temas de genero' }, { href: '#', text: 'Nous Cims Genero' }] },
+    { title: 'Contacto', links: [{ href: '#', text: 'Politica de privacidad' }, { href: '#', text: 'Terminos de uso' }] },
 ];
 
 const Footer = () => {
@@ -49,7 +50,7 @@ const Footer = () => {
                         {socialLinks.map((link, index) => (
                             <SocialIcon key={index} href={link.href} icon={link.icon} />
                         ))}
-                     </div>  
+                    </div>
                 </div>
             </div>
         </div>

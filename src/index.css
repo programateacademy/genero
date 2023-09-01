@@ -13,3 +13,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Estilos para el menú de accesibilidad */
+#accessibility-menu {
+  position: fixed;
+  top: 50px;
+  left: 20px;
+  z-index: 1000;
+}
