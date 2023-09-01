@@ -36,7 +36,7 @@ const Footer = () => {
                 <div className="sb_footer-below">
                     <div className="sb_footer-copyright">
                         <p>
-                            @{new Date().getFullYear()} Codeinn. All right reserved.
+                            @{new Date().getFullYear()} Educamás Programáte Academy. All right reserved.
                         </p>
                     </div>
                     <div className="Socialmedia">
