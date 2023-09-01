@@ -28,7 +28,7 @@ const Form = () => {
         <div className='text'>
           <h1 className='white'>¡Tu voz importa y </h1>
           <h1 className='white'>queremos escucharte!</h1>
-          <h1 className='white'>Unete a nosotr@s</h1>
+          <h1 className='purple'>Unete a nosotras</h1>
         </div>
         <form className='grid-input' id='form' onSubmit={handleSubmit(onSubmit)}>
           <div className='content-input'>
