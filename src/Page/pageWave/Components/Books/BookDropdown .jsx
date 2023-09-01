@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import '../../styles.css'
 
 const BookDropdown = ({ books, onBookSelect, searchBy }) => {
   const [selectedItem, setSelectedItem] = useState(
