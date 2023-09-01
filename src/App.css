@@ -6,7 +6,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-.app-container {
+.outer-container {
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -14,17 +14,20 @@
   overflow-x: hidden;
 }
 
-.sticky-navbar {
-  width: 100%;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background-color:transparent;
-}
-
-.content {
+.app-container {
+  padding-top: 25%;
   flex: 1;
 }
+
+.sticky-navbar {
+  width: 100%;
+  position: fixed; 
+  top: 0;
+  z-index: 100;
+  background-color: transparent;
+}
+
+
 
 
 
@@ -68,6 +71,7 @@ nav {
   }
 
   @media ( max-width: 500px ) {
+
     .Navbar {
       padding: 0 10px;
     }

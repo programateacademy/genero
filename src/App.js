@@ -10,18 +10,21 @@ import './App.css';
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="app-container">
+      <div className="outer-container">
         <div className="sticky-navbar">
           <Navbar />
         </div>
-        <div className="content">
-          <Route path="/" exact component={Home} />
-          <Route path="/pageWave/:cardsProp/:booksProp" component={PageWave} />
+        <div className="app-container">
+          <div className="content">
+            <Route path="/" exact component={Home} />
+            <Route path="/pageWave/:cardsProp/:booksProp" component={PageWave} />
+          </div>
         </div>
       </div>
     </BrowserRouter>
   );
 }
+
 
 export default App;
 
