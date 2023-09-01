@@ -1,5 +1,4 @@
 import { Component } from "react";
-import "./NavbarStyles.css";
 import { HashLink as Link } from 'react-router-hash-link';
 import photo from '../assets/img/imagenav.png'
 

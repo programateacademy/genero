@@ -11,9 +11,9 @@ const socialLinks = [
 ];
 
 const footerLinks = [
-    { title: 'Recursos', links: [{ href: "/pageWave/Cards-First-Wave/First-Wave-Books#demoPage", text: 'Literatura' }, { href: 'index.html', text: 'Historia' }, { href: '/#videos', text: 'Videos' }, { href: '/#gallery', text: 'Imagenes' }] },
-    { title: 'Acerca de', links: [{ href: 'index.html', text: 'Feminismo' }, { href: 'index.html', text: 'Temas de genero' }, { href: 'index.html', text: 'Nous Cims Genero' }] },
-    { title: 'Contacto', links: [{ href: '/#about', text: 'Politica de privacidad' }, { href: 'index.html', text: 'Terminos de uso' }] },
+    { title: 'Recursos', links: [{ text: 'Literatura' }, { text: 'Historia' }, { text: 'Videos' }, { text: 'Imagenes' }] },
+    { title: 'Acerca de', links: [{ text: 'Feminismo' }, { text: 'Temas de genero' }, { text: 'Nous Cims Genero' }] },
+    { title: 'Contacto', links: [{ text: 'Politica de privacidad' }, { text: 'Terminos de uso' }] },
 ];
 
 const Footer = () => {
@@ -25,9 +25,7 @@ const Footer = () => {
                         <div className="sb_footer-links_div" key={index}>
                             <h4>{section.title}</h4>
                             {section.links.map((link, linkIndex) => (
-                                <a href={link.href} key={linkIndex}>
-                                    <p>{link.text}</p>
-                                </a>
+                                    <p key={linkIndex}>{link.text}</p>
                             ))}
                         </div>
                     ))}
@@ -46,7 +44,7 @@ const Footer = () => {
                         {socialLinks.map((link, index) => (
                             <SocialIcon key={index} href={link.href} icon={link.icon} />
                         ))}
-                     </div>  
+                    </div>  
                 </div>
             </div>
         </div>
