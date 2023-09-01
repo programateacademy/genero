@@ -18,8 +18,7 @@ const footerLinks = [
 
 const Footer = () => {
     return (
-
-        <div className="Footer">
+        <div id="Footer">
             <div className="sb_footer section_padding">
                 <div className="sb_footer-links">
                     {footerLinks.map((section, index) => (
@@ -55,25 +54,6 @@ const Footer = () => {
             </div>
         </div>
     )
-                    <hr></hr>
-                    <div className="sb_footer-below">
-                        <div className="sb_footer-copyright">
-                            <p>
-                                @{new Date().getFullYear()} Codeinn. All right reserved.
-                            </p>
-                        </div>
-                        <div className="Socialmedia">
-                            <nav className='Socialmedia'>
-                                {socialLinks.map((link, index) => (
-                                    <SocialIcon key={index} href={link.href} icon={link.icon} />
-                                ))}
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>   
-         )
 }
 
-            export default Footer;
+export default Footer;
