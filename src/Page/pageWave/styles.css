@@ -23,7 +23,8 @@
 .img-container img{
   border-radius: 10px;
   box-shadow: -20px -20px #00E6CA; 
-  max-width: 450px;
+  max-width: 20vh;
+  max-height: 20vh;
 }
 
 .analytics{
