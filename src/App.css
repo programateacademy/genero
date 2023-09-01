@@ -489,6 +489,7 @@ nav {
 
 .grid-input input[type="text"] {
   width: 80%;
+  border-radius: 10px;
   border: #A65BAE;
   height: 30px;
   background: #C09AC3;
@@ -503,6 +504,7 @@ nav {
 }
 
 .grid-input textarea{
+  border-radius: 10px;
   resize: none;
   background: #C09AC3;
   height: 180px;
@@ -569,9 +571,6 @@ border-radius: 5px;
 color: white;
 }
 
-#Footer a:hover{
-  color: #711288;   
-}
 
 .sb_footer{
   display: flex;
@@ -623,7 +622,6 @@ color: white;
   font-size: 20px;
   line-height: 20px;
   margin: 0.5rem 0;
-  cursor: pointer;
 }
 
 .sb_footer-below{
@@ -667,7 +665,7 @@ hr {
       line-height: 37px;
   }
 }
-  
+
 @media ( max-width: 425px) {
   #about {
     margin-inline: 20px;

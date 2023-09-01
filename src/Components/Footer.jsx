@@ -1,5 +1,4 @@
 import React from "react";
-import './Footer.css';
 import logo_educamas from '../assets/img/Logo-educamas.png';
 import SocialIcon from './SocialIcon';
 import { faFacebook, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
