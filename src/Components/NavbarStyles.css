@@ -1,4 +1,3 @@
-/**/
 nav {
     position: sticky;
     display: flex;
@@ -11,8 +10,10 @@ nav {
 }
 
 .hidden {
-    display: none;
-}
+    opacity: 0;
+    transition: opacity 0.5s ease; 
+    pointer-events: none; 
+}  
 
 #Navbar {
     position: absolute;

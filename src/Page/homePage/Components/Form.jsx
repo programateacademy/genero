@@ -20,14 +20,6 @@ const Form = () => {
       'LRxNH6JKhqn7_y75P'
     )
 
-    // .then((response) => {
-    //   console.log("Correo enviado exitosamente", response);
-    // })
-    // .catch((error) => {
-    //   console.error("Error al enviar el correo", error);
-    // });
-    
-    // console.log(dataForm);
     reset()
   };
   return (
@@ -36,7 +28,7 @@ const Form = () => {
         <div className='text'>
           <h1 className='white'>¡Tu voz importa y </h1>
           <h1 className='white'>queremos escucharte!</h1>
-          <h1 className='purple'>Unete a nosotras</h1>
+          <h1 className='purple'>Unete a nosotr@s</h1>
         </div>
         <form className='grid-input' id='form' onSubmit={handleSubmit(onSubmit)}>
           <div className='content-input'>

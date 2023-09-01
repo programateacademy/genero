@@ -110,6 +110,8 @@ hr {
 } 
 
 @media screen and (max-width: 550px){
+
+
     .sb_footer-heading h1{
         font-size: 34px;
         line-height: 42px;
@@ -140,3 +142,4 @@ hr {
         line-height: 37px;
     }
 }
+
