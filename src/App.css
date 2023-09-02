@@ -37,6 +37,7 @@ body {
   top: 0;
   z-index: 100;
   background-color: transparent;
+  height: 15vh;
 }
 
 nav {
@@ -69,7 +70,7 @@ nav {
 }
 
 #photonav{
-  position: relative;
+  position: absolute;
   width: 100%;
   height: auto;
   z-index: -1;
@@ -496,6 +497,7 @@ nav {
   background: #C09AC3;
   color: white;
   font-size: 14px;
+  padding: 0 5px;
 }
 
 
