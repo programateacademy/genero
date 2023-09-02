@@ -811,7 +811,6 @@ color: white;
   height: auto;
 }
 
-
 .Socialmedia{
   display: flex;
   flex-direction: row;
@@ -820,6 +819,12 @@ color: white;
 
 .Socialmedia a{
   color: white;
+}
+
+.Socialmedia a:hover{
+  color: #711288;
+  font-size: 17px;
+  transition: all .4s;
 }
 
 .Socialmedia img{
