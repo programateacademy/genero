@@ -514,6 +514,7 @@ nav {
   width: 185%;
   color: white;
   font-size: 16px;
+  padding: 0 5px;
 }
 
 .grid-input textarea::-webkit-scrollbar{
