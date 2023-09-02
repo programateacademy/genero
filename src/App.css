@@ -506,6 +506,10 @@ nav {
   font-size: 22px;
 }
 
+.content-input .red {
+  font-size: 14px;
+}
+
 .grid-input textarea{
   border-radius: 10px;
   resize: none;
