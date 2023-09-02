@@ -37,6 +37,7 @@ body {
   top: 0;
   z-index: 100;
   background-color: transparent;
+  height: 15vh;
 }
 
 nav {
@@ -69,7 +70,7 @@ nav {
 }
 
 #photonav{
-  position: relative;
+  position: absolute;
   width: 100%;
   height: auto;
   z-index: -1;
@@ -496,12 +497,17 @@ nav {
   background: #C09AC3;
   color: white;
   font-size: 14px;
+  padding: 0 5px;
 }
 
 
 .content-input p{
   color: white;
   font-size: 22px;
+}
+
+.content-input .red {
+  font-size: 14px;
 }
 
 .grid-input textarea{
@@ -512,6 +518,7 @@ nav {
   width: 185%;
   color: white;
   font-size: 16px;
+  padding: 0 5px;
 }
 
 .grid-input textarea::-webkit-scrollbar{
@@ -804,7 +811,6 @@ color: white;
   height: auto;
 }
 
-
 .Socialmedia{
   display: flex;
   flex-direction: row;
@@ -813,6 +819,12 @@ color: white;
 
 .Socialmedia a{
   color: white;
+}
+
+.Socialmedia a:hover{
+  color: #711288;
+  font-size: 17px;
+  transition: all .4s;
 }
 
 .Socialmedia img{
