@@ -422,7 +422,7 @@ nav {
   margin-inline: 80px;
 }
 #about h6{
-  color: #282727;
+  color: white;
 }
 
 .image-with-overlay-image {
@@ -432,7 +432,7 @@ nav {
 
 .image-with-overlay-overlay {
   background-color: #C09AC3;
-  color: black;
+  color: white;
   padding: 12px;
   margin-left: -40px; 
   border-radius: 10px;
