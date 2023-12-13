@@ -1,0 +1,19 @@
+.chart-container {
+    text-align: center;
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+  }
+  
+  .chart-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .chart-wrapper {
+    width: 80%;
+    margin: auto;
+    border: 1px solid #ddd; /* Bordes opcionales */
+    border-radius: 8px; /* Bordes opcionales */
+    overflow: hidden; /* Para ocultar cualquier desbordamiento de la gráfica */
+  }
+  
