@@ -1,0 +1,107 @@
+.containerWrapper {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+  }
+  
+  .containerRow {
+    display: flex;
+    flex-direction: row; /* Coloca los elementos en una fila */
+  }
+  
+  /* Resto de tus estilos para containerTotal, containerTotales, y containerNumber */
+
+.containerTotal {
+    display: flex;
+    background-color: #97bdf5;
+    max-width: 600px; /* Establece un ancho máximo más pequeño */
+    width: 100%; /* Hace que el contenedor sea 100% del ancho del contenedor padre */
+    height: 60px;
+    border-radius: 25px;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    margin: 20px 10px; /* Ajusta el margen para espacio arriba y abajo y a la izquierda */
+  }
+  
+  .textAttention {
+    font-family: "Yusei Magic";
+    text-align: center;
+    margin-top: -5px; /* Ajusta el margen superior para subir el texto */
+    font-size: 1.2rem; /* Tamaño de fuente responsive utilizando rem o em */
+  }
+  
+.containerTotales {
+    display: flex;
+    background-color: #DCBADB;
+    max-width: 290px; /* Establece un ancho máximo más pequeño */
+    width: 100%; /* Hace que el contenedor sea 100% del ancho del contenedor padre */
+    height: 50px;
+    border-radius: 25px;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    margin: 20px 10px; /* Ajusta el margen para espacio arriba y abajo y a la izquierda */
+}
+
+.textTotal {
+    font-family: "Yusei Magic";
+    text-align: center;
+    margin-top: -5px; /* Ajusta el margen superior para subir el texto */
+    font-size: 1.2rem; /* Tamaño de fuente responsive utilizando rem o em */
+}
+
+.containerNumber {
+    display: flex;
+    background-color: #97bdf5;
+    max-width: 290px; /* Establece un ancho máximo más pequeño */
+    width: 100%; /* Hace que el contenedor sea 100% del ancho del contenedor padre */
+    height: 50px;
+    border-radius: 25px;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    margin: 20px 10px; /* Ajusta el margen para espacio arriba y abajo y a la izquierda */
+
+}
+
+.textNumber {
+    font-family: "Yusei Magic";
+    text-align: center;
+    margin-top: -5px; /* Ajusta el margen superior para subir el texto */
+    font-size: 1.2rem; /* Tamaño de fuente responsive utilizando rem o em */
+}
+
+.containerfilter {
+    display: flex;
+    background-color: #97bdf5;
+    max-width: 290px; /* Establece un ancho máximo más pequeño */
+    width: 100%; /* Hace que el contenedor sea 100% del ancho del contenedor padre */
+    height: 50px;
+    border-radius: 25px;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    margin: 20px 10px; /* Ajusta el margen para espacio arriba y abajo y a la izquierda */
+}
+
+.textfilter {
+    font-family: "Yusei Magic";
+    text-align: center;
+    margin-top: -5px; /* Ajusta el margen superior para subir el texto */
+    font-size: 1.2rem; /* Tamaño de fuente responsive utilizando rem o em */
+}
+
+.containerfilterTotal {
+    display: flex;
+    background-color: #DCBADB;
+    max-width: 290px; /* Establece un ancho máximo más pequeño */
+    width: 100%; /* Hace que el contenedor sea 100% del ancho del contenedor padre */
+    height: 50px;
+    border-radius: 25px;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    margin: 20px 10px; /* Ajusta el margen para espacio arriba y abajo y a la izquierda */
+}
+
+.textfilterTotal {
+    font-family: "Yusei Magic";
+    text-align: center;
+    margin-top: -5px; /* Ajusta el margen superior para subir el texto */
+    font-size: 1.2rem; /* Tamaño de fuente responsive utilizando rem o em */
+}
