@@ -1,0 +1,105 @@
+.wrapperContainer {
+    display: flex;
+    flex-direction: column; /* Places the elements in a column */
+  }
+  
+.rowContainer {
+    display: flex;
+    flex-direction: row; /* Place the elements in a row */
+}
+
+.totalAttentionContainer {
+    display: flex;
+    background-color: #97bdf5;
+    max-width: 600px;
+    width: 100%; 
+    height: 60px;
+    border-radius: 25px;
+    justify-content: center; 
+    align-items: center; 
+    margin: 20px 10px; 
+}
+  
+.totalAttentionText {
+    font-family: "Yusei Magic";
+    text-align: center;
+    margin-top: -5px; 
+    font-size: 1.2rem; 
+}
+  
+.totalRowContainer {
+    display: flex;
+    background-color: #DCBADB;
+    max-width: 290px; 
+    width: 100%; 
+    height: 50px;
+    border-radius: 25px;
+    justify-content: center; 
+    align-items: center; 
+    margin: 20px 10px; 
+}
+
+.totalRowText {
+    font-family: "Yusei Magic";
+    text-align: center;
+    margin-top: -5px; 
+    font-size: 1.2rem; 
+}
+
+.numberContainer {
+    display: flex;
+    background-color: #97bdf5;
+    max-width: 290px; 
+    width: 100%; 
+    height: 50px;
+    border-radius: 25px;
+    justify-content: center; 
+    align-items: center; 
+    margin: 20px 10px; 
+
+}
+
+.numberText {
+    font-family: "Yusei Magic";
+    text-align: center;
+    margin-top: -5px; 
+    font-size: 1.2rem; 
+}
+
+.filterContainer {
+    display: flex;
+    background-color: #97bdf5;
+    max-width: 290px; 
+    width: 100%; 
+    height: 50px;
+    border-radius: 25px;
+    justify-content: center; 
+    align-items: center; 
+    margin: 20px 10px; 
+}
+
+.filterText {
+    font-family: "Yusei Magic";
+    text-align: center;
+    margin-top: -5px; 
+    font-size: 1.2rem; 
+}
+
+.totalFilterContainer {
+    display: flex;
+    background-color: #DCBADB;
+    max-width: 290px; 
+    width: 100%; 
+    height: 50px;
+    border-radius: 25px;
+    justify-content: center; 
+    align-items: center; 
+    margin: 20px 10px; 
+}
+
+.totalFilterText {
+    font-family: "Yusei Magic";
+    text-align: center;
+    margin-top: -5px; 
+    font-size: 1.2rem; 
+}
