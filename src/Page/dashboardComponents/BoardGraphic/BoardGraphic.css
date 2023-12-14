@@ -1,6 +1,12 @@
-#Localidad{
-    text-align: center;
-    font-family: yuseiMagic;
-    font-size: 1.5rem;
+.container-Localidad {
+    text-align: center; 
+    font-family: 'Yusei Magic', sans-serif;
+  }
+  
+  #Localidad {
     background-color: #DCBADB;
-}
+    padding: 10px;
+  }
+  
+
+  

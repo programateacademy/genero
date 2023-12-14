@@ -31,7 +31,7 @@ import {
         {
           label: "Localidad",
           data: Registro,
-          backgroundColor: '#E0B0FF', // Color de fondo de las barras        
+          backgroundColor: '#E0B0FF', // Color de fondo de las barras                
           
         },
       ],
@@ -46,7 +46,7 @@ import {
   
       <div className="container-Localidad">           
       <div>    
-      <br></br><br></br>   
+      <br></br>  
       <h1 id = "Localidad"  >Detalle por Localidad</h1>
         <Bar options={options} data={data} />
       </div>
