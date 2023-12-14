@@ -3,7 +3,7 @@ import './BoardGraphic.css';
 
 const BoardGraphic = () => {
     return (
-        <>Desde board Graphic</>
+        <></>
     );
 };
 

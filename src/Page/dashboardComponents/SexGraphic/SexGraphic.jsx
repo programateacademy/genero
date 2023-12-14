@@ -41,6 +41,23 @@ const SexGraphic = () => {
         ],
     };
 
+    const options = {
+
+        responsive: true,
+
+        scales: {
+            y: {
+              min: 0,
+            },
+        },      
+
+        plugins: {
+            legend: {
+              display: true,
+            },
+        },
+    };
+
 
     return (
       <div className="sexGraphic">
@@ -54,7 +71,7 @@ const SexGraphic = () => {
         {/* Graphic container*/}
         <div className="sexGraphicContainer">
           {/* Graphic */}
-          <Line data={data} />
+          <Line data={data} options={options}/>
         </div>
       </div>
     );
