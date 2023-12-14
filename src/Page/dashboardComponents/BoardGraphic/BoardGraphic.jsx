@@ -23,7 +23,7 @@ import {
   );
   const BoardGraphic = () => {
     const Localidad = ["Martires", "Bosa", "Ciudad Bolivar ", "Kennedy", "Rafael Uribe Uribe ", "San Cristobal", "Santa Fé", "Usme", "Suba", "Engativa", "Tunjuelito", "Fuera de Bogotá", "Chapinero", "Barrios Unidos", "Fontibón", "Usaquén", "Puente Aranda", "Antonio Nariño", "Sin información disponible", "La candelaria", "Teusaquillo"];
-    const Registro = [2000, 1800, 800, 700, 600, 500, 1000, 1000, 800, 200, 40, 30, 20, 50, 10, 10];
+    const Registro = [2000, 1800, 800, 700, 600, 500, 1000, 1000, 800, 200, 40, 30, 20, 50, 15, 10];
   
     const data = {
       labels: Localidad,
