@@ -43,6 +43,17 @@ scrollToBottom = () => {
                         <ul id="Navbar" className={this.state.clicked ? "active" : ""}>
                             <li><a className="active" href="/">Inicio</a></li>
                             <li><Link to="/#about" smooth={true}>Sobre</Link></li>
+
+                            <li className="dropdown">
+                                <a href="#" className="dropbtn">Datos <i className="fas fa-caret-down"></i></a>
+                                <div className="dropdown-content">
+                                    <a href="/dashboard">Dashboard</a>
+                                   
+                                </div>
+                            </li>
+
+
+
                             <li className="dropdown">
                                 <a href="#" className="dropbtn">Recursos <i className="fas fa-caret-down"></i></a>
                                 <div className="dropdown-content">
@@ -57,7 +68,7 @@ scrollToBottom = () => {
                         <i id="Bar" className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
                     </div>
                 </nav>
-                <img id="photonav" src={photo} alt="foto_menu" className={`${this.state.scrolled ? "hidden" : ""} ${this.state.scrolled ? "faded-out" : ""}`}/>
+               {/* <img id="photonav" src={photo} alt="foto_menu" className={`${this.state.scrolled ? "hidden" : ""} ${this.state.scrolled ? "faded-out" : ""}`}/>}*/}
             </>
         )
     }
