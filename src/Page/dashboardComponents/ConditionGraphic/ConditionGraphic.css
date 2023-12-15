@@ -1,0 +1,33 @@
+.tittleCondition {
+    display: flex;
+    background-color: #97bdf5;
+    max-width: 600px;
+    width: 100%;
+    height: 62px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    margin: -560px 10px 50px auto; /* Ajusta el margen para espacio arriba, abajo, y a la izquierda; auto a la derecha */
+  }
+  
+  .textTitleCondition {
+    font-family: "Yusei Magic";
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  .containerGraphicCondition{
+    display: flex;
+    background-color: #FFF0FF;
+    max-width: 600px;
+    width: 100%;
+    height: 380px;
+    justify-content: center;
+    align-items: center;
+    
+    margin-left: auto; /* Esto mueve el componente hacia la derecha */
+  }
+
+.tittleGraphicCondition{
+    margin: 48px 10px;
+}
