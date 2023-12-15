@@ -1,6 +1,5 @@
 import React from "react";
 import './BoardGraphic.css';
-<<<<<<< HEAD
 import { Bar } from 'react-chartjs-2';
 import {
     Chart as ChartJS,
@@ -56,12 +55,6 @@ import {
       
       
       
-=======
-
-const BoardGraphic = () => {
-    return (
-        <></>
->>>>>>> sexualOrientationGraphic
     );
   };
   
