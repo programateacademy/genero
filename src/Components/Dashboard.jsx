@@ -16,10 +16,10 @@ import YearButtons from "../Page/dashboardComponents/YearButtons/YearButtons";
 const Dashboard = () => {
     return (
         // Container for all lot of components of DashboardComponents
-        <div className='componentsContainer'>
-            <BoardGraphic />
+        <div  className='componentsContainer'>
+            <div className="column" > <BoardGraphic />
             <br></br>
-            <ConditionGraphic />
+            <ConditionGraphic /> </div>
             <br></br>
             <Download />
             <br></br>
