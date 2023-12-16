@@ -34,9 +34,9 @@ const GraphicCondition = () => {
         {
           label: "Numero de casos totales",
           data: Cantidad,
-          borderColor: ["rgba(49, 140, 231, 1)", "rgba(196, 147, 195, 1)", "rgba(106, 169, 233, 1)", "rgba(224, 176, 255, 1)"],
+          borderColor: ["rgba(224, 176, 255, 1)", "rgba(106, 169, 233, 1)"],
           borderWidth: 2,
-          backgroundColor: ["rgba(49, 140, 231, 1)", "rgba(196, 147, 195, 1)", "rgba(106, 169, 233, 1)", "rgba(224, 176, 255, 1)"],
+          backgroundColor: ["rgba(224, 176, 255, 1)", "rgba(106, 169, 233, 1)"],
         },
       ],
     };

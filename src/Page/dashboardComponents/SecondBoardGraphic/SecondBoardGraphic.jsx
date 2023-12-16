@@ -31,7 +31,7 @@ import {
         {
           label: "Edad",
           data: Registro,
-          backgroundColor: '#E0B0FF', // Color de fondo de las barras        
+          backgroundColor: '#6AA9E9', // Color de fondo de las barras        
           
         },
       ],

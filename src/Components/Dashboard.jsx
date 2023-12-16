@@ -17,29 +17,66 @@ const Dashboard = () => {
     return (
         // Container for all lot of components of DashboardComponents
         <div  className='componentsContainer'>
-            <div className="column" > <BoardGraphic />
-            <br></br>
-            <ConditionGraphic /> </div>
-            <br></br>
-            <Download />
-            <br></br>
-            <Graphics />
-            <br></br>
-            <IdentityGraphic />
-            <br></br>
-            <SecondBoardGraphic />
-            <br></br>
-            <SecondGraphic />
-            <br></br>
-            <SexGraphic />
-            <br></br>
-            <SexualOrientationGraphic />
-            <br></br>
+            
+            <div className="container-tittle">
             <Tittle />
+            </div>
+            <div className="column" >            
+            
+            <br></br>
+            <br></br>
             <br></br>
             <TotalAttention />
             <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
             <YearButtons />
+            <br></br>
+            <di className="container-graphics">
+            <Graphics />
+            <br></br>            
+            </di>
+            <div className="container-Secondgraphics">
+            <SecondGraphic /> 
+            </div>
+                       
+            <br></br>
+            <BoardGraphic/>
+            <br></br>
+            <SecondBoardGraphic />
+            <br></br>
+            <div className="container-Sex">
+            <SexGraphic />
+
+            <div className="container-SexualOrientation">
+            <br></br>
+            <SexualOrientationGraphic />
+            </div>        
+            </div>
+            <div className="container-Identity">
+            <br></br>
+            <IdentityGraphic />
+            <br></br>
+            <div>
+                
+            </div>
+            <div className="container-Condition">
+            <ConditionGraphic />
+
+            </div>
+             </div>
+            <br></br>   
+
+            </div>
+
+            
+                     
+            <Download />         
+                      
+                        
+                        
+                        
         </div>
     );
 };

@@ -1,11 +1,13 @@
 .container-Edad {
     text-align: center; 
     font-family: 'Yusei Magic', sans-serif;
+    margin: 20px 0;
+    padding: 10px;
   }
   
   #Edad {
     text-align: center;
-    background-color: #DCBADB;
+    background-color: #6AA9E9;
     padding: 10px;
   }
   

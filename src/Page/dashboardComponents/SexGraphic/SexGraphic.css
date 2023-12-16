@@ -17,6 +17,7 @@
 }
   
 .sexGraphicContainer {
+    
     display: flex;
     background-color: #cedef7;
     max-width: 630px;

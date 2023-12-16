@@ -1,0 +1,57 @@
+.tittleDownload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tittleDownloadOne {
+    display: flex;
+    background-color: #97bdf5;
+    max-width: 1200px;
+    width: 100%;
+    height: 60px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 10px;
+  }
+  
+  .textDownload {
+    font-family: "Yusei Magic";
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  .containerMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .containerDownload {
+    background-color: #FFF0FF;
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    margin: 20px 10px;
+  }
+  
+  .textDownloadOne,
+  .textDownloadTwo {
+    font-family: "Yusei Magic";
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imageContainer img {
+    width: 200px; /* Tamaño deseado para las imágenes */
+    height: auto;
+    margin: 10px; /* Ajusta el margen entre las imágenes */
+  }
+  
