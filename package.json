@@ -14,17 +14,11 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.1",
-<<<<<<< HEAD
     "chart.js": "^4.4.1",
     "emailjs-com": "^3.2.0",
     "mdi-react": "^9.2.0",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
-=======
-    "emailjs-com": "^3.2.0",
-    "mdi-react": "^9.2.0",
-    "react": "^18.2.0",
->>>>>>> 6b89638dff98c26533f20c329fe290f7d1b9f51d
     "react-dom": "^18.2.0",
     "react-fontawesome": "^1.7.1",
     "react-hook-form": "^7.45.4",
