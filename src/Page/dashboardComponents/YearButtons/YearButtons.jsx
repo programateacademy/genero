@@ -1,15 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 import './YearButtons.css'; // Agrega la importación directa
+import data from '../../../assets/Services/Data/Data.json';
 
-const YearButtons = () => {
-  return (
-    <div className="ButtonsContainer">
-      {/* Primer boton */}
+function YearButtons () {
+  const [selectedAño, setselectedAño] = useState(null);
+  const SelectedAño = (item) =>{
+    setselectedAño(item);
+  }
+
+const selectedAñoData = data.find((item) => item.año === selectedAño);
+console.log(selectedAñoData);
+
+
+return(
+  <div className="ButtonsContainer">
+      {/* Primer boton */}s
       <div className="ButtonOne">
-        <div className="textButtonOne">
-          <h3>2019</h3>
-        </div>
+        <button className="textButtonOne"  text="2019" onclick={() => SelectedAño(`2019`)}/>
       </div>
+
+
 
       {/* Segundo boton */}
       <div className="ButtonTwo">
@@ -41,7 +51,7 @@ const YearButtons = () => {
 
     </div>
   );
-}
+};
 
 
 export default YearButtons;
