@@ -34,38 +34,33 @@ const Dashboard = () => {
             </div>
 
             <div className="column" >            
-                <br></br>
-                <br></br>
-                <br></br>
-                <TotalAttention />
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <YearButtons onYearSelect={handleSelectedAño} jsonData={Data} />
-                <br></br>
-
-                <div className="container-graphics">
-                    <Graphics selectedAñoContent={selectedAñoContent}/>
-                    <br></br>            
-                </div>
-
-                <div className="container-Secondgraphics">
-                    <SecondGraphic selectedAñoContent={selectedAñoContent}/> 
-                </div>   
-
-                <br></br>
-
-                <div className="container-BoardGraphic">
-                    <BoardGraphic selectedAñoContent={selectedAñoContent}/>
-                </div>
-
-                <br></br>
-                <SecondBoardGraphic />
-                <br></br>
-
-                <div className="container-Sex">
-                    <SexGraphic selectedAñoContent={selectedAñoContent} />
+            
+            <br></br>
+            <br></br>
+            <br></br>
+            <TotalAttention />
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <YearButtons onYearSelect={handleSelectedAño} jsonData={Data} />
+            <br></br>
+            <di className="container-graphics">
+            <Graphics selectedAñoContent={selectedAñoContent}/>
+            <br></br>            
+            </di>
+            <div className="container-Secondgraphics">
+            <SecondGraphic selectedAñoContent={selectedAñoContent}/> 
+            </div>           
+            <br></br>
+            <div className="container-BoardGraphic">
+            <BoardGraphic selectedAñoContent={selectedAñoContent}/>
+            </div>
+            <br></br>
+            <SecondBoardGraphic />
+            <br></br>
+            <div className="container-Sex">
+            <SexGraphic selectedAñoContent={selectedAñoContent} />
 
                     <div className="container-SexualOrientation">
                         <br></br>
