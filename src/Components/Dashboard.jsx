@@ -55,7 +55,7 @@ const Dashboard = () => {
             <BoardGraphic selectedAñoContent={selectedAñoContent}/>
             </div>
             <br></br>
-            <SecondBoardGraphic />
+            <SecondBoardGraphic selectedAñoContent={selectedAñoContent}/>
             <br></br>
             <div className="container-Sex">
             <SexGraphic selectedAñoContent={selectedAñoContent} />

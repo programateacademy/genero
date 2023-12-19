@@ -21,16 +21,27 @@ import {
     Legend,
     Filler
   );
-  const SecondBoardGraphic = () => {
-    const Edad = ["25-29", "30-34", "35-39", "40-44", "45-49", "50-54", "55-59", "60-64", "65-69", "70-74", "75-79", "80-84", "85-89", "90-94", "95-99", "100+", "Sin información"];
-    const Registro = [2000, 1800, 800, 700, 600, 500, 1000, 1000, 800, 200, 40, 30, 20, 50, 15, 10];
-  
+  const SecondBoardGraphic = ({selectedAñoContent}) => {
+    const Edad = selectedAñoContent.map((item) => item.grupo_edad);
+    const conteoEdad = Edad.reduce((acc, elemento) => {
+      acc[elemento] = (acc[elemento] || 0) + 1;
+      return acc;
+    }, {});
+
+     // Configuración de resultados
+     const edad = Object.keys(conteoEdad);
+     const Cantidad = Object.values(conteoEdad);
+
+     console.log(edad); // Array de elementos únicos en estrato
+    console.log(Cantidad)
+
+
     const data = {
-      labels: Edad,
+      labels: edad,
       datasets: [
         {
           label: "Edad",
-          data: Registro,
+          data: Cantidad,
           backgroundColor: '#6AA9E9', // Color de fondo de las barras        
           
         },

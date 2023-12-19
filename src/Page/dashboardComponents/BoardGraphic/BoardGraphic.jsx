@@ -38,7 +38,7 @@ import {
 
 
     const data = {
-      labels: Localidad,
+      labels: localidad,
       datasets: [
         {
           label: "Localidad",
