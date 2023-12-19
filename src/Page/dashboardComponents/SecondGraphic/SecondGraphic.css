@@ -1,0 +1,43 @@
+.tittleTwo {
+    display: flex;
+    background-color: #97bdf5;
+    max-width: 600px;
+    width: 100%;
+    height: 60px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    margin: -560px 10px 50px auto;
+  }
+  
+  .textTitleTwo {
+    font-family: "Yusei Magic";
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  .containerGraphicTwo {
+    display: flex;
+    background-color: #FFF0FF;
+    max-width: 600px;
+    width: 100%;
+    height: 380px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+    /* Styles for larger screens */
+    @media screen and (min-width: 700px) {
+      .containerGraphicTwo {
+        margin-top: 40px;
+      }
+    }
+    
+    /* Styles for smaller screens */
+    @media screen and (max-width: 450px) {
+      .tittleTwo {
+        margin-top: -20px;
+      }
+    }
+    

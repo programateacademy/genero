@@ -1,0 +1,72 @@
+.ButtonsContainer {
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    align-items: flex-start;
+    gap: 5vw; /* Espaciado relativo al ancho de la ventana */
+    margin-right: 2vw; /* Margen relativo al ancho de la ventana */
+  }
+  
+  .ButtonOne,
+  .ButtonThree,
+  .ButtonFive {
+    background-color: #DCBADB;
+    width: 7vw; /* Ancho relativo al ancho de la ventana */
+    height: 7vw; /* Alto relativo al ancho de la ventana */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid #DCBADB; /* Añadir un borde */ 
+     button{
+      font-family: "Yusei Magic";
+      font-size: 1.2rem;
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+
+  .ButtonTwo,
+  .ButtonFour {
+    background-color: #97bdf5;
+    width: 7vw; /* Ancho relativo al ancho de la ventana */
+    height: 7vw; /* Alto relativo al ancho de la ventana */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid #97bdf5; /* Añadir un borde */
+    button{
+      font-family: "Yusei Magic";
+      font-size: 1.2rem;
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+  
+  .textButtonOne,
+  .textButtonTwo,
+  .textButtonThree,
+  .textButtonFour,
+  .textButtonFive {
+    font-family: "Yusei Magic";
+    font-size: 1.2rem;
+  }
+  
+
+  /* Estilos para pantallas más grandes */
+@media screen and (max-width: 700px) {
+    .ButtonsContainer {
+      margin-top: -100px;
+    }
+  }
+  
+  /* Estilos para pantallas más pequeñas */
+  @media screen and (min-width: 450px) {
+    .ButtonsContainer {
+      margin-top: -120px;
+    }
+  }
+  

@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    background-color: #DCBADB;
+    width: 100%; /* Hace que el contenedor sea 100% del ancho del contenedor padre */
+    height: 100px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    margin: 20px auto; /* Centra horizontalmente y añade espacio arriba y abajo */
+  }
+  
+  .textname {
+    font-family: "Yusei Magic";
+    text-align: center;
+    margin-top: -5px; /* Ajusta el margen superior para subir el texto */
+    font-size: 1.2rem; /* Tamaño de fuente responsive utilizando rem o em */
+  }
