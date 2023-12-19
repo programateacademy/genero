@@ -1,7 +1,6 @@
 .container {
     display: flex;
     background-color: #DCBADB;
-    max-width: 500px; /* Establece un ancho máximo */
     width: 100%; /* Hace que el contenedor sea 100% del ancho del contenedor padre */
     height: 100px;
     border-radius: 25px;

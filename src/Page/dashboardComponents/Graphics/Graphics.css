@@ -18,6 +18,7 @@
   
   .containerGraphic {
     display: flex;
+    margin: 500px;
     background-color: #FFF0FF;
     max-width: 630px;
     width: 100%;

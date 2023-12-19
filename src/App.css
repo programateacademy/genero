@@ -14,6 +14,8 @@ body {
   font-family: "Rubik", sans-serif;
   overflow-x: hidden !important;
   position: absolute;
+  width: 100%; /* Ensures that the body occupies the whole screen */
+  height: 100%; /* Ensures that the body occupies the whole screen */
 }
 
 .outer-container {
@@ -25,9 +27,10 @@ body {
 }
 
 .app-container {
-  padding-top: 25%;
+  padding-top: 6.5%;
   flex: 1;
 }
+
 
 /* ------- Navbar ------- */
 
