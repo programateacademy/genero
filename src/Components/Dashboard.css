@@ -1,5 +1,8 @@
-body {
+#componentsContainer{
     background-color: #F0E5E5;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 !important;
 }
 .container-tittle{
     text-align: center;

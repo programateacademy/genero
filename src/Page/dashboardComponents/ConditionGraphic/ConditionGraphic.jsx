@@ -25,11 +25,24 @@ ChartJS.register(
 );
 
 
-const GraphicCondition = () => {
-    const Estrato = ["Si", "No"];
-    const Cantidad = [2735, 51817];
+const GraphicCondition = ({selectedAñoContent}) => {
+    const Discapacidad = selectedAñoContent.map((item) => item.discapacidad);;
+    const conteoDiscapacidad = Discapacidad.reduce((acc, elemento) => {
+      acc[elemento] = (acc[elemento] || 0) + 1;
+      return acc;
+    }, {});
+
+    const discapacidad = Object.keys(conteoDiscapacidad);
+    const Cantidad = Object.values(conteoDiscapacidad);
+
+    
+    console.log(discapacidad); // Array de elementos únicos en estrato
+    console.log(Cantidad)
+
+
+
     const data = {
-      labels: Estrato,
+      labels: discapacidad,
       datasets: [
         {
           label: "Numero de casos totales",

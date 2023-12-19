@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import  './Dashboard.css';
 import BoardGraphic from "../Page/dashboardComponents/BoardGraphic/BoardGraphic";
 import ConditionGraphic from "../Page/dashboardComponents/ConditionGraphic/ConditionGraphic";
@@ -12,11 +12,21 @@ import SexualOrientationGraphic from "../Page/dashboardComponents/SexualOrientat
 import Tittle from "../Page/dashboardComponents/Tittle/Tittle";
 import TotalAttention from "../Page/dashboardComponents/TotalAttention/TotalAttention";
 import YearButtons from "../Page/dashboardComponents/YearButtons/YearButtons";
+import Data from '../assets/Services/Data/Data.json';
 
 const Dashboard = () => {
+    const [selectedAño, setselectedAño] = useState(null);
+    const [selectedAñoContent, setselectedAñoContent] = useState([]);
+    console.log(selectedAño) // se realiza el console para llamar la función
+    const handleSelectedAño = (item) => {
+        setselectedAño(item);
+        const selectedYearData = Data.find((data) => data.año === item);
+        setselectedAñoContent(selectedYearData ? selectedYearData.content : []);
+      };
+ 
     return (
         // Container for all lot of components of DashboardComponents
-        <div  className='componentsContainer'>
+        <div  id='componentsContainer'>
             
             <div className="container-tittle">
             <Tittle />
@@ -31,38 +41,39 @@ const Dashboard = () => {
             <br></br>
             <br></br>
             <br></br>
-            <YearButtons />
+            <YearButtons onYearSelect={handleSelectedAño} jsonData={Data} />
             <br></br>
             <di className="container-graphics">
-            <Graphics />
+            <Graphics selectedAñoContent={selectedAñoContent}/>
             <br></br>            
             </di>
             <div className="container-Secondgraphics">
-            <SecondGraphic /> 
-            </div>
-                       
+            <SecondGraphic selectedAñoContent={selectedAñoContent}/> 
+            </div>           
             <br></br>
-            <BoardGraphic/>
+            <div className="container-BoardGraphic">
+            <BoardGraphic selectedAñoContent={selectedAñoContent}/>
+            </div>
             <br></br>
             <SecondBoardGraphic />
             <br></br>
             <div className="container-Sex">
-            <SexGraphic />
+            <SexGraphic selectedAñoContent={selectedAñoContent} />
 
             <div className="container-SexualOrientation">
             <br></br>
-            <SexualOrientationGraphic />
+            <SexualOrientationGraphic selectedAñoContent={selectedAñoContent} />
             </div>        
             </div>
             <div className="container-Identity">
             <br></br>
-            <IdentityGraphic />
+            <IdentityGraphic selectedAñoContent={selectedAñoContent}/>
             <br></br>
             <div>
                 
             </div>
             <div className="container-Condition">
-            <ConditionGraphic />
+            <ConditionGraphic selectedAñoContent={selectedAñoContent} />
 
             </div>
              </div>

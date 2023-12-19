@@ -1,6 +1,6 @@
 import React from "react";
 import './Graphics.css'; // Agrega la importación directa
-import { Line } from "react-chartjs-2"
+import { Line } from "react-chartjs-2";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -25,9 +25,19 @@ ChartJS.register(
 );
 
 
-const GraphicLine = () => {
-  const Estrato = ["En inclusión Social", "Estrato 1", "Estrato 2", "Estrato 3", "Estrato 4", "Estrato 5", "Habitabilidad de calle", "Sin información disponible"];
-  const Cantidad = [2, 9071, 27084, 4748, 46, 18, 1, 13852];
+const GraphicLine = ({selectedAñoContent}) => {
+  const estrato = selectedAñoContent.map((item) => item.Estrato);
+  const conteoEstrato = estrato.reduce((acc, elemento) => {
+    acc[elemento] = (acc[elemento] || 0) + 1;
+    return acc;
+  }, {});
+  
+  // Configuración de resultados
+  const Estrato = Object.keys(conteoEstrato);
+  const Cantidad = Object.values(conteoEstrato);
+  
+  console.log(Estrato); // Array de elementos únicos en estrato
+  console.log(Cantidad)
   const data = {
     labels: Estrato,
     datasets: [

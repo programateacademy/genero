@@ -21,16 +21,28 @@ import {
     Legend,
     Filler
   );
-  const BoardGraphic = () => {
-    const Localidad = ["Martires", "Bosa", "Ciudad Bolivar ", "Kennedy", "Rafael Uribe Uribe ", "San Cristobal", "Santa Fé", "Usme", "Suba", "Engativa", "Tunjuelito", "Fuera de Bogotá", "Chapinero", "Barrios Unidos", "Fontibón", "Usaquén", "Puente Aranda", "Antonio Nariño", "Sin información disponible", "La candelaria", "Teusaquillo"];
-    const Registro = [2000, 1800, 800, 700, 600, 500, 1000, 1000, 800, 200, 40, 30, 20, 50, 15, 10];
-  
+  const BoardGraphic = ({selectedAñoContent}) => {
+    const Localidad = selectedAñoContent.map((item) => item.localidad);
+    const conteoLocalidad = Localidad.reduce((acc, elemento) => {
+      acc[elemento] = (acc[elemento] || 0) + 1;
+      return acc;
+    }, {});
+
+     // Configuración de resultados
+    const localidad = Object.keys(conteoLocalidad);
+    const Cantidad = Object.values(conteoLocalidad);
+
+    console.log(localidad); // Array de elementos únicos en estrato
+    console.log(Cantidad)
+
+
+
     const data = {
       labels: Localidad,
       datasets: [
         {
           label: "Localidad",
-          data: Registro,
+          data: Cantidad,
           backgroundColor: '#E0B0FF', // Color de fondo de las barras                
           
         },
