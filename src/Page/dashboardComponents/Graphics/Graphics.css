@@ -1,29 +1,86 @@
-.tittleOne {
-    display: flex;
+  .tittleOne{
+        /* background-color: #DCBADB;
+        display: flex;
+        max-width: 100vw;
+        width: 100%;
+        height: 60px;
+        border-radius: 25px;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 15px; Ajusta el margen para espacio arriba y abajo y a la izquierda */
+
+  }
+
+  .tittleGraphic{
+  margin: 10px 10px;
+
+  }
+  
+  
+  
+  @media(max-width: 480px) {   /* Estilos para smartphones pequeños en modo retrato */ 
+   .tittleOne{
+
     background-color: #DCBADB;
-    max-width: 630px;
-    width: 100%;
-    height: 60px;
-    border-radius: 25px;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 10px; /* Ajusta el margen para espacio arriba y abajo y a la izquierda */
-  }
-  
-  .textTitleOne {
-    font-family: "Yusei Magic";
-    text-align: center;
-    font-size: 1.5rem;
-  }
-  
-  .containerGraphic {
-    display: flex;
-    background-color: #FFF0FF;
-    max-width: 630px;
-    width: 100%;
-    height: 380px;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 50px; /* Ajusta el margen para espacio arriba y abajo y a la izquierda */
-    padding: 20px;
-  }
+        display: flex;
+        max-width: 100vw;
+        width: 100%;
+        height: 60px;
+        border-radius: 25px;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 15px; /* Ajusta el margen para espacio arriba y abajo y a la izquierda */
+
+   }
+    }
+    
+    @media (min-width: 768px){
+      .tittleOne{
+
+        background-color: #DCBADB;
+            display: flex;
+            max-width: 100vw;
+            width: 100%;
+            height: 60px;
+            border-radius: 25px;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 15px; /* Ajusta el margen para espacio arriba y abajo y a la izquierda */
+    
+       }
+      /* Estilos para tabletas en modo retrato */
+      }
+    
+    @media (min-width: 1024px){
+      .tittleOne {
+        background-color: #DCBADB;
+        display: flex;
+        flex-direction: row;
+        max-width: 50vw;
+        width: 80%;
+        height: 60px;
+        border-radius: 25px;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 10px; /* Ajusta el margen para espacio arriba y abajo y a la izquierda */
+      } 
+      .textTitleOne {
+        font-family: "Yusei Magic";
+        text-align: center;
+        font-size: 1.5rem;
+      }
+      
+      .containerGraphic {
+        display: flex;
+        flex-direction: row;
+        background-color: #FFF0FF;
+        width: 50%;
+        height: 380px;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 50px; /* Ajusta el margen para espacio arriba y abajo y a la izquierda */
+        padding: 20px;
+      }
+      /* Estilos para portátiles y monitores de tamaño medio */
+    
+    }

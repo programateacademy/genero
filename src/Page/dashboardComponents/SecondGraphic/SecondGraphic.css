@@ -28,16 +28,20 @@
   }
   
     /* Estilos para pantallas más grandes */
-    @media screen and (min-width: 700px) {
+    @media(min-width: 700px) {
       .containerGraphicTwo {
-        margin-top: 40px;
+        margin-top: 0px;
       }
     }
     
     /* Estilos para pantallas más pequeñas */
-    @media screen and (max-width: 450px) {
+    @media(max-width: 450px) {
       .tittleTwo {
         margin-top: -20px;
       }
+    }
+
+    @media (min-width: 1024px){
+      
     }
     

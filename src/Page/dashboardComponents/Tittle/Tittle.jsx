@@ -4,7 +4,7 @@ import './Tittle.css'; // Agrega la importación directa
 
 const Tittle = () => {
   return (
-    <div className="container">
+    <div className="tittle-one">
       <div className="textname">
         <h2>CASA DE TODAS BOGOTÁ <br /> 01 enero de 2019- 23 de octubre de 2023</h2>
       </div>

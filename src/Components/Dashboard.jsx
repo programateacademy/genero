@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import  './Dashboard.css';
+import React, { useState } from "react";
+import './Dashboard.css';
 import BoardGraphic from "../Page/dashboardComponents/BoardGraphic/BoardGraphic";
 import ConditionGraphic from "../Page/dashboardComponents/ConditionGraphic/ConditionGraphic";
 import Download from "../Page/dashboardComponents/Download/Download";
@@ -22,72 +22,71 @@ const Dashboard = () => {
         setselectedAño(item);
         const selectedYearData = Data.find((data) => data.año === item);
         setselectedAñoContent(selectedYearData ? selectedYearData.content : []);
-      };
- 
+    };
+
     return (
         // Container for all lot of components of DashboardComponents
-        <div  id='componentsContainer'>
-            
+        <div id='componentsContainer'>
+
             <div className="container-tittle">
-            <Tittle />
+                <Tittle />
             </div>
-            <div className="column" >            
-            
-            <br></br>
-            <br></br>
-            <br></br>
-            <TotalAttention />
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <YearButtons onYearSelect={handleSelectedAño} jsonData={Data} />
-            <br></br>
-            <di className="container-graphics">
-            <Graphics selectedAñoContent={selectedAñoContent}/>
-            <br></br>            
-            </di>
-            <div className="container-Secondgraphics">
-            <SecondGraphic selectedAñoContent={selectedAñoContent}/> 
-            </div>           
-            <br></br>
-            <div className="container-BoardGraphic">
-            <BoardGraphic selectedAñoContent={selectedAñoContent}/>
-            </div>
-            <br></br>
-            <SecondBoardGraphic selectedAñoContent={selectedAñoContent}/>
-            <br></br>
-            <div className="container-Sex">
-            <SexGraphic selectedAñoContent={selectedAñoContent} />
+            <div className="column" >
 
-            <div className="container-SexualOrientation">
-            <br></br>
-            <SexualOrientationGraphic selectedAñoContent={selectedAñoContent} />
-            </div>        
-            </div>
-            <div className="container-Identity">
-            <br></br>
-            <IdentityGraphic selectedAñoContent={selectedAñoContent}/>
-            <br></br>
-            <div>
-                
-            </div>
-            <div className="container-Condition">
-            <ConditionGraphic selectedAñoContent={selectedAñoContent} />
+                <br></br>
+                <br></br>
+                <br></br>
+                <TotalAttention />
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <YearButtons onYearSelect={handleSelectedAño} jsonData={Data} />
+                <br></br>
+                <div className="container-graphics">
+                    <Graphics selectedAñoContent={selectedAñoContent} />
+                    <br></br>
+                    <SecondGraphic selectedAñoContent={selectedAñoContent} />
+                </div>
+                <br></br>
+                <div className="container-BoardGraphic">
+                    <BoardGraphic selectedAñoContent={selectedAñoContent} />
+                </div>
+                <br></br>
+                <SecondBoardGraphic selectedAñoContent={selectedAñoContent} />
+                <br></br>
+                {/* TODO: falta ajustar los demas componentes al responsive. */}
+                {/* <div className="container-Sex">
+                    <SexGraphic selectedAñoContent={selectedAñoContent} />
+
+                    <div className="container-SexualOrientation">
+                        <br></br>
+                        <SexualOrientationGraphic selectedAñoContent={selectedAñoContent} />
+                    </div>
+                </div>
+                <div className="container-Identity">
+                    <br></br>
+                    <IdentityGraphic selectedAñoContent={selectedAñoContent} />
+                    <br></br>
+                    <div>
+
+                    </div>
+                    <div className="container-Condition">
+                        <ConditionGraphic selectedAñoContent={selectedAñoContent} />
+
+                    </div>
+                </div>
+                <br></br> */}
 
             </div>
-             </div>
-            <br></br>   
 
-            </div>
 
-            
-                     
-            <Download />         
-                      
-                        
-                        
-                        
+
+            {/* <Download /> */}
+
+
+
+
         </div>
     );
 };
