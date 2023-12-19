@@ -26,11 +26,22 @@ ChartJS.register(
 );
 
 
-const GraphicGenero = () => {
-    const Genero = ["Bisexual", "Gay", "Heterosexual", "Lesbiana", "NS/NR", "Sin Informacion"];
-    const Cantidad = [2019, 702, 50059, 1524, 57, 191];
+const GraphicGenero = ({selectedAñoContent}) => {
+    const Genero =  selectedAñoContent.map((item) => item.identidad);;
+    const conteoGenero =  Genero.reduce((acc, elemento) => {
+      acc[elemento] = (acc[elemento] || 0) + 1;
+      return acc;
+    }, {});
+
+    const genero = Object.keys(conteoGenero);
+    const Cantidad = Object.values(conteoGenero);
+
+    console.log(genero); // Array de elementos únicos en estrato
+    console.log(Cantidad)
+
+    
     const data = {
-      labels: Genero,
+      labels: genero,
       datasets: [
         {
           label: "Numero de casos totales",

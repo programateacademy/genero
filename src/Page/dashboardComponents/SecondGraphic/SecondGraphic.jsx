@@ -25,11 +25,22 @@ ChartJS.register(
 );
 
 
-const GraphicPie = () => {
-    const Estrato = ["Intervenciones Sociales", "Primeras Atenciones", "Psicosocial", "Sociojurídicas"];
-    const Cantidad = [23493, 5493, 10030, 15536];
+const GraphicPie = ({selectedAñoContent}) => {
+    const Tipo = selectedAñoContent.map((item) => item.tipo);;
+    const conteoTipo = Tipo.reduce((acc, elemento) => {
+      acc[elemento] = (acc[elemento] || 0) + 1;
+      return acc;
+    }, {});
+
+    // Configuración de resultados
+  const tipo = Object.keys(conteoTipo);
+  const Cantidad = Object.values(conteoTipo);
+
+  console.log(tipo); // Array de elementos únicos en estrato
+  console.log(Cantidad)
+
     const data = {
-      labels: Estrato,
+      labels: tipo,
       datasets: [
         {
           label: "Numero de casos totales",

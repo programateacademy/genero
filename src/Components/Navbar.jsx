@@ -16,10 +16,6 @@ const Navbar = () => {
     setClicked(!clicked);
   };
 
-  const scrollToBottom = () => {
-    const element = document.getElementById("bottom-section");
-    element.scrollIntoView({ behavior: "smooth" });
-  };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -37,7 +33,6 @@ const Navbar = () => {
             <li><a className="active" href="/">Inicio</a></li>
             <li><Link to="/#about" smooth={true}>Sobre</Link></li>
             <li className="dropdown">
-              <a href="#" className="dropbtn">Recursos <i className="fas fa-caret-down"></i></a>
               <div className="dropdown-content">
                 <a href="/pageWave/Cards-First-Wave/First-Wave-Books">Oleada 1</a>
                 <a href="/pageWave/Cards-Second-Wave/Second-Wave-Books">Oleada 2</a>

@@ -1071,12 +1071,12 @@ hr {
   .container{
     max-width: 1140px;
   }
+
 }
 @media (min-width: 1400px) {
   .container{
-    max-width: 1320px;
+    max-width: 2000px;
   }
-  
 }
 
 @media ( max-width: 1040px) {

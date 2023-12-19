@@ -24,16 +24,28 @@ ChartJS.register(
   Filler
 );
 
-const SexualOrientationGraphic = () => {
+const SexualOrientationGraphic = ({selectedAñoContent}) => {
 
-    const sexuality = ["Heterosexual", "Bisexual", "Lesbiana", "Gay", "Sin información disposnible", "NS / NR"];
-    const quantity = [50060, 2020, 1525, 703, 192, 58];
+    const Sexualialidad = selectedAñoContent.map((item) => item.orienta);;
+    const conteoSexualidad = Sexualialidad.reduce((acc, elemento) => {
+        acc[elemento] = (acc[elemento] || 0) + 1;
+        return acc;
+      }, {});
+
+    // Configuración de resultados
+    const sexualidad = Object.keys(conteoSexualidad);
+    const Cantidad = Object.values(conteoSexualidad);
+
+    console.log(sexualidad); // Array de elementos únicos en estrato
+    console.log(Cantidad)
+
+    
     const data = {
-        labels: sexuality,
+        labels: sexualidad,
         datasets:[
             {
                 Label: "Número de casos totales",
-                data: quantity,
+                data: Cantidad,
                 borderColor: ["rgba(232, 174, 230, 100)"],
                 backgroundColor: ["rgba(232, 174, 230, 100)"],
                 borderWidth: 2,

@@ -24,16 +24,26 @@ ChartJS.register(
   Filler
 );
 
-const SexGraphic = () => {
+const SexGraphic = ({selectedAñoContent}) => {
+    const Sexo = selectedAñoContent.map((item) => item.sexo);;
+    const conteoSexo =  Sexo.reduce((acc, elemento) => {
+      acc[elemento] = (acc[elemento] || 0) + 1;
+      return acc;
+    }, {});
+    
+        // Configuración de resultados
+    const sexo = Object.keys(conteoSexo);
+    const Cantidad = Object.values(conteoSexo);
 
-    const sex = ["Mujer", "Hombre", "Intersexual", "Sin información disponible", "NS / NR"];
-    const quantity =[51772, 2447, 235, 97, 2];
+    console.log(sexo); // Array de elementos únicos en estrato
+    console.log(Cantidad)
+
     const data = {
-        labels: sex,
+        labels: sexo,
         datasets:[ 
             {
               label: "Número de casos totales",
-              data: quantity,
+              data: Cantidad,
               borderColor: ["rgba(49, 140, 231, 1)"],
               backgroundColor: ["rgba(49, 140, 231, 1)"],
               borderWidth: 2,
