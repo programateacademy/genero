@@ -36,7 +36,6 @@ const Dashboard = () => {
                 <br></br>
                 <br></br>
                 <br></br>
-                <TotalAttention />
                 <br></br>
                 <br></br>
                 <br></br>
@@ -45,10 +44,9 @@ const Dashboard = () => {
                 <br></br>
                 <div className="container-graphics">
                     <Graphics selectedAñoContent={selectedAñoContent} />
-                    <br></br>
                     <SecondGraphic selectedAñoContent={selectedAñoContent} />
                 </div>
-                <br></br>
+
                 <div className="container-BoardGraphic">
                     <BoardGraphic selectedAñoContent={selectedAñoContent} />
                 </div>
@@ -56,33 +54,25 @@ const Dashboard = () => {
                 <SecondBoardGraphic selectedAñoContent={selectedAñoContent} />
                 <br></br>
                 {/* TODO: falta ajustar los demas componentes al responsive. */}
-                {/* <div className="container-Sex">
+                <div className="container-Sex">
                     <SexGraphic selectedAñoContent={selectedAñoContent} />
-
-                    <div className="container-SexualOrientation">
-                        <br></br>
                         <SexualOrientationGraphic selectedAñoContent={selectedAñoContent} />
-                    </div>
                 </div>
                 <div className="container-Identity">
                     <br></br>
                     <IdentityGraphic selectedAñoContent={selectedAñoContent} />
                     <br></br>
-                    <div>
-
-                    </div>
-                    <div className="container-Condition">
                         <ConditionGraphic selectedAñoContent={selectedAñoContent} />
 
-                    </div>
+
                 </div>
-                <br></br> */}
+                <br></br>
 
             </div>
 
 
 
-            {/* <Download /> */}
+            <Download />
 
 
 

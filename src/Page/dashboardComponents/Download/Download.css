@@ -55,3 +55,30 @@
     margin: 10px; /* Ajusta el margen entre las imágenes */
   }
   
+
+  
+@media(max-width: 480px) {   /* Estilos para smartphones pequeños*/ 
+  .tittleDownload{
+    width: 90%;
+    margin-top: 930px;
+    margin-left: 20px;
+  }
+  .textDownloadOne,
+  .textDownloadTwo {
+    font-size: 0.8rem;
+  }
+  .imageContainer img{
+    width: 90%;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+
+/* Estilos para tabletas*/
+}
+
+@media (min-width: 1024px){
+
+}

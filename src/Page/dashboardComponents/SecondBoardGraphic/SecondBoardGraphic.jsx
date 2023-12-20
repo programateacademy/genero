@@ -56,11 +56,11 @@ import {
     return (    
   
       <div className="container-Edad">           
-      <div>           
+              
       <h1 id = "Edad"  >Grupos Edad</h1>
         <Bar options={options} data={data} />
       </div>
-      </div>
+  
       
       
       

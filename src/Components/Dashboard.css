@@ -1,11 +1,19 @@
+
+
+
 #componentsContainer{
     background-color: #F0E5E5;
     align-items: center !important;
     justify-content: center !important;
+    font-family: "Yusei Magic";
     
-   
+    
+
+    
+
 }
 .container-tittle{
+    font-family: "Yusei Magic";
     text-align: center;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -17,7 +25,7 @@
     display: flex;
     justify-content: center;
     width: 100vw;
-    margin-top: 0%;
+    margin-top: 0;
     margin-bottom: 1%;    
 }
 
@@ -25,18 +33,28 @@
 
 
 
-@media only screen and (max-width: 480px) {   /* Estilos para smartphones pequeños en modo retrato */ 
-    
+
+
+@media(max-width: 480px) {   /* Estilos para smartphones pequeños en modo retrato */ 
+    .container-Sex, .container-SexualOrientation{
+        width: 100vw;
+    }
+.container-Identity{
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+   
+
+}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-   
-    /* Estilos para tabletas en modo retrato */
-  }
+@media (min-width: 768px){
 
-@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    /* Estilos para tabletas en modo retrato */
+}
+
+@media (min-width: 1024px){
     .container-graphics{
-        
         flex-direction: column;
         display: flex;
         justify-content: center;
@@ -54,28 +72,21 @@
         margin-top: -1%;
         margin-bottom: 1%;
     }
-    .container-Sex{
-        flex-direction: column;
+    .container-Sex {
         display: flex;
-        justify-content: center;
-        margin-left: -5%;
-    }
-    .container-SexualOrientation{
-        flex-direction: column;
-        display: flex;
-        margin-top: -554px;
-        justify-content: center;
-        margin-left: -5%;
-        margin-right: -110px;
+        flex-direction: row;
+        width: 97%; /* Puedes ajustar el ancho según tus necesidades */
+        
     }
     .container-Identity{
-        flex-direction: column;
         display: flex;
-        margin-top: 5px;
-        justify-content: center;
-        margin-left: 0%;
-        margin-right: -4%;
+        flex-direction: row;
+        width: 97%;
+    
+    }
+    .column{
+        margin-top: 0px;
     }
     /* Estilos para portátiles y monitores de tamaño medio */
-   
+
 }

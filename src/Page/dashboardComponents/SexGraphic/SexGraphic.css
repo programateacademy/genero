@@ -1,30 +1,60 @@
 .sexTittleOne {
     display: flex;
     background-color: #97bdf5;
-    max-width: 630px;
-    width: 100%;
-    height: 60px;
+    max-width: 700px;
+    width: 97%;
+    height: 57px;
     border-radius: 25px;
     justify-content: center;
     align-items: center;
-    margin: 40px 60px; /* Adjusts the margin for top, bottom and left spacing */
+    margin: 10px 20px; /* Adjusts the margin for top, bottom and left spacing */
 }
-  
+
 .sexTextOne {
     font-family: "Yusei Magic";
     text-align: center;
     font-size: 1.5rem;
 }
-  
+
 .sexGraphicContainer {
-    
+    max-width: 620px;
     display: flex;
+    flex-direction: row;
     background-color: #cedef7;
-    max-width: 630px;
+    padding-left: 20px;
     width: 100%;
-    height: 350px;
+    height: 300px;
     border-radius: 15px;
     justify-content: center;
     align-items: center;
-    margin: 40px 60px; /* Adjusts the margin for top, bottom and left spacing */
+    margin-left: 30px;
+    
 }
+
+
+@media(max-width: 480px) {   /* Estilos para smartphones pequeños en modo retrato */ 
+    .sexGraphic, .sexGraphicContainer, .sexTittleOne{
+        margin-left: 4px;
+        margin-right: 10px;
+        width: 98%;
+        
+    }
+    .sexTittleOne{
+        margin-top: 5px;
+    }
+    }
+    
+    @media(min-width: 768px) and (max-width: 959px) {
+        /* Estilos para tabletas en modo retrato */
+    }
+    
+    @media(min-width: 1024px){
+        .sexGraphic{
+            width: 100%;
+            margin-left: 0;
+        }
+        /* Estilos para portátiles y monitores de tamaño medio */
+    
+    
+    }
+    
