@@ -1,0 +1,43 @@
+.container-Localidad {
+    text-align: center; 
+    font-family: 'Yusei Magic', sans-serif;
+    width: 80%;
+    margin-left: 130px;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  
+  #Localidad {
+    background-color: #DCBADB;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  @media(max-width: 480px) {   /* Estilos para smartphones pequeños en modo retrato */ 
+    .container-Localidad{
+      width: 95%;
+      margin-left: 8px;
+      
+    }
+
+    #Localidad{
+
+    }
+  }
+  
+  
+  /* Estilos para portatiles*/
+  @media (min-width: 768px) {
+    .container-Localidad{
+      margin-left: 50px;
+    }
+    #Localidad{
+      width: 1000px;
+      margin-left: 120px;
+    }
+  }
+  
+  @media (min-width: 1024px){
+  
+  }
+  

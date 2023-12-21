@@ -1,0 +1,88 @@
+#componentsContainer{
+    background-color: #F0E5E5;
+    align-items: center !important;
+    justify-content: center !important;
+    font-family: "Yusei Magic";  
+    
+  
+    
+
+}
+.container-tittle{
+    font-family: "Yusei Magic";
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 50px;
+    color: #020202;   
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 0;
+    margin-bottom: 1%;    
+}
+
+
+
+
+
+
+
+@media(max-width: 480px) {   /* Estilos para smartphones pequeños en modo retrato */ 
+    .container-Sex, .container-SexualOrientation{
+        width: 100vw;
+    }
+.container-Identity{
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+   
+
+}
+}
+
+@media (min-width: 768px){
+
+    /* Estilos para tabletas en modo retrato */
+}
+
+@media (min-width: 1024px){
+    .container-graphics{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        margin-left: -2%;    
+        margin-top: 1%;
+        margin-bottom: 1%;    
+    }
+
+    .container-Secondgraphics{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        margin-left: 20%;
+        margin-right: -5%;    
+        margin-top: -1%;
+        margin-bottom: 1%;
+    }
+    .container-Sex {
+        display: flex;
+        flex-direction: row;
+        width: 97%; /* Puedes ajustar el ancho según tus necesidades */
+        
+    }
+    .container-Identity{
+        display: flex;
+        flex-direction: row;
+        width: 97%;
+    
+    }
+    .column{
+        margin-top: 0px;
+    }
+    /* Estilos para portátiles y monitores de tamaño medio */
+
+}

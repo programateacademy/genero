@@ -1,0 +1,68 @@
+.sexualOrientationGraphicTittleOne {
+    display: flex;
+    background-color: #DCBADB;
+    max-width: 620px;
+    width: 95%;
+    height: 60px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    margin: 4px 6px; /* Adjusts the margin for top, bottom and left spacing */
+    margin-left: auto;
+    margin-top: 7px;
+}
+  
+.sexualOrientationGraphicTextOne {
+    font-family: "Yusei Magic";
+    text-align: center;
+    font-size: 1.5rem;
+}
+  
+.sexualOrientationGraphicContainer {
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+    background-color: #f5ddf5;
+    width: 98%;
+    height: 300px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 20px;
+    
+}
+
+.sexualOrientationGraphic{  
+    max-width: 620px; 
+    width: 100%;
+    margin-left: 20px;
+  
+}
+@media(max-width: 480px) {   /* Estilos para smartphones pequeños en modo retrato */ 
+    .sexualOrientationGraphic{
+    
+        margin-left: 0px;
+        width: 94%;
+        padding-top: 5px;
+    }
+
+    .sexualOrientationGraphicTittleOne{
+        margin-left: 22px;
+
+    }
+    .sexualOrientationGraphicContainer{
+    height: 280px;
+    padding-top: 30px;
+    }
+
+    }
+    
+    @media(min-width: 768px) and (max-width: 959px) {
+        /* Estilos para tabletas en modo retrato */
+    }
+    
+    @media(min-width: 1024px){
+    
+        /* Estilos para portátiles y monitores de tamaño medio */
+    
+    
+    }

@@ -1,0 +1,40 @@
+.tittle-one {
+    display: flex;
+    background-color: #DCBADB;
+    width: 90%; /* Hace que el contenedor sea 100% del ancho del contenedor padre */
+    height: 100px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    margin: 2px auto; /* Centra horizontalmente y añade espacio arriba y abajo */
+    margin-top: 0;
+  }
+  
+  .textname {
+    font-family: "Yusei Magic";
+    text-align: center;
+    margin-top: -5px; /* Ajusta el margen superior para subir el texto */
+    font-size: 1.2rem; /* Tamaño de fuente responsive utilizando rem o em */
+  }
+
+  @media(max-width: 480px) {   /* Estilos para smartphones pequeños en modo retrato */ 
+    .tittle-one, .textname{
+      width: 98%;
+      height: 100px ;
+      font-size: 1.2rem;
+      padding-top: 5px;
+      
+    
+    }
+    }
+    
+    @media(min-width: 768px) and (max-width: 959px) {
+        /* Estilos para tabletas en modo retrato */
+      }
+    
+    @media(min-width: 1024px) and (max-width: 1279px) {
+        /* Estilos para portátiles y monitores de tamaño medio */
+    .container-tittle{
+    
+    }
+    }
