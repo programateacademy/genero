@@ -9,7 +9,7 @@ const Download = () => {
       {/* Letrero de la Gráfica */}
       <div className="tittleDownloadOne">
         <div className="textDownload">
-          <h3>Descarga</h3>
+          <h3>Información</h3>
         </div>
       </div>
 
