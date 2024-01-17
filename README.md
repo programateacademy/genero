@@ -95,8 +95,8 @@ _Prográmate Academy by Educamás_
 
   LEGADO DASHBOARD
 * **Daniela Rodriguez** *Lider tecnica* - [https://github.com/Daniela90-prog]
-* **Jeisson Rubio** *Consultor del proyecto* - [https://github.com/jeirub]
-* **Santiago Hernandez** * Consultor del proyecto* -[https://github.com/SantiiagoHernandez]
+* **Jeisson Rubio** *Scrum Master* - [https://github.com/jeirub]
+* **Santiago Hernandez** *Product Owner* -[https://github.com/SantiiagoHernandez]
 * **Andres Vargas** *Developer* -[https://github.com/Kimvo1]
 
 ---
