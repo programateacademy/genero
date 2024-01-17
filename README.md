@@ -66,6 +66,7 @@ src/
 * _[Link a proyecto](https://genero-front-six.vercel.app/)_
 * _[Link a documentación](https://docs.google.com/document/d/1eluYFpHvXtY9JiOI_-Clv1_4atcH34komax5w2u-2F0/edit?usp=sharing)_
 * _[Link a mockups](https://www.figma.com/file/fXHviR0kU75bikdnLvQeGF/Nous-Cims-Genero?type=design&node-id=0%3A1&mode=design&t=5qrhUO9q8T5L97rI-1)_
+*  _[Link a mockups](https://www.figma.com/file/trQ9lvnu0ocQDlBwTxzrNl/Enfoque-de-Genero?type=design&node-id=0%3A1&mode=design&t=hkiQZtrLvK3AkLtm-1)_
 
 ## Construido con 🛠️
 
@@ -80,7 +81,7 @@ _Herramientas y librerias que usamos dentro del proyecto_
 * [@mdi-react](https://www.npmjs.com/package/@mdi/react) - Libreria de iconos SVG
 * [Bootstrap](https://react-bootstrap.github.io/) - Libreria front-end
 * [React-router-hash-link](https://www.npmjs.com/package/react-router-hash-link) - Libreria de enlace al enrutador
-
+* [Chart.js](https://www.chartjs.org/docs/latest/getting-started/installation.html)
 ## Autores ✒️
 
 _Prográmate Academy by Educamás_
@@ -91,6 +92,12 @@ _Prográmate Academy by Educamás_
 * **Sebastian Mendez** - *Web developer* - [amSebas](https://github.com/amSebas)
 * **Julian Rodriguez** - *Web developer* - [JulianRodriguezV](https://github.com/JulianRodriguezV)
 * **Karol Galindo** - *Web developer* - [karolgalindo02](https://github.com/karolgalindo02)
+
+  LEGADO DASHBOARD
+* **Daniela Rodriguez** *Lider tecnica* - [https://github.com/Daniela90-prog]
+* **Jeisson Rubio** *Consultor del proyecto* - [https://github.com/jeirub]
+* **Santiago Hernandez** * Consultor del proyecto* -[https://github.com/SantiiagoHernandez]
+* **Andres Vargas** *Developer* -[https://github.com/Kimvo1]
 
 ---
 ⌨️ con ❤️ por [Equipo Front-end](https://github.com/programateacademy/genero-front) 😊
