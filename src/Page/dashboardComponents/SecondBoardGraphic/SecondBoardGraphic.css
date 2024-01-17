@@ -38,14 +38,14 @@
 }
 
 /* Estilos para tabletas */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .container-Edad {
     display: flex;
     flex-direction: column;
     width: 90%;
     height: 500px;
     margin-bottom: 50px;
-    margin-left: 160px;
+    margin-left: 100px;
     padding: 10px;
     text-align: center;
     font-family: 'Yusei Magic', sans-serif;
@@ -55,21 +55,27 @@
     text-align: center;
     background-color: #6AA9E9;
     max-width: 1000px;
-    height: 60px;
+    width: 90%;
+    height: 70px;
     border-radius: 20px;
-    padding: 5px;
+    padding: 10px;
   }
 }
 
 /* Estilos para portátiles y monitores de tamaño medio */
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .container-Edad {
-    #Edad{
-      width: 100%;
+      margin-left: 130px;
+      width: 90%;
+      height: 600px;
+      
     }
+    #Edad{
+      width: 90%;
+      padding: 30px;
+    }
+}
 
-}
-}
 
     
     

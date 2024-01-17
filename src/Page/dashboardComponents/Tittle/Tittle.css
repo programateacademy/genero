@@ -29,7 +29,12 @@
     }
     
     @media(min-width: 768px) and (max-width: 959px) {
-        /* Estilos para tabletas en modo retrato */
+       .container-tittle{
+        position: relative;
+        left: 4rem;
+        width: 90%;
+
+       }
       }
     
     @media(min-width: 1024px) and (max-width: 1279px) {

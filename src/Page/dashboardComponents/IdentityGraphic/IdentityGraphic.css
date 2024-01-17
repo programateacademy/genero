@@ -48,13 +48,18 @@
 
 }
 
-@media (min-width: 768px) {
-  /* Estilos para tabletas en modo retrato */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .tittleGraphicGenero{
+    width: 80%;
+    margin-left: 110px;
+  }
 }
 
-@media (min-width: 1024px) {
-  /* Estilos para pantallas más grandes */
-  .tittleGraphicGenero {
-    width: 50%;
+@media (min-width: 1025px) and (max-width: 1442px) {
+  
+  
+  .container-Identity{
+    margin-left: 60px;
+
   }
 }

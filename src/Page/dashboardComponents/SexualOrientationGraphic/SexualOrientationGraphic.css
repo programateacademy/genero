@@ -56,13 +56,28 @@
 
     }
     
-    @media(min-width: 768px) and (max-width: 959px) {
-        /* Estilos para tabletas en modo retrato */
+    @media(min-width: 768px) and (max-width: 1024px) {
+        .sexualOrientationGraphic{
+            margin-top: -393px;
+            margin-left: 500px;
+            width: 50%;
+            margin-right: 10px;
+        }
+
+        .sexualOrientationGraphicContainer{
+            margin-top: 20px;
+        }
     }
     
-    @media(min-width: 1024px){
+    @media(min-width: 1025px){
     
-        /* Estilos para portátiles y monitores de tamaño medio */
-    
+        .sexualOrientationGraphic{
+            margin-right: 30px;
+            margin-top: 23px;
+            width: 50%;
+        }
+        .sexualOrientationGraphicContainer{
+            margin-top: 25px;
+        }
     
     }

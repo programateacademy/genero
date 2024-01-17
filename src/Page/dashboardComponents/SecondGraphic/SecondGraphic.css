@@ -31,8 +31,11 @@
   }
   
     /* Estilos para pantallas más grandes */
-    @media(min-width: 700px) {
-      .containerGraphicTwo {
+    @media(min-width: 768px) {
+      .tittleGraphicTwo {
+        width: 40%;
+        margin-left: 50px;
+        margin-top: 17rem;
 
 
       }
@@ -60,7 +63,12 @@
 
     }
 
-    @media (min-width: 1024px){
+    @media (min-width: 1025px){
+      .tittleGraphicTwo{
+        margin-top: -50px;
+        margin-left: 100px;
+      }
+
       
     }
     

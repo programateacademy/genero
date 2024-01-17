@@ -57,7 +57,7 @@
   
 
   /* Estilos para pantallas más grandes */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
     .ButtonsContainer {
       margin-top: -100px;
     }

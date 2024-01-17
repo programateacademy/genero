@@ -44,16 +44,40 @@
     }
     }
     
-    @media(min-width: 768px) and (max-width: 959px) {
-        /* Estilos para tabletas en modo retrato */
-    }
+    @media(min-width: 764px) and (max-width: 1024px) {
+        .sexGraphic{
+            width: 45%;
+            margin-left: 5px;
+        }
+
+        .sexTittleOne{
+            width: 100%;
+            margin: 30px;
+        }
+
+        
+
+        }
     
-    @media(min-width: 1024px){
+    
+    @media(min-width: 1025px){
         .sexGraphic{
             width: 100%;
-            margin-left: 0;
+            margin-left: 30px;
         }
-        /* Estilos para portátiles y monitores de tamaño medio */
+
+        .container-Sex{
+            margin-top: 80px;
+        }
+
+        .sexTittleOne{
+            width: 75%;
+            margin: 30px;
+        }
+       
+        .sexGraphicContainer{
+            width: 100%;
+        }
     
     
     }

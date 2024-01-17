@@ -39,12 +39,27 @@
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+    .tittleGraphicCondition{
+      width: 70%;
+      margin-left: 100px;
 
+    }
+    .containerGraphicCondition{
+      margin-left: 230px;
+      
+    }
+
+    .tittleCondition{
+      text-align: center;
+      margin-left: 70px;
+      width: 100%;
+      
+    }
 
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
 .tittleCondition {
   display: flex;
   background-color: #97bdf5;

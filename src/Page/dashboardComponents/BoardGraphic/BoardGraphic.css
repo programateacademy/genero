@@ -27,17 +27,28 @@
   
   
   /* Estilos para portatiles*/
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     .container-Localidad{
-      margin-left: 50px;
+      margin-left: 0px;
     }
     #Localidad{
-      width: 1000px;
+      width: 900px;
       margin-left: 120px;
     }
   }
   
-  @media (min-width: 1024px){
+  @media (min-width: 1025px){
+    .container-Localidad{
+    width: 90%;
+    
+    
+    }
+
+    #Localidad{
+      width: 90%;
+      margin-left: 40px;
+    }
+    }
   
-  }
+  
   
